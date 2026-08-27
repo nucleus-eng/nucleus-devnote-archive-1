@@ -36,7 +36,7 @@ with the following parameters:
 | Fit Parameter | Name | Units | What it tells you |
 |---|---|---|---|
 |$F_\text{ss}$ | Steady-State Fluorescence | $u$ | Fluorescence at completion of the reaction. Proportional to total amount of reporter expressed. |
-| $k$ | Steepness | unitless | How fast is the reaction? |
+| $k$ | Steepness | $h^{-1}$ | How fast is the reaction? |
 | $\tau_\text{vel}$  | Inflection Time | $h$ | How long until the reaction reaches its fastest rate? |
 | $d$ | Drift Rate | $u \cdot h^{-1}$| The rate of drift after steady state (ideally, close to zero). |
 | $\tau_\text{drift}$| Drift Onset Time | $h$ | When does drift start to affect fluorescence? |
