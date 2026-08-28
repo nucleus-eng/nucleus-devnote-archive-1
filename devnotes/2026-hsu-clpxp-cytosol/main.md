@@ -12,7 +12,7 @@ The [Control Module](https://devnotes.nucleus.engineering/articles/clpxp-module-
 :name: fig:scheme
 :align: center
 :width: 65%
-Illustration of the ClpXP protein degradation control module in the [Developer Cell](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," with other modules grayed out.
+Illustration of the ClpXP protein degradation control module in the [Developer Cell](https://devnotes.nucleus.engineering/articles/developer-cell-introduction), with other modules grayed out.
 :::
 
 In the [previous DevNote](https://devnotes.nucleus.engineering/articles/bnext-devnotes-clpx-in-pure-01), we demonstrated the degradation of ssrA-tagged proteins by the ClpXP protease system in bulk reactions using the commercial NEB PURExpress system. In this DevNote, we replaced NEB PURE with Nucleus Cytosol and performed similar experiments using different combinations of purified proteins and DNA constructs to verify target protein degradation.

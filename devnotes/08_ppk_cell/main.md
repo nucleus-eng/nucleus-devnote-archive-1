@@ -13,12 +13,12 @@ Building on these findings, we systematically evaluate three metabolic configura
 
 The choice of supplements reflects practical considerations for synthetic cell preparation. While PEG4k was previously shown to enhance PPK module performance, Optiprep represents a critical test condition as it is commonly used as a density gradient medium in the inverted emulsion method for generating synthetic cells. Understanding how these supplements affect the PPK module is essential for determining suitable operating conditions.
 
-We aim to identify suitable operating conditions for the PPK-based energy regeneration system and characterize its performance across both bulk and encapsulated environments. This represents the first of three modules to be integrated into the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction)," establishing a foundation for more complex synthetic cellular systems with sustained metabolic activity ({ref}`fig:ppk-cell-illustration`).
+We aim to identify suitable operating conditions for the PPK-based energy regeneration system and characterize its performance across both bulk and encapsulated environments. This represents the first of three modules to be integrated into the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction), establishing a foundation for more complex synthetic cellular systems with sustained metabolic activity ({ref}`fig:ppk-cell-illustration`).
 
 :::{figure} ./figures/Developer_Cell-PPK_Module.png
 :label: fig:ppk-cell-illustration
 :width: 75%
-Illustration of the PPK based energy regeneration module in the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction)," with undeveloped modules grayed out. 
+Illustration of the PPK based energy regeneration module in the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction), with undeveloped modules grayed out. 
 
 :::
 
