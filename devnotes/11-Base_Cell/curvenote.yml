@@ -78,6 +78,10 @@ project:
   #    title: DNA EtOH Precipitation
   #  - file: ./plasmids/pOpen-deGFP.gb
    #   title: pOpen-deGFP
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
 site:
   template: article-theme
   nav: []

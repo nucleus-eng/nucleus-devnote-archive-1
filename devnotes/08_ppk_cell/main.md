@@ -13,12 +13,12 @@ Building on these findings, we systematically evaluate three metabolic configura
 
 The choice of supplements reflects practical considerations for synthetic cell preparation. While PEG4k was previously shown to enhance PPK module performance, Optiprep represents a critical test condition as it is commonly used as a density gradient medium in the inverted emulsion method for generating synthetic cells. Understanding how these supplements affect the PPK module is essential for determining suitable operating conditions.
 
-We aim to identify suitable operating conditions for the PPK-based energy regeneration system and characterize its performance across both bulk and encapsulated environments. This represents the first of three modules to be integrated into the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction), establishing a foundation for more complex synthetic cellular systems with sustained metabolic activity ({ref}`fig:ppk-cell-illustration`).
+We aim to identify suitable operating conditions for the PPK-based energy regeneration system and characterize its performance across both bulk and encapsulated environments. This represents the first of three modules to be integrated into the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction)," establishing a foundation for more complex synthetic cellular systems with sustained metabolic activity ({ref}`fig:ppk-cell-illustration`).
 
 :::{figure} ./figures/Developer_Cell-PPK_Module.png
 :label: fig:ppk-cell-illustration
 :width: 75%
-Illustration of the PPK based energy regeneration module in the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction), with undeveloped modules grayed out. 
+Illustration of the PPK based energy regeneration module in the [Developer Cell](https://devnotes.bnext.bio/articles/developer-cell-introduction)," with undeveloped modules grayed out. 
 
 :::
 
@@ -207,3 +207,7 @@ Kernel density plot of central fluorescence intensity (mean) for individual lipo
 - We have identified conditions in which the addition of the PPK module increases the performance of the PURE cell, displaying a similar behavior as displayed in bulk  PURE reactions [](https://devnotes.bnext.bio/articles/ppk-module-test).
 - Along the way, we identified that addition of optiprep significantly reduced the performance of PURE compared with standard and PEG-supplemented PURE reactions. 
 - Next steps will involve integrating the proposed [ClpXP Module](https://devnotes.bnext.bio/articles/clpxp-module-plan) with the PPK Module in a PURE cytosol and characterizing it's behavior. 
+
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.

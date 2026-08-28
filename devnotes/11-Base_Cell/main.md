@@ -133,3 +133,7 @@ Combined green (488 nm) and red (561 nm) fluorescence channels. Timepoint 0 (t =
 # Conclusions and next steps
 
 This DevNote presents the initial testing of the Nucleus Base Cell. The Base Cell functions as a foundational synthetic-cell platform engineered to support modular extensions for biotechnological applications and future synthetic cell development.
+
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.

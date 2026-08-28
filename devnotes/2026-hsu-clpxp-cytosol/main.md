@@ -12,7 +12,7 @@ The [Control Module](https://devnotes.nucleus.engineering/articles/clpxp-module-
 :name: fig:scheme
 :align: center
 :width: 65%
-Illustration of the ClpXP protein degradation control module in the [Developer Cell](https://devnotes.nucleus.engineering/articles/developer-cell-introduction), with other modules grayed out.
+Illustration of the ClpXP protein degradation control module in the [Developer Cell](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," with other modules grayed out.
 :::
 
 In the [previous DevNote](https://devnotes.nucleus.engineering/articles/bnext-devnotes-clpx-in-pure-01), we demonstrated the degradation of ssrA-tagged proteins by the ClpXP protease system in bulk reactions using the commercial NEB PURExpress system. In this DevNote, we replaced NEB PURE with Nucleus Cytosol and performed similar experiments using different combinations of purified proteins and DNA constructs to verify target protein degradation.
@@ -358,5 +358,9 @@ Overall, these results show that Nucleus Cytosol provides substantially higher p
 # Future Works
 
 In [previous DevNote](https://devnotes.nucleus.engineering/articles/bnext-devnotes-clpxp-pure-cells-01), we successfully demonstrated that the ClpXP-based control module functions effectively within the NEB PURExpress system in the confined environment of liposomes, establishing its robustness for protein degradation–based control in synthetic cells. Building on this foundation, the next step is to transition this module to synthetic cells encapsulating the Nucleus Cytosol system. This transition is important not only as a technical substitution, but also as an opportunity to directly compare how the two PURE systems perform under identical synthetic cell conditions. While we have already characterized and compared NEB PURExpress and Nucleus Cytosol in bulk reactions, their behavior in confined, cell-like environments remains unexplored and may reveal differences in expression efficiency, degradation dynamics, and system compatibility that are not apparent in bulk. Therefore, implementing the ClpXP control module in Nucleus Cytosol-based synthetic cells will enable a systematic, side-by-side evaluation of these two transcription–translation platforms in a more biologically relevant compartmentalized setting, helping to clarify their respective strengths and limitations for synthetic cell engineering.
+
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.
 
 

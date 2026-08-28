@@ -531,4 +531,8 @@ As a next step, we will investigate whether PURE-expressed SecYEG can mediate th
 
 In parallel, we will continue to develop and evaluate additional assays to further verify the membrane integration, assembly, and functionality of SecYEG complexes in liposomes.
 
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.
+
 

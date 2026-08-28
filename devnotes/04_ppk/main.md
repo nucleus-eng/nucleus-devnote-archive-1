@@ -185,3 +185,7 @@ In this developer note, we highlight a key finding: the PPK2-based energy regene
 Equally important is the role of magnesium ion concentration in optimizing protein synthesis. Our results demonstrate that different energy regeneration modules have distinct magnesium requirements, and that tuning this parameter is critical for maximizing performance. Although only preliminary magnesium optimization was performed in this study, our findings suggest that further improvements in yield could be achieved through additional optimization of magnesium levels, polyphosphate (polyP) substrate concentration, and PPK2 enzyme dosage in the combined module reaction.
 
 Overall, the results presented here underscore the potential of modular energy regeneration strategies to enhance the efficiency and output of *in vitro* protein synthesis in the PURE system.
+
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.
