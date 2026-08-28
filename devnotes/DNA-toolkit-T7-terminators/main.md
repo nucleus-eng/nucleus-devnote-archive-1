@@ -145,6 +145,10 @@ Beyond the comparative analysis, this collection provides a versatile toolbox fo
 
 Conversely, T7hyb7 and T7hyb8 serve as valuable tools for stoichiometric control in polycistronic operons. Future efforts should focus on further modifying these variants to generate a library with a broader dynamic range. This could facilitate the development of large polycistronic operons in PURE systems.
 
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.
+
 
 
 

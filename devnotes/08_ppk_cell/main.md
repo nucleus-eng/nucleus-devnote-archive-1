@@ -207,3 +207,7 @@ Kernel density plot of central fluorescence intensity (mean) for individual lipo
 - We have identified conditions in which the addition of the PPK module increases the performance of the PURE cell, displaying a similar behavior as displayed in bulk  PURE reactions [](https://devnotes.bnext.bio/articles/ppk-module-test).
 - Along the way, we identified that addition of optiprep significantly reduced the performance of PURE compared with standard and PEG-supplemented PURE reactions. 
 - Next steps will involve integrating the proposed [ClpXP Module](https://devnotes.bnext.bio/articles/clpxp-module-plan) with the PPK Module in a PURE cytosol and characterizing it's behavior. 
+
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.

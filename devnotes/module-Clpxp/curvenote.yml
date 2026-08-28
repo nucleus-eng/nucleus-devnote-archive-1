@@ -62,6 +62,10 @@ project:
     - id: meca
       title: Computational Archive
       filename: module-clpxp.zip
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
 site:
   template: article-theme
   nav: []

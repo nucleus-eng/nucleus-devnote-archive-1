@@ -61,6 +61,10 @@ project:
       filename: t7-terminators.zip
     - file: ./General/DNA_toolkit_T7_terminator_collection-labnotebook.pdf
       title: Lab notebook entry
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
 site:
   template: article-theme
   nav: []

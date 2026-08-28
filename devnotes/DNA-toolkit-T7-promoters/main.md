@@ -272,4 +272,8 @@ Steadystate fluorescence values of deGFP expression under the control of the T7 
 ::::::
 -->
 
+**Acknowledgments**
+
+This work is part of the project titled "[Developer Cell: A modular, extensible chassis for building synthetic cells](https://devnotes.nucleus.engineering/articles/developer-cell-introduction)," and is funded in part by the Alfred P. Sloan Foundation under grant G-2024-22735.
+
 
