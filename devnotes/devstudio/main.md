@@ -12,7 +12,7 @@ Reproduce demonstration projects in new labs.
 Document the modules and underlying dependencies for reusability.
 Improve the underlying tools to document the modules along the way.
 
-By working together to build and document these demos on a short timeline, we have been prototyping collaborative synthetic cell engineering and learning the principles of this new field. This Developer Note aims to describe the underlying technical and organizational structure for running Developer Studios in the future.
+By working together to build and document these demos on a short timeline, we have been prototyping collaborative synthetic cell engineering and learning the principles of this new field — building on earlier work begun at the [DevCells Kickoff Workshop](https://devnotes.nucleus.engineering/articles/devcells-kickoff-workshop). This Developer Note aims to describe the underlying technical and organizational structure for running Developer Studios in the future.
 
 ## Synthetic Cell Engineering
 

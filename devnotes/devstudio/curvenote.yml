@@ -5,21 +5,16 @@ project:
   subtitle: ""
   description: ""
   authors:
-    - name: Anton Jackson-Smith
-      email: anton@bnext.bio
-      orcid: 0000-0002-7334-3368
-      affiliations:
-        - name: b.next, San Francisco, California, 94107, USA
-          city: San Francisco
-          state: California
-          postal_code: '94107'
-          country: USA
+    - name: Developer Studio Workshop Participants
+      email: build@bnext.bio
       corresponding: true
+      affiliations:
+        - name: Nucleus Labs, San Francisco, CA
   keywords: []
   references:
     devnotes: https://devnotes.bnext.bio
   date: 2026-08-31
-  banner: banner.webp
+  banner: banner-devcells.webp
   toc:
     - file: main.md
   github: https://github.com/bnext-bio/nucleus-developer-notes
