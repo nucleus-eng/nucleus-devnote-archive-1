@@ -15,6 +15,7 @@ project:
     devnotes: https://devnotes.bnext.bio
   date: 2026-08-31
   banner: banner-devcells.webp
+  thumbnail: assets/thumbnail.png
   toc:
     - file: main.md
   github: https://github.com/bnext-bio/nucleus-developer-notes
