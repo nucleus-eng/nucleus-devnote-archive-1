@@ -14,10 +14,6 @@ flowchart TD
     classDef this fill:#374151,color:#ffffff,stroke:#111827;
     class BASE_CYTOSOL,MEMBRANE_POPC_CHOL_CHICAGO constituent;
     class CHICAGO_CHASSIS this;
-
-    click BASE_CYTOSOL "/docs/modules/base-cytosol/spec"
-    click CHICAGO_CHASSIS "/docs/modules/chicago-chassis/spec"
-    click MEMBRANE_POPC_CHOL_CHICAGO "/docs/modules/membrane-popc-chol-chicago/spec"
 ```
 *Module dependencies for the Chicago Chassis demonstration.*
 <!-- /gen:composition-diagram -->
