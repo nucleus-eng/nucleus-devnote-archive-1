@@ -1,0 +1,58 @@
+version: 1
+project:
+  id: nucleus-devnote-core-devstudio
+  title: ""
+  subtitle: ""
+  description: ""
+  authors:
+    - name: Anton Jackson-Smith
+      email: anton@bnext.bio
+      orcid: 0000-0002-7334-3368
+      affiliations:
+        - name: b.next, San Francisco, California, 94107, USA
+          city: San Francisco
+          state: California
+          postal_code: '94107'
+          country: USA
+      corresponding: true
+  keywords: []
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-08-31
+  banner: banner.webp
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devstudio.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: devstudio.zip
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []
