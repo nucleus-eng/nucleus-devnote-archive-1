@@ -1,3 +1,4 @@
+(fig:devstudio-pipeline)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -38,3 +39,4 @@ flowchart TD
     class DECISIONS decisions;
     class DELIVERABLES deliverables;
 ```
+*End-to-end pipeline from bench materials through documentation delivery.*

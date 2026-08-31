@@ -1,4 +1,5 @@
 <!-- gen:composition-diagram -->
+(fig:london-deps)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -36,4 +37,5 @@ flowchart TD
     click S30_LYSATE "/docs/modules/s30-lysate/spec"
     click SUBSTRATE_CPRG_SUV "/docs/modules/substrate-cprg-suv/spec"
 ```
+*Module dependencies for the London Cascade demonstration.*
 <!-- /gen:composition-diagram -->

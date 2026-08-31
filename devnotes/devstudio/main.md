@@ -22,7 +22,7 @@ Reliable materials: Reliable materials that support documentation and reusabilit
 Data pipelines: Ability to quickly transform an experimental design into well annotated data
 Documentation Workflows: A means for quickly creating and modifying specifications to evolve with emerging constraints
 
-Many of these capacities exist in some form on Nucleus already. However, we need to adapt these tools to accommodate the form of this event and ensure that they work reliably. What follows is a checklist for what needs to be demonstrated and its current status.
+Many of these capacities exist in some form on Nucleus already. However, we need to adapt these tools to accommodate the form of this event and ensure that they work reliably. What follows is a checklist for what needs to be demonstrated and its current status, organized around the pipeline shown in {ref}`fig:devstudio-pipeline`. Module dependencies for each Node's demonstration are shown in {ref}`fig:chicago-deps` and {ref}`fig:london-deps`.
 
 ## Capacities checklist
 
@@ -52,6 +52,9 @@ Status per item will be added starting the week of 9/4, once this week's build w
 Custom reagents or materials with long lead times need to be procured and validated in advance of the event.
 
 ### Data pipeline
+
+Each component below corresponds to a stage in the pipeline ({ref}`fig:devstudio-pipeline`).
+
 - **Instrument access & data delivery.** Participants require a way for easily accessing measurement readouts without relying on our central file system.
 - **Platemap generation.** Participants require a method to convert a platemap in their own format into one compatible with Nucleus's [CDK](https://pypi.org/project/nucleus-cdk/) tools. This is currently the most critical and least developed component of the pipeline.
 - **CDK and compute access.** Participants require reliable access to CDK tools, most likely via Colab-based template workbooks rather than local installations.
@@ -80,3 +83,7 @@ As a starting point, we expect that the event will have the following week-by-we
 ### Follow along
 
 This event will be open — feel free to drop by and participate over the three weeks (9/23 – 10/14). We'll be livestreaming instrument output directly to YouTube as data comes in, so you can follow along with what's happening on the bench in real time, not just see the final demos. Please reach out!
+
+:::{youtube} WPd8dyNlvqk
+:caption: A previous workshop stream gives a taste of what live instrument output looks like in practice.
+:::

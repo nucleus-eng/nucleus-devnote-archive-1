@@ -1,4 +1,5 @@
 <!-- gen:composition-diagram -->
+(fig:chicago-deps)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -18,4 +19,5 @@ flowchart TD
     click CHICAGO_CHASSIS "/docs/modules/chicago-chassis/spec"
     click MEMBRANE_POPC_CHOL_CHICAGO "/docs/modules/membrane-popc-chol-chicago/spec"
 ```
+*Module dependencies for the Chicago Chassis demonstration.*
 <!-- /gen:composition-diagram -->
