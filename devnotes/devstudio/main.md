@@ -8,9 +8,9 @@ abstract: |
 
 Developer Studio is an event that brings together 12 labs organized into two Nodes to do integrated synthetic cell engineering. Over the last 9 months, each Node has been working at their own institutions to figure out how to integrate pre-existing synthetic cell technologies into charismatic demonstrations, the so-called [London](https://devnotes.nucleus.engineering/articles/london-demo-1) and [Chicago](https://devnotes.nucleus.engineering/articles/chicago-demo-1) Demos. The goal of the studio is to reproduce the work done over the last 9 months in a three-week period and ensure that it is documented for reusability, significantly expanding the amount of integrated synthetic cell technology available on [Nucleus](https://docs.nucleus.engineering/). More succinctly, the goals are:
 
-Reproduce demonstration projects in new labs.
-Document the modules and underlying dependencies for reusability.
-Improve the underlying tools to document the modules along the way.
+- Reproduce demonstration projects in new labs.
+- Document the modules and underlying dependencies for reusability.
+- Improve the underlying tools to document the modules along the way.
 
 By working together to build and document these demos on a short timeline, we have been prototyping collaborative synthetic cell engineering and learning the principles of this new field — building on earlier work begun at the [DevCells Kickoff Workshop](https://devnotes.nucleus.engineering/articles/devcells-kickoff-workshop). This Developer Note aims to describe the underlying technical and organizational structure for running Developer Studios in the future.
 
@@ -18,9 +18,9 @@ By working together to build and document these demos on a short timeline, we ha
 
 Several capacities must be in place in order for Developer Studio to accomplish its goals. These capacities are also aligned with those needed to scale the size of collaboration in integrative synthetic cell engineering. This compiles down to three core pieces:
 
-Reliable materials: Reliable materials that support documentation and reusability
-Data pipelines: Ability to quickly transform an experimental design into well annotated data
-Documentation Workflows: A means for quickly creating and modifying specifications to evolve with emerging constraints
+- **Reliable materials:** Reliable materials that support documentation and reusability
+- **Data pipelines:** Ability to quickly transform an experimental design into well annotated data
+- **Documentation Workflows:** A means for quickly creating and modifying specifications to evolve with emerging constraints
 
 Many of these capacities exist in some form on Nucleus already. However, we need to adapt these tools to accommodate the form of this event and ensure that they work reliably. What follows is a checklist for what needs to be demonstrated and its current status, organized around the pipeline shown in {ref}`pipeline <fig:devstudio-pipeline>`. Module dependencies for each Node's demonstration are shown in {ref}`Chicago <fig:chicago-deps>` and {ref}`London <fig:london-deps>`.
 
