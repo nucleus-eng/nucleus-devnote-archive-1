@@ -27,18 +27,18 @@ Many of these capacities exist in some form on Nucleus already. However, we need
 ## Capacities checklist
 
 ::::{tab-set}
-::::{tab-item} Pipeline
+:::{tab-item} Pipeline
 ```{include} assets/pipeline-diagram.md
 ```
-::::
-::::{tab-item} Chicago Module Dependencies
+:::
+:::{tab-item} Chicago Module Dependencies
 ```{include} assets/chicago-module-dependencies.md
 ```
-::::
-::::{tab-item} London Module Dependencies
+:::
+:::{tab-item} London Module Dependencies
 ```{include} assets/london-module-dependencies.md
 ```
-::::
+:::
 ::::
 
 Our plan is to develop and validate our data pipeline and documentation workflows against a specific test case. The proposed test case will be embedding base cell in an agarose hydrogel. This will test our documentation workflows using two standard data workflows: microplate reader and microscopy. This will test the process from the bench to data to DevNote to documentation.
