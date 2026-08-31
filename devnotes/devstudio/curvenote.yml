@@ -27,8 +27,8 @@ project:
   open_access: true
   venue: Nucleus
   subject: Developer Note
-  plugins:
-    - lorem.mjs
+  # plugins:
+  #   - lorem.mjs
   jupyter: true
   exports:
     - format: meca
