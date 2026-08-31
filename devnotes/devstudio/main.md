@@ -84,6 +84,6 @@ As a starting point, we expect that the event will have the following week-by-we
 
 This event will be open — feel free to drop by and participate over the three weeks (9/23 – 10/14). We'll be livestreaming instrument output directly to YouTube as data comes in, so you can follow along with what's happening on the bench in real time, not just see the final demos. Please reach out!
 
-:::{youtube} WPd8dyNlvqk
-:caption: A previous workshop stream gives a taste of what live instrument output looks like in practice.
-:::
+::::{iframe} https://www.youtube.com/embed/WPd8dyNlvqk
+A previous workshop stream gives a taste of what live instrument output looks like in practice.
+::::
