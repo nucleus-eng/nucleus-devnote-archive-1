@@ -1,18 +1,18 @@
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
-    MATERIALS["**Materials**\nReagents and plasmid stocks"]
-    INSTRUMENT["**Instrument access & data delivery**\nPortable file delivery"]
-    LIVESTREAM["**Livestream**\nFeed to YouTube"]
-    PLATEMAP["**Platemap generation**\nMost critical, underdeveloped"]
-    CDK["**CDK & compute access**\nColab-based compute tools"]
-    FIGURES["**Figure generation & analysis**\nPublication-quality, editable"]
-    DRAFTING["**Collaborative drafting environment**\nGoogle Drive workspace"]
-    DECISIONS["**Decision making**\nIn-Studio RFCs"]
-    DEVNOTE["**Draft → DevNote**\nGoogle Docs to MyST"]
-    DOCS["**DevNote → Docs**\nDocumentation pages"]
-    MGMT["**Documentation management**\nAdapt as constraints evolve"]
-    DELIVERABLES["**Deliverables**\nDevNotes and documentation pages"]
+    MATERIALS["**Materials**<br/>Reagents and plasmid stocks"]
+    INSTRUMENT["**Instrument access & data delivery**<br/>Portable file delivery"]
+    LIVESTREAM["**Livestream**<br/>Feed to YouTube"]
+    PLATEMAP["**Platemap generation**<br/>Most critical, underdeveloped"]
+    CDK["**CDK & compute access**<br/>Colab-based compute tools"]
+    FIGURES["**Figure generation & analysis**<br/>Publication-quality, editable"]
+    DRAFTING["**Collaborative drafting environment**<br/>Google Drive workspace"]
+    DECISIONS["**Decision making**<br/>In-Studio RFCs"]
+    DEVNOTE["**Draft → DevNote**<br/>Google Docs to MyST"]
+    DOCS["**DevNote → Docs**<br/>Documentation pages"]
+    MGMT["**Documentation management**<br/>Adapt as constraints evolve"]
+    DELIVERABLES["**Deliverables**<br/>DevNotes and documentation pages"]
 
     MATERIALS --> INSTRUMENT
     INSTRUMENT --> LIVESTREAM

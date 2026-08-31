@@ -1,7 +1,7 @@
 ---
-title: ""
+title: "Developer Studio"
 abstract: |
-  
+  Developer Studio brings together 12 labs organized into two Nodes for a three-week sprint to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs in San Francisco. This DevNote describes the event's structure, the technical capacities required to support collaborative synthetic cell engineering at scale, and the data and documentation pipelines — from bench measurement to published DevNote — developed to enable rapid, reusable documentation across participating labs.
 ---
 
 ## Overview
