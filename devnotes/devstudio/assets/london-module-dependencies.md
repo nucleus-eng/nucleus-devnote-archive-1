@@ -1,4 +1,6 @@
 <!-- gen:composition-diagram -->
+::::{tab-item} Module Dependencies
+
 (fig:london-deps)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
@@ -38,4 +40,6 @@ flowchart TD
     click SUBSTRATE_CPRG_SUV "/docs/modules/substrate-cprg-suv/spec"
 ```
 *Module dependencies for the London Cascade demonstration.*
+
+::::
 <!-- /gen:composition-diagram -->
