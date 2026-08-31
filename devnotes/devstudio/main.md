@@ -22,7 +22,7 @@ Reliable materials: Reliable materials that support documentation and reusabilit
 Data pipelines: Ability to quickly transform an experimental design into well annotated data
 Documentation Workflows: A means for quickly creating and modifying specifications to evolve with emerging constraints
 
-Many of these capacities exist in some form on Nucleus already. However, we need to adapt these tools to accommodate the form of this event and ensure that they work reliably. What follows is a checklist for what needs to be demonstrated and its current status, organized around the pipeline shown in {ref}`fig:devstudio-pipeline`. Module dependencies for each Node's demonstration are shown in {ref}`fig:chicago-deps` and {ref}`fig:london-deps`.
+Many of these capacities exist in some form on Nucleus already. However, we need to adapt these tools to accommodate the form of this event and ensure that they work reliably. What follows is a checklist for what needs to be demonstrated and its current status, organized around the pipeline shown in {ref}`pipeline <fig:devstudio-pipeline>`. Module dependencies for each Node's demonstration are shown in {ref}`Chicago <fig:chicago-deps>` and {ref}`London <fig:london-deps>`.
 
 ## Capacities checklist
 
@@ -53,7 +53,7 @@ Custom reagents or materials with long lead times need to be procured and valida
 
 ### Data pipeline
 
-Each component below corresponds to a stage in the pipeline ({ref}`fig:devstudio-pipeline`).
+Each component below corresponds to a stage in the pipeline ({ref}`pipeline <fig:devstudio-pipeline>`).
 
 - **Instrument access & data delivery.** Participants require a way for easily accessing measurement readouts without relying on our central file system.
 - **Platemap generation.** Participants require a method to convert a platemap in their own format into one compatible with Nucleus's [CDK](https://pypi.org/project/nucleus-cdk/) tools. This is currently the most critical and least developed component of the pipeline.
