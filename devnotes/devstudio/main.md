@@ -53,15 +53,10 @@ Custom reagents or materials with long lead times need to be procured and valida
 
 ### Data pipeline
 - **Instrument access & data delivery.** Participants require a way for easily accessing measurement readouts without relying on our central file system.
-- 
-Platemap generation. Participants require a method to convert a platemap in their own format into one compatible with - **Nucleus's [CDK](https://pypi.org/project/nucleus-cdk/) tools.** This is currently the most critical and least developed component of the pipeline.
-
-CDK and compute access. Participants require reliable access to CDK tools, most likely via Colab-based template workbooks rather than local installations.
-
+- **Platemap generation.** Participants require a method to convert a platemap in their own format into one compatible with Nucleus's [CDK](https://pypi.org/project/nucleus-cdk/) tools. This is currently the most critical and least developed component of the pipeline.
+- **CDK and compute access.** Participants require reliable access to CDK tools, most likely via Colab-based template workbooks rather than local installations.
 - **Figure generation and analysis.** Participants require a means to modify the CDK outputs, suggest improvements, and integrate analysis into a collaborative drafting environment.
-- 
 - **Collaborative drafting environment.** Participants require a shared workspace, likely hosted on Google Drive, for assembling figures and notes into a draft. The draft must follow defined semantic conventions to support downstream parsing.
-- 
 - **Livestream.** Instrument output needs to be reliably piped to a public [YouTube](https://www.youtube.com/channel/UC_8cK6nOMQgEp-fnS3S5rXw) stream as data is generated, so participants and outside followers can watch data come off the machines in real time.
 
 ### Documentation workflows
