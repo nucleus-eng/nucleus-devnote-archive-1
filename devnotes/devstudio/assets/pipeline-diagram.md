@@ -15,10 +15,10 @@ flowchart TD
     MGMT["**Documentation management**<br/>Adapt as constraints evolve"]
     DELIVERABLES["**Deliverables**<br/>DevNotes and documentation pages"]
 
-    MATERIALS --> INSTRUMENT
+    MATERIALS --> PLATEMAP
+    PLATEMAP --> INSTRUMENT
     INSTRUMENT --> LIVESTREAM
-    INSTRUMENT --> PLATEMAP
-    PLATEMAP --> CDK
+    INSTRUMENT --> CDK
     CDK --> FIGURES
     FIGURES --> DRAFTING
     DRAFTING --> DEVNOTE
