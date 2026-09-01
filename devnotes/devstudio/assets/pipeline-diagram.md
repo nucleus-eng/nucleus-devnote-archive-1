@@ -4,7 +4,6 @@
 flowchart TD
     MATERIALS["**Materials**<br/>Reagents and plasmid stocks"]
     INSTRUMENT["**Instrument access & data delivery**<br/>Portable file delivery"]
-    LIVESTREAM["**Livestream**<br/>Feed to YouTube"]
     PLATEMAP["**Platemap generation**<br/>Most critical, underdeveloped"]
     CDK["**CDK & compute access**<br/>Colab-based compute tools"]
     FIGURES["**Figure generation & analysis**<br/>Publication-quality, editable"]
@@ -17,7 +16,6 @@ flowchart TD
 
     MATERIALS --> PLATEMAP
     PLATEMAP --> INSTRUMENT
-    INSTRUMENT --> LIVESTREAM
     INSTRUMENT --> CDK
     CDK --> FIGURES
     FIGURES --> DRAFTING
@@ -29,13 +27,11 @@ flowchart TD
 
     classDef materials fill:#e5e7eb,color:#374151,stroke:#9ca3af;
     classDef pipeline fill:#dbeafe,color:#1e40af,stroke:#93c5fd;
-    classDef side fill:#e5e7eb,color:#374151,stroke:#9ca3af;
     classDef decisions fill:#ede9fe,color:#5b21b6,stroke:#c4b5fd,stroke-dasharray: 5 5;
     classDef deliverables fill:#dcfce7,color:#166534,stroke:#86efac;
 
     class MATERIALS materials;
     class INSTRUMENT,PLATEMAP,CDK,FIGURES,DRAFTING,DEVNOTE,DOCS,MGMT pipeline;
-    class LIVESTREAM side;
     class DECISIONS decisions;
     class DELIVERABLES deliverables;
 ```

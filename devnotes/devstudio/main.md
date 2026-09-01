@@ -1,22 +1,24 @@
 ---
 title: "Developer Studio"
 abstract: |
-  Developer Studio brings together 12 labs organized into two Nodes for a three-week sprint to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs in San Francisco. This DevNote describes the event's structure, the technical capacities required to support collaborative synthetic cell engineering at scale, and the data and documentation pipelines — from bench measurement to published DevNote — developed to enable rapid, reusable documentation across participating labs.
+  Developer Studio (DevStudio) brings together 13 labs, organized into two Nodes, for a three-week effort to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs in San Francisco. This living DevNote documents how b.next is preparing and validating the reliable materials, data pipelines, and documentation workflows required for the event—from experimental design and measurement to published DevNotes and reusable Nucleus specifications—and records lessons for future DevStudios.
 ---
 
 ## Overview
 
-Developer Studio is an event that brings together 12 labs organized into two Nodes to do integrated synthetic cell engineering. Over the last 9 months, each Node has been working at their own institutions to figure out how to integrate pre-existing synthetic cell technologies into charismatic demonstrations, the so-called [London](https://devnotes.nucleus.engineering/articles/london-demo-1) and [Chicago](https://devnotes.nucleus.engineering/articles/chicago-demo-1) Demos. The goal of the studio is to reproduce the work done over the last 9 months in a three-week period and ensure that it is documented for reusability, significantly expanding the amount of integrated synthetic cell technology available on [Nucleus](https://docs.nucleus.engineering/). More succinctly, the goals are:
+Developer Studio (DevStudio) brings together 13 labs, organized into two Nodes, for three weeks of integrated synthetic cell engineering. Over the past nine months, each Node has worked at their home institutions to integrate existing synthetic cell technologies into two demonstrations: the [London](https://devnotes.nucleus.engineering/articles/london-demo-1) and [Chicago](https://devnotes.nucleus.engineering/articles/chicago-demo-1) Demos. DevStudio aims to reproduce this work at Nucleus Labs and document it for reuse, significantly expanding the integrated synthetic cell technologies available through Nucleus as DevNotes and Documentation. More specifically, its goals are:
 
-- Reproduce demonstration projects in new labs.
-- Document the modules and underlying dependencies for reusability.
-- Improve the underlying tools to document the modules along the way.
+- Reproduce each Node’s Demo in a new laboratory.
+- Document the constituent modules and their dependencies for reuse.
+- Improve the tools and workflows that turn experimental work into reusable documentation.
 
-By working together to build and document these demos on a short timeline, we have been prototyping collaborative synthetic cell engineering and learning the principles of this new field — building on earlier work begun at the [DevCells Kickoff Workshop](https://devnotes.nucleus.engineering/articles/devcells-kickoff-workshop). This Developer Note aims to describe the underlying technical and organizational structure for running Developer Studios in the future.
+Over the past nine months, the participating labs have been prototyping new approaches to collaborative synthetic cell engineering and developing principles for this emerging field, building on work begun at the [DevCells Kickoff Workshop](https://devnotes.nucleus.engineering/articles/devcells-kickoff-workshop). DevStudio is the capstone of that work: a three-week, co-located effort to reproduce and document the demonstrations on a compressed timeline.
 
-## Synthetic Cell Engineering
+This DevNote is a living account of how b.next, the host of DevStudio, is preparing the infrastructure, materials, and workflows needed to accomplish these goals. It is intended to orient participating labs, collaborators, and visitors; coordinate our preparations; and record technical and organizational lessons for future DevStudios. We will update it as these systems are tested before and during the Studio.
 
-Several capacities must be in place in order for Developer Studio to accomplish its goals. These capacities are also aligned with those needed to scale the size of collaboration in integrative synthetic cell engineering. This compiles down to three core pieces:
+## Synthetic Cell Engineering Infrastructure
+
+Several infrastructure capacities must be in place at b.next-operated Nucleus Labs in order for Developer Studio to accomplish its goals. These capacities are also aligned with those needed to scale the size of collaboration in integrative synthetic cell engineering. This compiles down to three core pieces:
 
 - **Reliable materials:** Reliable materials that support documentation and reusability
 - **Data pipelines:** Ability to quickly transform an experimental design into well annotated data
@@ -41,26 +43,25 @@ Many of these capacities exist in some form on Nucleus already. However, we need
 :::
 ::::
 
-Our plan is to develop and validate our data pipeline and documentation workflows against a specific test case. The proposed test case will be embedding base cell in an agarose hydrogel. This will test our documentation workflows using two standard data workflows: microplate reader and microscopy. This will test the process from the bench to data to DevNote to documentation.
+In the three weeks leading up to DevStudio, b.next will develop and validate the event’s data and documentation workflows using a representative test case: embedding a base cell in an agarose hydrogel. This rehearsal will exercise both plate-reader and microscopy workflows and test the complete path from experimental design and data collection through analysis, DevNote publication, and incorporation into Nucleus Docs. The goal is to identify and resolve gaps before participants arrive so that these workflows can support the Nodes’ demonstration work during DevStudio.
 
-:::{note} 
-Status per item will be added starting the week of 9/4, once this week's build work is further along. 
+:::{note}
+Beginning the week of September 4, we will update each readiness area below with results from pre-Studio testing, remaining gaps, and next steps. Updates will continue as the workflows are validated and refined.
 :::
 
 ### Reliable materials
 
-Custom reagents or materials with long lead times need to be procured and validated in advance of the event.
+Reproducing the Nodes’ demonstrations requires critical materials to be available and validated before participants arrive. Current preparations include procuring and validating DNA constructs intended for inclusion in the Nucleus Distribution and available under OpenMTA, alongside related reagents produced by b.next—some of which may serve as physical implementations of Nucleus specifications. As validation proceeds, we will update this section with inventory, performance data, known constraints, and readiness status.
 
 ### Data pipeline
 
 Each component below corresponds to a stage in the pipeline ({ref}`pipeline <fig:devstudio-pipeline>`).
 
-- **Instrument access & data delivery.** Participants require a way for easily accessing measurement readouts without relying on our central file system.
-- **Platemap generation.** Participants require a method to convert a platemap in their own format into one compatible with Nucleus's [CDK](https://pypi.org/project/nucleus-cdk/) tools. This is currently the most critical and least developed component of the pipeline.
-- **CDK and compute access.** Participants require reliable access to CDK tools, most likely via Colab-based template workbooks rather than local installations.
+- **Instrument access & data delivery.** Instruments at Nucleus Labs currently save measurement data to b.next’s internal file system, which visiting participants cannot access. We therefore need a reliable way to deliver files directly to each Node’s shared workspace as they are generated.
+- **Consistent data annotations.** Each experiment requires a structured map connecting every well to its materials, conditions, and controls. Because researchers use different formats and conventions to record this information, we need a simple way to translate their existing layouts into standardized inputs compatible with Nucleus’s CDK tools. This is currently the most critical and least developed component of the pipeline. Generating consistent annotations as experiments are designed and executed will also make the resulting data more reusable, supporting future modeling and AI-enabled workflows.
+- **CDK and compute access.** Participants need a reliable, low-friction way to run CDK tools without extensive local setup. The compute environment should be consistent across participants, easy to access, and straightforward for b.next to maintain and update as the workflows evolve.
 - **Figure generation and analysis.** Participants require a means to modify the CDK outputs, suggest improvements, and integrate analysis into a collaborative drafting environment.
 - **Collaborative drafting environment.** Participants require a shared workspace, likely hosted on Google Drive, for assembling figures and notes into a draft. The draft must follow defined semantic conventions to support downstream parsing.
-- **Livestream.** Instrument output needs to be reliably piped to a public [YouTube](https://www.youtube.com/channel/UC_8cK6nOMQgEp-fnS3S5rXw) stream as data is generated, so participants and outside followers can watch data come off the machines in real time.
 
 ### Documentation workflows
 
@@ -75,15 +76,12 @@ flowchart LR
 ```
 *DevStudio echoes the Nucleus workflow: experimental work is captured in DevNotes and translated into reusable documentation on Nucleus Docs.*
 
-- **Draft to DevNote.** A process is required to convert a participant's draft created in the shared workspace into a [MyST-based DevNote](https://devnotes.nucleus.engineering/).
+- **Draft to DevNote.** Participants need to draft collaboratively without learning the technical structure of MyST. The workflow should transform their notes, figures, methods, and links to supporting data into publishable DevNotes while preserving structure, attribution, and connections to the underlying evidence.
+- **DevNote to Docs.** DevNotes capture specific experiments and their results, while Nucleus Docs describes reusable modules, protocols, and specifications. We need a workflow for identifying validated content in each DevNote and incorporating it into the appropriate documentation pages while preserving links to the supporting work.
+- **Documentation management.** Protocols and specifications will evolve as reproduction attempts reveal new requirements, incompatibilities, and constraints. Documentation must be straightforward to update, with changes propagated across related module and process pages and their supporting evidence retained.
+- **Decision making.** Some technical decisions during DevStudio will not have an obvious answer or owner. We need a lightweight process for framing these questions, gathering input from relevant experts, recording the evidence and alternatives considered, and publishing the resulting decision—potentially as an RFC-style DevNote.
 
-- **DevNote to Docs.** A process is required to extract content from a DevNote into a documentation page for publication on [Nucleus Docs](https://docs.nucleus.engineering/).
-
-- **Documentation management.** A process is required to adapt and modify documentation as more data is collected and additional constraints are identified.
-
-- **Decision making.** Some engineering decisions during the Studio will lack an obvious answer or owner. A process for making and recording these decisions, likely as DevNotes framed as RFCs, should be defined in advance.
-
-### Structure of the event
+## Structure of the event
 
 As a starting point, we expect that the event will have the following week-by-week structure.
 
@@ -91,9 +89,11 @@ As a starting point, we expect that the event will have the following week-by-we
 - **Week 2.** Resolve issues and get each Node's full integrated demo working.
 - **Week 3.** Make another attempt if needed; otherwise, integrate or swap modules across Nodes.
 
-### Follow along
+## Follow along
 
-This event will be open — feel free to drop by and participate over the three weeks (9/23 – 10/14). We'll be livestreaming instrument output directly to YouTube as data comes in, so you can follow along with what's happening on the bench in real time, not just see the final demos. Please reach out!
+DevStudio will be open to visitors and remote followers from September 23 to October 14. Throughout the three weeks, we will publish and update DevNotes documenting experimental progress, data, and decisions. Reusable protocols and specifications emerging from this work will be incorporated into new documentation pages on Nucleus Docs.
+
+We may even bring back the Nucleus Engineering livestream for selected experiments, offering another way to engage with live data—as it has during past events at Nucleus Labs. Please reach out if you’d like to learn more, visit, or follow along remotely.
 
 ::::{iframe} https://www.youtube.com/embed/WPd8dyNlvqk
 A previous workshop stream gives a taste of what live instrument output looks like in practice.
