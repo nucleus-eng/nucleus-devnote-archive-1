@@ -59,17 +59,17 @@ Reproducing the Nodes’ demonstrations requires critical materials to be availa
 
 | Construct | Design | Order | Amplify & Purify | Test Function | Clone | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| T7-theo-deGFP | Done | Done | Done | Failed | | Not used for demo |
+| T7-theo-deGFP | Done | Done | Done | Failed | | Not Used for Demo Anymore |
 | T7-tetO-deGFP | Done | Done | Done | Done | | |
 | T7-tetO-C23DO | Done | Done | Done | Done | | |
-| T7-toehold9-PLA1 | Done | Done | Done | | Not required | |
+| T7-toehol9-PLA1 | Done | Done | Done | | Not required | |
 | T7-toehold9-deGFP | Done | Done | Done | Done | Not required | |
 | pLux-deGFP | Done | Done | Done | Failed | | Requires cloning in vector for test of function |
 | BBa_J23101-LuxR | Done | Done | Done | Failed | | Requires cloning in vector for test of function |
-| LuxR-PLA1 | Done | Done | Done | | | In glycerol stock, pET-Kan vector; requires cloning in vector |
-| LuxR-deGFP | Done | Done | Done | Failed | | In glycerol stock, pET-Kan vector; requires cloning in vector |
-| T7-theo-PLA1 | Done | Done | Done | | Not required | Not used for demo |
-| T7-theo-lacZ | Done | Done | Done | Done/Leaky | Not required | Not used for demo |
+| LuxR-PLA1 | Done | Done | Done | | | In glycerol stock, pET-Kan vector; Requires cloning in vector for test of function |
+| LuxR-deGFP | Done | Done | Done | Failed | | In glycerol stock, pET-Kan vector; Requires cloning in vector for test of function |
+| T7-theo-PLA1 | Done | Done | Done | | Not required | Not Used for Demo Anymore |
+| T7-theo-lacZ | Done | Done | Done | Done/Leaky | Not required | Not Used for Demo Anymore |
 | LuxI plasmid | Done | Done | Not required | | Not required | |
 | T7-tetO-PLA1 | Done | Done | Done | | | |
 | trigger ssDNA | Done | Done | Not required | | Not required | |
