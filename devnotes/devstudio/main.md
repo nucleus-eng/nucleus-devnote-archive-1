@@ -106,11 +106,13 @@ flowchart LR
 
 ## Structure of the event
 
-As a starting point, we expect that the event will have the following week-by-week structure.
+DevStudio will combine experimental work with a lightweight coordination and documentation cadence. We expect to begin each day with a brief stand-up to align on planned experiments, dependencies, and blockers. Participants will also have protected time to update shared experimental drafts and DevNotes while details are fresh. Regular cross-Node sessions will provide space to compare results, share lessons, discuss documentation practices, and work through technical decisions that affect multiple teams.
 
-- **Week 1.** Replicate and test individual modules — get what worked at the home labs working in San Francisco.
-- **Week 2.** Resolve issues and get each Node's full integrated demo working.
-- **Week 3.** Make another attempt if needed; otherwise, integrate or swap modules across Nodes.
+Within that cadence, the three weeks will progress from orientation and reproduction to integration, validation, and reuse:
+
+- **Week 1: Orient, strategize, and reproduce individual modules.** Participants will be introduced to Nucleus Labs, the shared data and documentation workflows, and the goals and working practices of the Studio. Each Node will align on its experimental strategy and responsibilities, then establish its individual modules using the materials, equipment, and processes available in San Francisco. Methods, annotated data, deviations, and unresolved gaps will be captured in shared drafts and initial DevNotes.
+- **Week 2: Integrate each Node’s demonstration.** Teams will resolve interfaces and incompatibilities between modules and work toward reproducing each Node’s complete demonstration. DevNotes will be updated with integration results, constraints, and technical decisions, while stable protocols and specifications begin moving into Nucleus Docs.
+- **Week 3: Validate, reuse, and document.** Teams will repeat the complete demonstrations to assess reliability and reproducibility. Where readiness allows, they will exchange or recombine modules across Nodes to test reuse beyond the original context. The resulting DevNotes will be completed and Nucleus Docs updated with validated methods, specifications, and known constraints.
 
 ## Follow along
 
