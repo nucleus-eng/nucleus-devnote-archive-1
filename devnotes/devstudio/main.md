@@ -64,6 +64,17 @@ Each component below corresponds to a stage in the pipeline ({ref}`pipeline <fig
 
 ### Documentation workflows
 
+(fig:devstudio-workflow)=
+```mermaid
+flowchart LR
+    A["Experiments<br/>(Running record of experimental work)"]
+    B["DevNotes<br/>(Experiments, results, data, and ideas worth sharing)"]
+    C["Nucleus Docs<br/>(Reusable protocols and specifications supported by DevNotes)"]
+
+    A --> B --> C
+```
+*DevStudio echoes the Nucleus workflow: experimental work is captured in DevNotes and translated into reusable documentation on Nucleus Docs.*
+
 - **Draft to DevNote.** A process is required to convert a participant's draft created in the shared workspace into a [MyST-based DevNote](https://devnotes.nucleus.engineering/).
 
 - **DevNote to Docs.** A process is required to extract content from a DevNote into a documentation page for publication on [Nucleus Docs](https://docs.nucleus.engineering/).
