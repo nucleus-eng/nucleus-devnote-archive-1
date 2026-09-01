@@ -53,7 +53,7 @@ Beginning the week of September 4, we will update each readiness area below with
 
 Reproducing the Nodes’ demonstrations requires critical materials to be available and validated before participants arrive. Current preparations include procuring and validating DNA constructs intended for inclusion in the Nucleus Distribution and available under OpenMTA, alongside related reagents produced by b.next—some of which may serve as physical implementations of Nucleus specifications. As validation proceeds, we will update this section with inventory, performance data, known constraints, and readiness status.
 
-:::{table} DNA construct validation status.
+:::{table} DNA construct validation status. Full sequences are available in [nucleus-eng/DNA#10](https://github.com/nucleus-eng/DNA/pull/10) and will be merged into the main distribution after DevStudio.
 :label: tbl:plasmid-validation
 :align: center
 
@@ -62,7 +62,7 @@ Reproducing the Nodes’ demonstrations requires critical materials to be availa
 | T7-theo-deGFP | Done | Done | Done | Failed | | Not Used for Demo Anymore |
 | T7-tetO-deGFP | Done | Done | Done | Done | | |
 | T7-tetO-C23DO | Done | Done | Done | Done | | |
-| T7-toehol9-PLA1 | Done | Done | Done | | Not required | |
+| T7-toehold9-PLA1 | Done | Done | Done | | Not required | |
 | T7-toehold9-deGFP | Done | Done | Done | Done | Not required | |
 | pLux-deGFP | Done | Done | Done | Failed | | Requires cloning in vector for test of function |
 | BBa_J23101-LuxR | Done | Done | Done | Failed | | Requires cloning in vector for test of function |
