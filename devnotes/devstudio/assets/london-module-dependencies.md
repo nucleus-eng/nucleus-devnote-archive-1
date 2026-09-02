@@ -3,29 +3,42 @@
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
-    AHL_SENSING_CELL["AHL Sensing Cell"]
-    DETECTOR_3OC6_HSL["Detector: AHL"]
-    EFFECTOR_PLA1["Effector: PLA1"]
-    LONDON_CASCADE["London Cascade"]
-    LONDON_CHASSIS["London Chassis"]
-    MEMBRANE_POPC["London Membrane: POPC"]
-    REPORTER_LACZ["Reporter: LacZ"]
-    S30_LYSATE["S30 Lysate"]
-    SUBSTRATE_CPRG_SUV["Substrate SUV: CPRG"]
+    S30["S30 Lysate"]
+    MP["London Membrane<br/>POPC"]
+    P_GUV(["Encapsulation: Phase Transfer"])
+    P_SUV(["SUV Encapsulation"])
+    P_ULGA(["ULGA Hydrogel Embedding"])
+    P_READ(["Colorimetric Readout"])
+    LON["London Chassis"]
+    AHL["AHL Sensing Module"]
+    AHLV["AHL Sensing Cell"]
+    PLA1["PLA1 Lysis Module"]
+    LACZ["LacZ Reporter"]
+    SUV["Substrate SUV: CPRG"]
+    LONCAS["London Cascade"]
+    G_ULGA["Gel: ULGA"]
 
-    LONDON_CHASSIS --> AHL_SENSING_CELL
-    DETECTOR_3OC6_HSL --> AHL_SENSING_CELL
-    AHL_SENSING_CELL --> LONDON_CASCADE
-    EFFECTOR_PLA1 --> LONDON_CASCADE
-    REPORTER_LACZ --> LONDON_CASCADE
-    SUBSTRATE_CPRG_SUV --> LONDON_CASCADE
-    S30_LYSATE --> LONDON_CHASSIS
-    MEMBRANE_POPC --> LONDON_CHASSIS
+    S30 --> LON
+    MP --> LON
+    LON --> P_GUV
+    AHL --> AHLV
+    P_GUV --> AHLV
+    P_SUV --> SUV
+    AHLV -.-> LONCAS
+    PLA1 -.-> LONCAS
+    LACZ -.-> LONCAS
+    SUV -.-> LONCAS
+    LONCAS -->|"1.5% w/v"| P_ULGA
+    P_ULGA --> G_ULGA
+    G_ULGA --> P_READ
 
-    classDef constituent fill:#6B7280,color:#ffffff,stroke:#4B5563;
-    classDef this fill:#374151,color:#ffffff,stroke:#111827;
-    class AHL_SENSING_CELL,DETECTOR_3OC6_HSL,EFFECTOR_PLA1,LONDON_CHASSIS,MEMBRANE_POPC,REPORTER_LACZ,S30_LYSATE,SUBSTRATE_CPRG_SUV constituent;
-    class LONDON_CASCADE this;
+    classDef london fill:#fbe8dc,stroke:#D55E00,color:#7a2d00;
+    classDef shared fill:#def5ee,stroke:#009E73,color:#00402e;
+    classDef process fill:#ffffff,stroke:#6b7280,color:#111827;
+    class PLA1,LACZ,SUV shared;
+    class S30,MP,LON,AHL,AHLV,LONCAS,G_ULGA london;
+    class P_GUV,P_SUV,P_ULGA,P_READ process;
+    style LONCAS stroke-dasharray: 5 5
 ```
 *Module dependencies for the London Cascade demonstration.*
 <!-- /gen:composition-diagram -->
