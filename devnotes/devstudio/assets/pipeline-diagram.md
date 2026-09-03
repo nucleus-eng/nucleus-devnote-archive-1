@@ -21,15 +21,21 @@ flowchart TD
     FIGURES --> DRAFTING
     DRAFTING --> DEVNOTE
     DECISIONS -.-> DEVNOTE
+    DECISIONS -.-> DOCS
+    DECISIONS -.-> MGMT
     DEVNOTE --> DOCS
     DOCS --> MGMT
     MGMT --> DELIVERABLES
 
-    classDef shared fill:#def5ee,stroke:#009E73,color:#00402e;
-    classDef process fill:#ffffff,stroke:#6b7280,color:#111827;
+    classDef materials fill:#e5e7eb,stroke:#9ca3af,color:#374151;
+    classDef datapipeline fill:#e3f0f8,stroke:#0072B2,color:#063a57;
+    classDef docworkflow fill:#fbe8dc,stroke:#D55E00,color:#7a2d00;
+    classDef deliverables fill:#def5ee,stroke:#009E73,color:#00402e;
 
-    class MATERIALS,DELIVERABLES shared;
-    class PLATEMAP,INSTRUMENT,CDK,FIGURES,DRAFTING,DEVNOTE,DOCS,MGMT,DECISIONS process;
+    class MATERIALS materials;
+    class PLATEMAP,INSTRUMENT,CDK,FIGURES,DRAFTING datapipeline;
+    class DECISIONS,DEVNOTE,DOCS,MGMT docworkflow;
+    class DELIVERABLES deliverables;
     style DECISIONS stroke-dasharray: 5 5
 ```
 *End-to-end pipeline from bench materials through documentation delivery.*

@@ -50,6 +50,8 @@ In the three weeks leading up to DevStudio, the event's data and documentation w
 This section will be updated beginning the week of September 4 with results from pre-Studio testing, remaining gaps, and next steps. Updates will continue as the workflows are validated and refined.
 :::
 
+What follows is organized around the three areas of the pipeline ({ref}`pipeline <fig:devstudio-pipeline>`): reliable materials that underpin each experiment, the data pipeline from experimental design to annotated figures, and the documentation workflows that turn results into published DevNotes and reusable Nucleus Docs.
+
 ### Reliable materials
 
 Reproducing the Nodes’ demonstrations requires critical materials to be available and validated before participants arrive. Current preparations include procuring and validating DNA constructs intended for inclusion in the Nucleus Distribution and available under OpenMTA, alongside custom reagents -  some of which may serve as physical implementations of Nucleus specifications. This section will be updated with inventory, performance data, known constraints, and readiness status as work progresses.
@@ -78,8 +80,6 @@ Reproducing the Nodes’ demonstrations requires critical materials to be availa
 :::
 
 ### Data pipeline
-
-Each component below corresponds to a stage in the pipeline ({ref}`pipeline <fig:devstudio-pipeline>`).
 
 - **Instrument access & data delivery.** Participants need a reliable way to access instrument data directly from their shared workspace as experiments run. Instruments currently save data to an internal file system not accessible to visiting participants, so what’s needed is a portable mechanism to deliver files as they are generated.
 - **Consistent design & data annotation.** Each experiment requires a structured map connecting every well to its materials, conditions, and controls. Because researchers use different formats and conventions to record this information, what's needed is a simple way to translate their existing layouts into standardized inputs compatible with Nucleus’s CDK tools. This is currently the most critical and least developed component of the pipeline. Generating consistent annotations as experiments are designed and executed will also make the resulting data more reusable, supporting future modeling and AI-enabled workflows.
