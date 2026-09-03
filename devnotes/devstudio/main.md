@@ -1,7 +1,7 @@
 ---
 title: "Developer Studio"
 abstract: |
-  Developer Studio (DevStudio) brings together 13 labs, organized into two Nodes, for a three-week effort to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs in San Francisco. This living DevNote documents the process of preparing and validating the reliable materials, data pipelines, and documentation workflows required for the event—from experimental design and measurement to published DevNotes and reusable Nucleus specifications—and records lessons for future DevStudios.
+  Developer Studio (DevStudio), part of the [Developer Cells](https://syncellwiki.org/wiki/index.php/Schmidt_Sciences_DevCell_Project) (DevCells) project, brings together 13 labs, organized into two Nodes, for a three-week effort to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs in San Francisco. This living DevNote documents the process of preparing and validating the reliable materials, data pipelines, and documentation workflows required for the event—from experimental design and measurement to published DevNotes and reusable Nucleus specifications—and records lessons for future DevStudios.
 ---
 
 ## Overview
@@ -43,7 +43,7 @@ Many of these capacities exist in some form on Nucleus already. However, existin
 :::
 ::::
 
-In the three weeks leading up to DevStudio, the event's data and documentation workflows will be developed and validated using a representative test case: embedding a base cell in an agarose hydrogel. This rehearsal will exercise both plate-reader and microscopy workflows and test the complete path from experimental design and data collection through analysis, DevNote publication, and incorporation into Nucleus Docs. The goal is to identify and resolve gaps before participants arrive so that these workflows can support the Nodes’ demonstration work during DevStudio.
+In the three weeks leading up to DevStudio, the event's data and documentation workflows will be developed and validated using a representative test case: embedding a base cell in an agarose hydrogel. This rehearsal will exercise both platereader and microscopy workflows and test the complete path from experimental design and data collection through analysis, DevNote publication, and incorporation into Nucleus Docs. The goal is to identify and resolve gaps before participants arrive so that these workflows can support the Nodes’ demonstration work during DevStudio.
 
 :::{note}
 
@@ -81,8 +81,8 @@ Reproducing the Nodes’ demonstrations requires critical materials to be availa
 
 Each component below corresponds to a stage in the pipeline ({ref}`pipeline <fig:devstudio-pipeline>`).
 
-- **Instrument access & data delivery.** Instruments currently save data to an internal file system not accessible to visiting participants. What's needed is a reliable way to deliver files directly to each Node’s shared workspace as they are generated.
-- **Consistent data annotations.** Each experiment requires a structured map connecting every well to its materials, conditions, and controls. Because researchers use different formats and conventions to record this information, what's needed is a simple way to translate their existing layouts into standardized inputs compatible with Nucleus’s CDK tools. This is currently the most critical and least developed component of the pipeline. Generating consistent annotations as experiments are designed and executed will also make the resulting data more reusable, supporting future modeling and AI-enabled workflows.
+- **Instrument access & data delivery.** Participants need a reliable way to access instrument data directly from their shared workspace as experiments run. Instruments currently save data to an internal file system not accessible to visiting participants, so what’s needed is a portable mechanism to deliver files as they are generated.
+- **Consistent design & data annotation.** Each experiment requires a structured map connecting every well to its materials, conditions, and controls. Because researchers use different formats and conventions to record this information, what's needed is a simple way to translate their existing layouts into standardized inputs compatible with Nucleus’s CDK tools. This is currently the most critical and least developed component of the pipeline. Generating consistent annotations as experiments are designed and executed will also make the resulting data more reusable, supporting future modeling and AI-enabled workflows.
 - **CDK and compute access.** Participants need a reliable, low-friction way to run CDK tools without extensive local setup. The compute environment should be consistent across participants, easy to access, and straightforward for event organizers to maintain and update as the workflows evolve.
 - **Figure generation and analysis.** Participants require a means to modify the CDK outputs, suggest improvements, and integrate analysis into a collaborative drafting environment.
 - **Collaborative drafting environment.** Participants require a shared workspace, likely hosted on Google Drive, for assembling figures and notes into a draft. The draft must follow defined semantic conventions to support downstream parsing.

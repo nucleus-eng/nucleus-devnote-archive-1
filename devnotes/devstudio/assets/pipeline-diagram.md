@@ -3,7 +3,7 @@
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
     MATERIALS["Materials"]
-    PLATEMAP["Platemap generation"]
+    PLATEMAP["Consistent design & data annotation"]
     INSTRUMENT["Instrument access & data delivery"]
     CDK["CDK & compute access"]
     FIGURES["Figure generation & analysis"]

@@ -2,7 +2,7 @@ version: 1
 project:
   id: nucleus-devnote-core-devstudio
   title: "Developer Studio"
-  subtitle: "A collaborative sprint for integrated synthetic cell engineering"
+  subtitle: "A Developer Cells (DevCells) collaborative sprint for integrated synthetic cell engineering"
   description: "A three-week event bringing together 12 labs to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs."
   authors:
     - name: Developer Studio Workshop Participants
