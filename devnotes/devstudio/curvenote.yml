@@ -1,0 +1,55 @@
+version: 1
+project:
+  id: nucleus-devnote-core-devstudio
+  title: "Developer Studio"
+  subtitle: "A Developer Cells (DevCells) collaborative sprint for integrated synthetic cell engineering"
+  description: "A three-week event bringing together 12 labs to reproduce, integrate, and document synthetic cell engineering demonstrations at Nucleus Labs."
+  authors:
+    - name: Developer Studio Workshop Participants
+      email: build@bnext.bio
+      corresponding: true
+      affiliations:
+        - name: Nucleus Labs, San Francisco, CA
+  keywords: []
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-08-31
+  banner: banner-devcells.webp
+  thumbnail: assets/thumbnail.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  # plugins:
+  #   - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devstudio.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - assets/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: devstudio.zip
+  funding:
+    - id: G-2024-22735
+      source:
+        - Alfred P. Sloan Foundation
+site:
+  template: article-theme
+  nav: []
