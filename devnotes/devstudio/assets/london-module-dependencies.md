@@ -32,13 +32,22 @@ flowchart TD
     P_ULGA --> G_ULGA
     G_ULGA --> P_READ
 
+    subgraph LEGEND["Legend"]
+        LEG_S["Shared (London & Chicago)"]
+        LEG_L["London only"]
+        LEG_P(["Process"])
+    end
+
     classDef london fill:#fbe8dc,stroke:#D55E00,color:#7a2d00;
     classDef shared fill:#def5ee,stroke:#009E73,color:#00402e;
     classDef process fill:#ffffff,stroke:#6b7280,color:#111827;
     class PLA1,LACZ,SUV shared;
     class S30,MP,LON,AHL,AHLV,LONCAS,G_ULGA london;
     class P_GUV,P_SUV,P_ULGA,P_READ process;
+    class LEG_S shared;
+    class LEG_L london;
+    class LEG_P process;
     style LONCAS stroke-dasharray: 5 5
 ```
-*Module dependencies for the London Cascade demonstration.*
+*Module dependencies for the London Cascade demonstration. The London chassis has been demonstrated in S30 Lysate; integration with Nucleus Cytosol is a goal of DevStudio. Specific implementations of shared modules (green) may differ between Nodes.*
 <!-- /gen:composition-diagram -->

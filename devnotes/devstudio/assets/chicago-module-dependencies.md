@@ -55,16 +55,25 @@ flowchart TD
     G_ALG --> P_READ
     G_PEGDA -.-> P_READ
 
+    subgraph LEGEND["Legend"]
+        LEG_S["Shared (London & Chicago)"]
+        LEG_C["Chicago only"]
+        LEG_P(["Process"])
+    end
+
     classDef chicago fill:#e3f0f8,stroke:#0072B2,color:#063a57;
     classDef shared fill:#def5ee,stroke:#009E73,color:#00402e;
     classDef process fill:#ffffff,stroke:#6b7280,color:#111827;
     class NC,MPC,PLA1,LACZ,XYLE,SUV shared;
     class CHI,ATC,PH,ATCV,PHV,ATCCAS,PHCAS,CHICAS,G_ALG,G_PEGDA chicago;
     class P_CYTOSOL,P_ANNEAL,P_GUV,P_SUV,P_ALG,P_PHOTO,P_READ process;
+    class LEG_S shared;
+    class LEG_C chicago;
+    class LEG_P process;
     style PHV stroke-dasharray: 5 5
     style PHCAS stroke-dasharray: 5 5
     style CHICAS stroke-dasharray: 5 5
     style G_PEGDA stroke-dasharray: 5 5
 ```
-*Module dependencies for the Chicago Cascade demonstration.*
+*Module dependencies for the Chicago Cascade demonstration. Specific implementations of shared modules (green) may differ between Nodes.*
 <!-- /gen:composition-diagram -->
