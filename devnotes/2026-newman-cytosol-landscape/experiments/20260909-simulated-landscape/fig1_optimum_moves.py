@@ -199,8 +199,12 @@ def panel_surface(ax):
     _style(ax)
 
 
-def make_figure(two_panel=False):
-    if two_panel:
+def make_figure(two_panel=False, surface_only=False):
+    if surface_only:
+        # Just the right-hand panel, for use as the DevNote thumbnail.
+        fig, ax = plt.subplots(figsize=(6.4, 4.6))
+        panel_surface(ax)
+    elif two_panel:
         fig, axes = plt.subplots(1, 2, figsize=(12.4, 4.6))
         panel_sweep(axes[0], show_level=True)
         panel_surface(axes[1])
@@ -219,13 +223,24 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--two-panel", action="store_true",
                     help="add the Mg x Protein X surface alongside the sweep")
+    ap.add_argument("--surface-only", action="store_true",
+                    help="render only the Mg x Protein X surface, for the thumbnail")
     ap.add_argument("--out", default=None, help="output path (.png; .svg also written)")
     args = ap.parse_args()
 
-    default = "fig1-optimum-moves-2panel.png" if args.two_panel else "fig1-optimum-moves.png"
-    out = Path(args.out or Path(__file__).parent / default)
+    if args.surface_only:
+        # the DevNote thumbnail lives in assets/, two levels up from this script
+        out = Path(args.out or Path(__file__).parents[2] / "assets" / "thumbnail.png")
+    else:
+        default = "fig1-optimum-moves-2panel.png" if args.two_panel else "fig1-optimum-moves.png"
+        out = Path(args.out or Path(__file__).parent / default)
 
-    fig = make_figure(two_panel=args.two_panel)
+    fig = make_figure(two_panel=args.two_panel, surface_only=args.surface_only)
+    out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=220, bbox_inches="tight", facecolor="white")
-    fig.savefig(out.with_suffix(".svg"), bbox_inches="tight", facecolor="white")
-    print(f"wrote {out} and {out.with_suffix('.svg')}")
+    if args.surface_only:
+        # no companion svg: assets/ holds the raster thumbnail only
+        print(f"wrote {out}")
+    else:
+        fig.savefig(out.with_suffix(".svg"), bbox_inches="tight", facecolor="white")
+        print(f"wrote {out} and {out.with_suffix('.svg')}")
