@@ -52,6 +52,6 @@ project:
     title: Computational Archive
     filename: photopatterned-hydrogels.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

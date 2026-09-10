@@ -48,7 +48,7 @@ project:
       path: ./lorem.mjs
 site:
   nav: []
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   title: My cool new template
   options:
     logo_text: My cool new template

@@ -58,6 +58,6 @@ project:
     title: Computational Archive
     filename: lacz-xyle-module.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

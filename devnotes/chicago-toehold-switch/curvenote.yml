@@ -76,6 +76,6 @@ project:
     title: Computational Archive
     filename: toehold-switch.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

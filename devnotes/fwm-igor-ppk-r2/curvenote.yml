@@ -53,6 +53,6 @@ project:
       title: Computational Archive
       filename: fwm-igor-ppk-r2.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

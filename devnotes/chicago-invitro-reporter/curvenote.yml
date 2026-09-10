@@ -56,6 +56,6 @@ project:
     title: Computational Archive
     filename: invitro-reporter.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

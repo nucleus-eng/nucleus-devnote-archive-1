@@ -46,6 +46,6 @@ project:
     title: Computational Archive
     filename: double-emulsion.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

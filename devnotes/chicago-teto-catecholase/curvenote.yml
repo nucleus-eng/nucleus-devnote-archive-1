@@ -50,6 +50,6 @@ project:
     title: Computational Archive
     filename: teto-catecholase.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

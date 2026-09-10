@@ -56,6 +56,6 @@ project:
     - file: workspace/workspace_data.csv
       title: Exported Workspace Dataset
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

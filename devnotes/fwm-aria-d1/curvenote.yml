@@ -64,6 +64,6 @@ project:
     - file: ./data/20260320-iteration-2/workspace/jl/data/20260417-iteration-2-data_jl-curated.csv
       title: Full Curated Dataset
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

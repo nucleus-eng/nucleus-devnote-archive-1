@@ -59,6 +59,6 @@ project:
       source:
         - Alfred P. Sloan Foundation
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

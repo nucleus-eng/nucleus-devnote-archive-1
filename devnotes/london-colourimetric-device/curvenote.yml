@@ -143,6 +143,6 @@ project:
     title: Computational Archive
     filename: colourimetric-device.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

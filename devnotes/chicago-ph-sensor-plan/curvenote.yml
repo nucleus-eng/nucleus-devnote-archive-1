@@ -64,6 +64,6 @@ project:
     title: Computational Archive
     filename: ph-sensor-plan.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

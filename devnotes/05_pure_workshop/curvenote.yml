@@ -69,6 +69,6 @@ project:
       title: Computational Archive
       filename: pure-workshop.zip
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 

@@ -64,6 +64,6 @@ project:
     - file: ./general/prset_cx43-egfp_predicted.gb
       title: pT7-Cx43-eGFP
 site:
-  template: article-theme
+  template: https://github.com/myst-templates/article-theme.git
   nav: []
 
