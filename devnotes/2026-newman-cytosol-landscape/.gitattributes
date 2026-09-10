@@ -1,0 +1,5 @@
+# Raw instrument exports, platemaps and concentration keys are archival data.
+# Keep their bytes exactly as the instrument and pipeline produced them, so a
+# checksum against the source still matches. This is also how the already
+# migrated DevNotes store these files (their blobs preserve CRLF).
+experiments/**/data/** -text

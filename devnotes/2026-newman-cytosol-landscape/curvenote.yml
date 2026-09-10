@@ -1,0 +1,69 @@
+version: 1
+project:
+  id: nucleus-devnote-core-2026-newman-cytosol-landscape
+  title: What is a Cytosol Landscape?
+  # banner: banner.webp          # TODO add before opening the PR
+  authors:
+    - name: Sharon Newman
+      # orcid: 0000-0000-0000-0000   # TODO
+      corresponding: true
+      email: sharon@bnext.bio
+      affiliations:
+        - id-bnext
+      country: USA
+  affiliations:
+    - id: id-bnext
+      name: b.next, San Francisco, California, 94107, USA
+      city: San Francisco
+      state: California
+      postal_code: '94107'
+      country: USA
+  date: '2026-09-09'
+  # thumbnail: assets/thumbnail.png   # TODO add before opening the PR
+  toc:
+    - file: main.md
+    - file: experiments/20251105-labcraft-energy-sweep-01/Consolidating.ipynb
+    - file: experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb
+    - file: experiments/20260306-discoveryplate-aria-r0/kinetics_QC.ipynb
+    - file: experiments/20260318-discoveryplate-aria-r1/kinetics_QC.ipynb
+    - file: experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb
+  venue:
+    title: Nucleus
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  keywords:
+    - Cytosol
+    - Cytosol Landscape
+    - Discovery Plate
+    - composition
+    - design of experiments
+  open_access: true
+  license: CC-BY-4.0
+  subject: Developer Note
+  abbreviations:
+    CDK: cell development kit
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      articles:
+        - file: main.md
+      output: devnote.pdf
+      id: article
+  downloads:
+    - id: article
+      title: Download Article PDF
+  references:
+    devnotes:
+      url: https://devnotes.bnext.bio
+  jupyter: true
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - general/**/*
+    - experiments/**/*
+    - assets/**/*
+site:
+  template: article-theme
+  options:
+    site_id: bnext-devnotes
