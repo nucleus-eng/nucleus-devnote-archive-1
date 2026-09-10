@@ -1,8 +1,8 @@
 ---
 title: What is a Cytosol Landscape?
-abstract: |
-
-  A Cytosol Landscape maps how component composition (e.g., magnesium, ribosomes, proteins) affects performance metrics like protein yield, highlighting integration effects, robustness, cost, mechanisms, and optimization; it emphasizes question-driven, limited-dimensional experiments, discovery plates, and modeling to build trustworthy, actionable maps that guide module integration decisions despite the impossibility of mapping the full high-dimensional space.
+#abstract: |
+#
+#  A Cytosol Landscape maps how component composition (e.g., magnesium, ribosomes, proteins) affects performance metrics like protein yield, highlighting integration effects, robustness, cost, mechanisms, and optimization; it emphasizes question-driven, limited-dimensional experiments, discovery plates, and modeling to build trustworthy, actionable maps that guide module integration decisions despite the impossibility of mapping the full high-dimensional space.
 ---
 
 # Integration changes the recipe
@@ -20,7 +20,7 @@ A new protein can change the environment in which the rest of the system operate
 :align: center
 :width: 100%
 
-**Figure 1: Adding a module can move the optimum. left:** Steady-state protein yield against magnesium concentration (blue) for a base cytosol composition. When we add a new module or protein, using the same cytosol composition makes the new module appear to perform poorly. Moving along the magnesium axis reveals that the system can still perform well. It now just operates in a different region (simulated data). **right:** adding a new protein adds a new dimension to the Cytosol landscape that we now also need to consider (simulated data). Note that landscapes may not be as clean as the simulated data.
+**Adding a module can move the optimum. left:** Steady-state protein yield against magnesium concentration (blue) for a base cytosol composition. When we add a new module or protein, using the same cytosol composition makes the new module appear to perform poorly. Moving along the magnesium axis reveals that the system can still perform well. It now just operates in a different region (simulated data). **right:** adding a new protein adds a new dimension to the Cytosol landscape that we now also need to consider (simulated data). Note that landscapes may not be as clean as the simulated data.
 :::
 
 What if, instead of starting over every time we added a module, we had a map showing where the system works, where it is fragile, and which direction to move next?
@@ -41,15 +41,16 @@ Thinking in terms of landscapes changes the questions we can ask:
 - **Mechanism:** Which resources are becoming limiting as the system changes?
 - **Optimization:** Which small set of experiments would be most informative to run next?
 
-The highest point on the landscape (global/local optima) may not even be the best place to build cells. A sharp peak can give excellent yield under perfectly controlled conditions but fail when a reagent concentration is miscalculated and off by 5%. A slightly lower but broader plateau may be far more reproducible—and far easier to extend with new modules.
-
-> Would you rather build on the tallest peak, or on a plateau wide enough to build a cell on?
+The highest point on the landscape (global/local optima) may not even be the best place to build cells. 
+A sharp peak can give excellent yield under perfectly controlled conditions but fail when a reagent concentration 
+is miscalculated and off by 5%. A slightly lower but broader plateau may be far more reproducible—and far easier 
+to extend with new modules.
 
 # We are not mapping all of Cytosol
 
 The idea of a landscape can sound more complete than it really is. Cytosol contains more than 100 components. A dense map of every possible combination would require an absurd number of experiments. Even with robots, we cannot fill a 100-plus-dimensional space densely enough to know every hill, valley, and cliff.
 Fortunately, we do not need to.
-The practical goal is not to create a universal atlas of Cytosol. It is to build **question-driven maps of the regions that matter**.
+The practical goal is not to create a universal atlas of Cytosol. It is to build **question-driven maps of the regions that matter**. 
 
 For example:
 
@@ -63,7 +64,8 @@ A one-component sweep traces a line through the landscape. A two-component sweep
 
 # Discovery Plates: surveying the interesting regions
 
-We built the Discovery Plate workflow to explore these smaller, question-driven regions. A Discovery Plates is a physical plate of individual experiments. Each Discovery Plate begins with a question and a defined region of composition space. We generate a set of informative recipes, determine whether those recipes are physically possible to make from the available stocks, assemble many low-volume reactions, and measure their performance over time.
+We built a workflow to make what we're naming Discovery Plates to explore these smaller, question-driven regions.
+Each Discovery Plate begins with a question and a defined region of composition space. We generate a set of informative recipes, determine whether those recipes are physically possible to make from the available stocks, assemble many low-volume reactions, and measure their performance over time.
 
 We have built a concentration-planning pipeline that translates desired final compositions into feasible master-mix and per-well dispensing instructions. It also surfaces when a theoretically interesting condition cannot actually be made—for example, because a protein stock is too dilute, a required volume is below the pipetting limit, or there is not enough headroom left in the reaction.
 
@@ -94,14 +96,13 @@ This also changes how we design experiments. If we measure only final GFP yield,
 
 # What have we done so far?
 
-We do not have a complete Cytosol Landscape. What we have is the beginning of the experimental and computational infrastructure needed to build useful pieces of one.
-
+So far, we’ve built the tools and generated the first datasets needed to map useful regions of cytosol composition space.
 ## We have built the map-making machinery
 
 - An Opentrons + LabCraft workflow for assembling low-volume composition experiments.
 - A concentration pipeline that converts target compositions into feasible master-mix and titration instructions.
 - Space-filling condition generators for exploring several variables at once.
-- Initial response-surface and workflows for selecting subsequent conditions, (some in collaboration with FindWhatMatters that we have some [devnotes](https://devnotes.nucleus.engineering/collections-ai-scientist) on).
+- Initial response-surface and workflows for selecting subsequent conditions, (some in collaboration with FindWhatMatters that we have some [DevNotes](https://devnotes.nucleus.engineering/collections-ai-scientist) on).
 
 ## We have begun measuring slices of the landscape
 
@@ -114,7 +115,7 @@ Here are some examples of experiments we've run as we learn more about how to ap
 :align: center
 :width: 55%
 
-Mean drift-corrected steady-state fluorescence across a magnesium × potassium sweep. Generated by `experiments/20251105-labcraft-energy-sweep-01/Consolidating.ipynb`.
+Steady state fluorescence from a magnesium × potassium sweep on base cytosol.
 :::
 
 - A 3D exploration of magnesium, Ribosomes, and T7RNAP showed that magnesium had the largest effect on steady-state GFP signal in the tested region.
@@ -124,7 +125,7 @@ Mean drift-corrected steady-state fluorescence across a magnesium × potassium s
 :align: center
 :width: 75%
 
-Steady state as a function of magnesium, ribosomes and T7RNAP, replicate means, coloured by T7RNAP. Generated by `experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb`.
+Steady state fluorescence as a function of magnesium, ribosomes and T7RNAP, replicate means, coloured by T7RNAP. 
 :::
 
 :::{figure} ./experiments/20251106-labcraft-protein-sweep-01/interaction-plots-mg-ribo-t7rnap.png
@@ -132,19 +133,17 @@ Steady state as a function of magnesium, ribosomes and T7RNAP, replicate means, 
 :align: center
 :width: 100%
 
-Pairwise interaction plots for the same three factors, with standard-deviation bands. Generated by `experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb`.
+Pairwise interaction plots for the same three factors
 :::
 
-- We then continued on to increasing number of factors we explored including: a 5D exploration of different salts and PMix (left) and a 7D exploration of Amino Acids, ATP, GTP, Creatine Phosphate, Mg, K, tRNA (middle), and an 8D exploration of tRNA, Mg, GTP, ATP, DNA, Creatine Phosphate, PPK, PolyP (for some baseline work related to [PPK Energy Module integration](https://devnotes.nucleus.engineering/articles/ppk-module-test)) (right).
-
-REVIEW: the source prose says "(left)", "(middle)" and "(right)", which referred to a three-column layout. The three panels are now stacked as separate figures. Either reword to name the factor counts, or lay the three out side by side.
+- We then continued on to increasing number of factors we explored including: a 5D exploration of different salts and PMix (top) and a 7D exploration of Amino Acids, ATP, GTP, Creatine Phosphate, Mg, K, tRNA (middle), and an 8D exploration of tRNA, Mg, GTP, ATP, DNA, Creatine Phosphate, PPK, PolyP (for some baseline work related to [PPK Energy Module integration](https://devnotes.nucleus.engineering/articles/ppk-module-test)) (bottom).
 
 :::{figure} ./experiments/20260306-discoveryplate-aria-r0/pairplot-5-factor.png
 :label: fig-pairplot-5-factor
 :align: center
 :width: 100%
 
-5-factor Discovery Plate (ARIA R0): PMix, DNA, magnesium acetate, potassium glutamate and creatine phosphate, coloured by binned steady state. Generated by `experiments/20260306-discoveryplate-aria-r0/kinetics_QC.ipynb`.
+5-factor Discovery Plate: PMix, DNA, magnesium acetate, potassium glutamate and creatine phosphate, coloured by binned steady state.
 :::
 
 :::{figure} ./experiments/20260318-discoveryplate-aria-r1/pairplot-7-factor.png
@@ -152,7 +151,7 @@ REVIEW: the source prose says "(left)", "(middle)" and "(right)", which referred
 :align: center
 :width: 100%
 
-7-factor Discovery Plate: amino acids, ATP, creatine phosphate, GTP, magnesium acetate, potassium glutamate and tRNA, coloured by binned steady state. Generated by `experiments/20260318-discoveryplate-aria-r1/kinetics_QC.ipynb`.
+7-factor Discovery Plate: amino acids, ATP, creatine phosphate, GTP, magnesium acetate, potassium glutamate and tRNA, coloured by binned steady state. 
 :::
 
 :::{figure} ./experiments/20260506-discoveryplate-aria-r3/pairplot-8-factor.png
@@ -160,7 +159,7 @@ REVIEW: the source prose says "(left)", "(middle)" and "(right)", which referred
 :align: center
 :width: 100%
 
-8-factor Discovery Plate (ARIA R3): ATP, creatine phosphate, DNA, GTP, magnesium acetate, PolyP, PPK and tRNA, coloured by binned steady state. Generated by `experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb`.
+8-factor Discovery Plate: ATP, creatine phosphate, DNA, GTP, magnesium acetate, PolyP, PPK and tRNA, coloured by binned steady state. Generated by `experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb`.
 :::
 
 Higher-dimensional experiments are much harder to visualize—and much easier to over-interpret. We have analyzed these datasets using our pipeline, but before drawing or sharing conclusions, we are validating the underlying dispensing, controls, and comparability across experiments. As that foundation improves, these datasets can become inputs to models that help us identify sensitivities, test mechanisms, and choose the next experiments.
