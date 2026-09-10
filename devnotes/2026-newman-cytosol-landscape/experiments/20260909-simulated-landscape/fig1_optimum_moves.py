@@ -147,19 +147,27 @@ def _slice_line(ax, y, color, label):
     )
 
 
-def panel_surface(ax):
-    """The 2-D view: the ridge bends, and both curves on the left are cuts across it."""
-    mg = np.linspace(*MG_RANGE, 260)
-    px = np.linspace(0.0, PX_MAX, 260)       # Protein X, arbitrary units
-    MG, PX = np.meshgrid(mg, px)
+def _surface_field(mg, px):
+    """The Mg x Protein X yield surface, plus the ridge of optima running across it.
 
-    # Interpolate in units of PX_SLICE, so the surface reproduces WITH_X exactly at
-    # PX_SLICE and keeps going above it. The two panels then cannot disagree.
+    Interpolate in units of PX_SLICE, so the surface reproduces WITH_X exactly at
+    PX_SLICE and keeps going above it. The two panels then cannot disagree.
+    """
+    MG, PX = np.meshgrid(mg, px)
     t = PX / PX_SLICE
     mu = BASELINE["mu"] + (WITH_X["mu"] - BASELINE["mu"]) * t
     sigma = BASELINE["sigma"] + (WITH_X["sigma"] - BASELINE["sigma"]) * t
     amp = BASELINE["amp"] + (WITH_X["amp"] - BASELINE["amp"]) * t
     Z = amp * np.exp(-((MG - mu) ** 2) / (2.0 * sigma**2))
+    ridge = BASELINE["mu"] + (WITH_X["mu"] - BASELINE["mu"]) * (px / PX_SLICE)
+    return MG, PX, Z, ridge
+
+
+def panel_surface(ax):
+    """The 2-D view: the ridge bends, and both curves on the left are cuts across it."""
+    mg = np.linspace(*MG_RANGE, 260)
+    px = np.linspace(0.0, PX_MAX, 260)       # Protein X, arbitrary units
+    MG, PX, Z, ridge = _surface_field(mg, px)
 
     cf = ax.contourf(MG, PX, Z, levels=14, cmap="viridis")
     cb = ax.figure.colorbar(cf, ax=ax, pad=0.02)
@@ -168,7 +176,6 @@ def panel_surface(ax):
     cb.outline.set_visible(False)
 
     # where the optimum sits at each level of Protein X
-    ridge = BASELINE["mu"] + (WITH_X["mu"] - BASELINE["mu"]) * (px / PX_SLICE)
     ax.plot(ridge, px, color="white", lw=1.6, ls=(0, (4, 3)), zorder=3,
             path_effects=[pe.withStroke(linewidth=3.4, foreground="#1a1a1a", alpha=0.35)])
     ax.annotate(
@@ -199,6 +206,26 @@ def panel_surface(ax):
     _style(ax)
 
 
+# Banner: the middle of the same surface, with no axes, labels or annotations —
+# just the shape of the landscape and the line the optimum travels along.
+BANNER_MG = (4.0, 19.0)
+
+
+def banner_figure():
+    mg = np.linspace(*BANNER_MG, 600)
+    px = np.linspace(0.0, PX_MAX, 400)
+    MG, PX, Z, ridge = _surface_field(mg, px)
+
+    fig = plt.figure(figsize=(12.4, 3.2))
+    ax = fig.add_axes([0, 0, 1, 1])          # fill the canvas, no margins
+    ax.contourf(MG, PX, Z, levels=18, cmap="viridis")
+    ax.plot(ridge, px, color="white", lw=2.0, ls=(0, (5, 4)), alpha=0.85)
+    ax.set_xlim(*BANNER_MG)
+    ax.set_ylim(0.0, PX_MAX)
+    ax.set_axis_off()
+    return fig
+
+
 def make_figure(two_panel=False, surface_only=False):
     if surface_only:
         # Just the right-hand panel, for use as the DevNote thumbnail.
@@ -223,23 +250,29 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--two-panel", action="store_true",
                     help="add the Mg x Protein X surface alongside the sweep")
+    ap.add_argument("--banner", action="store_true",
+                    help="render the banner: middle of the surface, no axes or text")
     ap.add_argument("--surface-only", action="store_true",
                     help="render only the Mg x Protein X surface, for the thumbnail")
     ap.add_argument("--out", default=None, help="output path (.png; .svg also written)")
     args = ap.parse_args()
 
-    if args.surface_only:
+    if args.banner:
+        # banners sit at the DevNote root, alongside curvenote.yml
+        out = Path(args.out or Path(__file__).parents[2] / "banner.png")
+    elif args.surface_only:
         # the DevNote thumbnail lives in assets/, two levels up from this script
         out = Path(args.out or Path(__file__).parents[2] / "assets" / "thumbnail.png")
     else:
         default = "fig1-optimum-moves-2panel.png" if args.two_panel else "fig1-optimum-moves.png"
         out = Path(args.out or Path(__file__).parent / default)
 
-    fig = make_figure(two_panel=args.two_panel, surface_only=args.surface_only)
+    fig = banner_figure() if args.banner else make_figure(
+        two_panel=args.two_panel, surface_only=args.surface_only)
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, dpi=220, bbox_inches="tight", facecolor="white")
-    if args.surface_only:
-        # no companion svg: assets/ holds the raster thumbnail only
+    if args.surface_only or args.banner:
+        # no companion svg for the raster thumbnail or the banner
         print(f"wrote {out}")
     else:
         fig.savefig(out.with_suffix(".svg"), bbox_inches="tight", facecolor="white")
