@@ -1,0 +1,53 @@
+version: 1
+extends: base.yml
+# REVIEW: devstudio-devnote-g-to-devnote-m's own template lists `extends: base.yml` as
+# a minimal required field, but the real reference example
+# (devnotes/10-nucleus_cytosol_v05/curvenote.yml) has no `extends:` line at all and
+# instead re-specifies every base.yml field directly. Kept `extends: base.yml` here per
+# the skill's explicit instruction — TA should confirm which convention the venue
+# tooling actually expects before merging.
+project:
+  id: devstudio-test-20260909-01
+  # REVIEW: fresh UUID generated for this test run, not reused from any prior draft:
+  # aabf0c9e-dc5f-466d-b83a-618966a803cb — swap in as `id:` instead of the slug above
+  # if the venue schema requires a UUID rather than a slug (the real reference example
+  # uses a descriptive slug-style id, "nucleus-devnote-core-NucelusPURE_deGFP", not a
+  # UUID, so this wasn't obvious either way).
+  title: 'nucleus_cytosol_v05 (draft)'
+  # REVIEW: title carries "(draft)" verbatim from the DevNote(G) draft's own H1 — TA to
+  # confirm final title before publishing (this is a devstudio-pipeline test run, not a
+  # real submission).
+  # REVIEW: no Authors table was present in the source DevNote(G) draft (this draft was
+  # produced directly by devstudio-log-to-devnote-g from Log docs, not authored by a
+  # human with an Authors table filled in) — authors list left empty rather than
+  # fabricated. Corresponding-author email and ORCID are required for venue submission
+  # checks; TA must fill this in before this could ever be a real submission.
+  authors: []
+  # date: REVIEW — not present in source; source experiments are dated 2025-11-04 and
+  # 2025-11-07, but the DevNote(G) draft has no explicit "date of writeup" field the way
+  # a filled Specification table would. Using the test-run date as an explicit
+  # placeholder rather than silently picking one of the experiment dates.
+  date: '2026-09-09'
+  # keywords: REVIEW — not generated. Per devstudio-devnote-g-to-devnote-m, keyword
+  # generation against the controlled vocabulary (devstudio resources/devnote-keywords.md)
+  # is flagged for a future build step and intentionally left commented out here.
+  # keywords:
+  #   - Cytosol
+  #   - PURE
+  toc:
+    - file: main.md
+    - file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb
+      title: Analysis Notebook 1
+    - file: experiments/20251107-NucleusPURE_deGFP_MgSweep/Analysis.ipynb
+      title: Analysis Notebook 2
+  resources:
+    - experiments/**/*
+    - plasmids/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - file: ./plasmids/pOpen-deGFP.gb
+      title: pOpen-deGFP (local copy; canonical copy is nucleus-eng/DNA reporters/pOpen-deGFP.gbk)
+site:
+  template: article-theme
+  nav: []
