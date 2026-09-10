@@ -1,7 +1,7 @@
 version: 1
 project:
   id: 62abfe00-110e-41e1-8121-4572a093eb17
-  title: Quorum Sensing Polymersome
+  title: "Quorum Sensing Polymersome"
   subtitle: Polymersome module integrated in hydrogel for quorum sensing of biofilms
   authors:
   - name: Julia Purrinos De Oliveira

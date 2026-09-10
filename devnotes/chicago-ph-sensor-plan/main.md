@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Module Development Plan: DevCell-based pH sensor"
 abstract:
  This project develops a tunable, pH-responsive liposome sensor that couples a pH-sensitive ssDNA/trigger ssDNA pair to a linear toehold switch, enabling protein expression only when environmental pH drops to ~6.5. By integrating DNA components, PURE cell-free expression, and POPC–cholesterol vesicles, the system seeks to achieve robust and detectable colorimetric output in both bulk and hydrogel-embedded formats despite the inherent pH limitations of cell-free reactions.
 ---

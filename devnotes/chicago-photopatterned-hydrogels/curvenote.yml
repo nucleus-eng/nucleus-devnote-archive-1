@@ -1,7 +1,7 @@
 version: 1
 project:
   id: ojaswitapant
-  title: Photopatterned Hydrogels with DevCells
+  title: "Photopatterned Hydrogels with DevCells"
   description: Design, manufacture, and characterize our biosensing material platforms that house DevCells
   authors:
   - nameParsed:

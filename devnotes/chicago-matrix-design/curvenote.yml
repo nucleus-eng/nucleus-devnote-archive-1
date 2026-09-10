@@ -1,7 +1,7 @@
 version: 1
 project:
   id: PlanningDevNoteMaryKelly
-  title: Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis
+  title: "Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis"
   subtitle: Integrating liposomes containing a cell free sensor into a hydrogel matrix that is compatible
     with cell free sensor function, liposome stability, and overall matrix 3D printing.
   description: Determination of Matrix Composition to support Liposome Stability and Efficient Cell Free

@@ -1,7 +1,7 @@
 version: 1
 project:
   id: mjl-devnote-kickoff-workshop
-  title: In Vitro Reporter Validation
+  title: "In Vitro Reporter Validation"
   subtitle: Development and experimental validation of cytosol reporters.
   description: Development and experimental validation of cytosol reporters.
   authors:
