@@ -5,7 +5,7 @@ project:
   # banner: banner.webp          # TODO add before opening the PR
   authors:
     - name: Sharon Newman
-      # orcid: 0000-0000-0000-0000   # TODO
+      orcid: 0000-0001-5432-173X
       corresponding: true
       email: sharon@bnext.bio
       affiliations:
