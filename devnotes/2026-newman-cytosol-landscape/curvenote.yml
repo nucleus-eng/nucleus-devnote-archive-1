@@ -23,10 +23,15 @@ project:
   toc:
     - file: main.md
     - file: experiments/20251105-labcraft-energy-sweep-01/Consolidating.ipynb
+      title: Mg and K sweep (2 factors)
     - file: experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb
+      title: Mg, ribosome and T7RNAP screen (3 factors)
     - file: experiments/20260306-discoveryplate-aria-r0/kinetics_QC.ipynb
+      title: Discovery Plate ARIA R0 (5 factors)
     - file: experiments/20260318-discoveryplate-aria-r1/kinetics_QC.ipynb
+      title: Discovery Plate ARIA R1 (7 factors)
     - file: experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb
+      title: Discovery Plate ARIA R3 (8 factors)
   venue:
     title: Nucleus
   github: https://github.com/bnext-bio/nucleus-developer-notes
