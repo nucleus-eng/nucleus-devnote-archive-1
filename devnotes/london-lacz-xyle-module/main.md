@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "LacZ/XylE colour change module "
+title: "LacZ/XylE colour change module"
 abstract: |
   This module aims to develop LacZ and XylE as reporter enzymes to produce a colorimetric output within hydrogel-embedded GUVs in response to the detection of bacteria. 
 ---

@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "GUV Immobilisation"
+title: "Diffusion Kinetics"
 abstract: |
   This process describes the use of DSPE-Biotin in the GUV membrane to cause immobilisation on a neutravidin-coated plate, for the purposes of microscopy. 3%-by-mass appears to be the lower limit for total (or near-total) immobilisation, whilst lower percentages allow for some movement, or the movement of smaller GUVs. Whereas non-immobilised GUVs migrate from frame or leave the visualised plane when additional substrate is added to a well, this process facilitates single-cell resolution of synthetic cells across long protocols or across the addition of other outer solution components for real-time analysis.
 ---

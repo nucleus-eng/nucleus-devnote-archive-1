@@ -1,5 +1,5 @@
 ---
-title: 'Dev Note - bnext-round-1'
+title: "IGOR PPK Optimization: Round 1"
 abstract: |
   To maximize protein yield and synthesis rate in the PURE system, this work employed a multivariate optimization strategy for key components including ATP, GTP, and tRNA. Analysis concluded that optimal performance is not governed by a single factor, but rather a co-dependent relationship between physicochemical viability and kinetic efficiency. The top-ranked hypothesis posits that performance is dictated by the interplay between 'free Mg2+' concentration, a function of nucleotide levels, and the stoichiometric ratio of ATP to GTP. This unified model provides a framework for navigating the complex parameter space to identify novel, high-performance operational regimes.
 ---

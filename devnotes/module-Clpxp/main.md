@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "Control Module - Degradation of targeted proteins by ClpXP protease "
+title: "The Developer Cell Control Module: Protein Degradation by ClpXP"
 abstract: |
   Precise and time-resolved regulation of protein levels is essential for constructing synthetic minimal cells that can display dynamic and reversible behaviors. However, the PURE system, although it provides a defined and protease-free environment with high transcription and translation fidelity, does not contain endogenous pathways for controlled protein degradation. This limitation restricts the development of circuits that require signal reset, feedback, or temporal coordination. To address this gap, the Developer Cell Control Module integrates the ATP-dependent ClpXP protease complex to enable programmable post-translational regulation within PURE-based systems. In this DevNote, we reconstitute and evaluate ClpXP-mediated degradation of ssrA-tagged target proteins in both bulk reactions and liposome-encapsulated synthetic cells. Using combinations of purified protein components and DNA templates supplemented with PURE, we demonstrate selective and energy-dependent degradation of target substrates. These results establish an effective strategy for controlling protein lifetimes in minimal synthetic environments and lay the groundwork for engineering synthetic cells with more sophisticated, dynamic, and tunable functional behaviors.
 ---

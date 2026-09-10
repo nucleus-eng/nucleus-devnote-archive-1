@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: An Unexpected Enzyme in PURE Why Folinic Acid Needs Extra Help
+title: "Cx43 Cell"
 abstract: |
   The Connexin 43 Cell is a synthetic cell system that expresses and functionally integrates the mammalian channel protein connexin 43 (Cx43) into artificial cell membranes. This system encapsulates plasmid DNA encoding Cx43-GFP fusion protein along with the PURE cell-free expression system within lipid vesicles. Upon expression, Cx43 spontaneously inserts into the vesicle membrane and self-associates to form hexameric nanopores called connexons. The functionality of connexon formation can be demonstrated through controlled release of an encapsulated fluorescent dye. The ability of connexons to form gap junctions between neighboring cells could enable the development of tissues composed Cx43-derived cells.
 ---
