@@ -1,11 +1,4 @@
 version: 1
-extends: base.yml
-# REVIEW: devstudio-devnote-g-to-devnote-m's own template lists `extends: base.yml` as
-# a minimal required field, but the real reference example
-# (devnotes/10-nucleus_cytosol_v05/curvenote.yml) has no `extends:` line at all and
-# instead re-specifies every base.yml field directly. Kept `extends: base.yml` here per
-# the skill's explicit instruction — TA should confirm which convention the venue
-# tooling actually expects before merging.
 project:
   id: devstudio-test-20260909-01
   # REVIEW: fresh UUID generated for this test run, not reused from any prior draft:
@@ -34,6 +27,29 @@ project:
   # keywords:
   #   - Cytosol
   #   - PURE
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+    - ../../plugins/seqviz/seqviz.mjs
+  jupyter: true
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devnote.pdf
+      id: article
+  requirements:
+    - environment.yml
   toc:
     - file: main.md
     - file: experiments/20251104-NucleusPURE_deGFP/Analysis.ipynb

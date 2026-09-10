@@ -20,9 +20,8 @@ The `pOpen-deGFP` construct used throughout both experiments below is shown here
 ::::{figure}
 :label: seq-degfp
 
-:::{seqviz} https://github.com/nucleus-eng/DNA/blob/736400c835ae124010573ae3cdddea285e7689a9/reporters/pOpen-deGFP.gbk
+:::{seqviz} ./plasmids/pOpen-deGFP.gb
 :height: 400px
-:viewer: both
 :::
 
 Plasmid map of `pOpen-deGFP`.
