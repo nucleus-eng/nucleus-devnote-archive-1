@@ -183,15 +183,3 @@ This work also sits within a growing field. Within cell-free systems, recent wor
 We're excited to work through these challenges so that we can ask increasingly powerful questions about module burden, energy demand, productive lifetime, and integration. We'd love to chat if you're working on similar things, or think a region is particular interesting to probe! We leave you with a question:
 
 > We cannot map the entire landscape. So how much of it do we need to map to make the next integration decision with confidence?
-
-# Research artifacts
-
-| Figure | Produced by | Data |
-| --- | --- | --- |
-| {ref}`fig-optimum-moves` | `experiments/20260909-simulated-landscape/fig1_optimum_moves.py --two-panel` | none — simulated |
-| {ref}`fig-mg-k-sweep` | `experiments/20251105-labcraft-energy-sweep-01/Consolidating.ipynb` | `data/` (3 files) |
-| {ref}`fig-mg-ribo-t7-3d`, {ref}`fig-mg-ribo-t7-interactions` | `experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb` | `data/` (2 files) |
-| {ref}`fig-pairplot-5-factor` | `experiments/20260306-discoveryplate-aria-r0/kinetics_QC.ipynb` | `data/` (5 files) |
-| {ref}`fig-pairplot-7-factor` | `experiments/20260318-discoveryplate-aria-r1/kinetics_QC.ipynb` | `data/` (5 files) |
-| {ref}`fig-pairplot-8-factor` | `experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb` | `data/` (5 files) |
-
