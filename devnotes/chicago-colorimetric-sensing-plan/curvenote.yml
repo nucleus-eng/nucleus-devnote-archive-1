@@ -1,7 +1,7 @@
 version: 1
 project:
   id: NCF-planningDevNote-01
-  title: Colorimetric Sensing Module Development Plan
+  title: "Colorimetric Sensing Module Development Plan"
   subtitle: Colorimetric sensing in hydroxypropyl cellulose utilizing salt releasing DevCells
   authors:
   - name: Cécile A. C. Chazot

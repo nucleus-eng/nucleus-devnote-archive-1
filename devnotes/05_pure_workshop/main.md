@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: Nucleus PURE Workshop
+title: "Nucleus OnePot PURE workshop"
 abstract: |
   The PURE system typically require 9 months to 2 years for researchers to build from scratch. We organized a five-day workshop where eight participants from three continents built complete OnePot PURE systems using open protocols. Three of four components (energy mixes, tRNAs, ribosomes) performed comparably to commercially-available benchmarks, while protein mixtures showed minimal activity due to buffer contamination. A "poisoning experiment" revealed 1μL of participant preparations reduced activity of commercially-available PURE by 90-95%. Through real-time collaborative analysis and systematic troubleshooting, participants gained practical skills and confidence to recreate PURE systems in their home laboratories, representing a significant step toward democratizing cell-free synthesis platforms for synthetic biology applications.
 ---

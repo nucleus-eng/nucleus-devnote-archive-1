@@ -1,7 +1,7 @@
 version: 1
 project:
   id: 019d20e4-4787-7f35-9c77-f2f53f43d107
-  title: Theophylline-LacZ sensor validation in Nucleus Cytosol
+  title: "Theophylline-LacZ sensor validation in Nucleus Cytosol"
   authors:
   - name: Maram Naji
     email: maram@U.northwestern.edu

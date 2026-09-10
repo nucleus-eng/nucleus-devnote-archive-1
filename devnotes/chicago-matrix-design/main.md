@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Matrix Design for Stable Liposomes and Efficient Cell-Free Protein Synthesis"
 abstract: |
   This project evaluates conditions that support stable liposomes and effective cell-free protein synthesis within giant unilamellar vesicles (GUVs). GFP-expressing cell-free systems are encapsulated in GUVs of different lipid compositions to assess functional robustness, while microscopy and plate-based assays quantify vesicle stability and protein production within various matrix materials. Key parameters—including crosslinking density, external osmolarity, hydrogel weight percent, and nutrient supplementation—are systematically varied to identify conditions that maximize GFP yield and maintain artificial-cell sensor sensitivity within the matrix environment.
 ---

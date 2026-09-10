@@ -1,7 +1,7 @@
 version: 1
 project:
   id: mrb_kamatlab
-  title: Environmentally Responsive Materials via Integration of DevCells
+  title: "Environmentally Responsive Materials via Integration of DevCells"
   authors:
   - name: Madison Briggs
     affiliations:

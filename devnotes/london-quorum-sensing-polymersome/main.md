@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Quorum Sensing Polymersome"
 ---
 
 # Overview

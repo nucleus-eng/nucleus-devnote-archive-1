@@ -1,5 +1,5 @@
 ---
-title: "Membrane Translation Module Development"
+title: "SecYEG-Based Membrane Translation Module in Synthetic Cells"
 abstract: |
   The Membrane Translation Module aims to enable functional membrane protein expression and integration in synthetic cells through the SecYEG translocon system. We developed DNA constructs encoding SecYEG and target membrane proteins, validated their expression in the PURExpress system, and demonstrated enhanced membrane localization and functionality in liposome-encapsulated reactions. This module will support active transporters, molecular sensors, and membrane-based communication in the Developer Cell platform.
 ---

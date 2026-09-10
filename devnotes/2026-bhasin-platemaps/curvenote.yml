@@ -1,7 +1,7 @@
 version: 1
 project:
   id: 019d6e3a-c618-77bc-853c-fe4694511f53
-  title: Using platemaps to analyze and share data
+  title: "Using platemaps to analyze and share data"
   authors:
     - name: Jay Bhasin
       email: jay@bnext.bio

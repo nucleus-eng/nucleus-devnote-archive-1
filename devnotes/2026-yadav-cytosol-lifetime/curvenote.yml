@@ -1,7 +1,7 @@
 version: 1
 project:
   id: 019ed70b-0af7-7dd0-aefe-688ebf933399
-  title: Characterizing the Limited Operational Lifetime of Cytosol Reactions
+  title: "Characterizing the Limited Operational Lifetime of Cytosol Reactions"
   authors:
     - name: Surendra Yadav
       email: surendra@bnext.bio

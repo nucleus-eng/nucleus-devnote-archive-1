@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Environmentally Responsive Materials via Integration of DevCells"
 abstract: |
   This module is to ensure that we can properly encapsulate PURE system for protein production and to maintain membrane stability in hydrogel materials. Sensor and reporters used will be made and developed in Lucks and Tullman-Ercek labs and hydrogels in the Truby lab.
 ---

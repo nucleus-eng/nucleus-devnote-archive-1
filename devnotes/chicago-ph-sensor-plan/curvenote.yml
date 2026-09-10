@@ -1,7 +1,7 @@
 version: 1
 project:
   id: sjcliulab
-  title: 'Module Development Plan: DevCell-based pH sensor'
+  title: "Module Development Plan: DevCell-based pH sensor"
   subtitle: DevCell-based sensor for colorimetric detection of acidic pH.
   description: DevCell-based sensor for colorimetric detection of acidic pH.
   authors:

@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "In Vitro Reporter Validation"
 abstract: |
   The deployment of developer cells necessitates reporters that can produce robust and interpretable signals. Toward this goal, I plan to develop a methodology to test and assess the functionality of genetically encoded reporter proteins for use in the nucleus cytosol module.
 ---

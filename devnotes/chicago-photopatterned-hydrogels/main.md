@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Photopatterned Hydrogels with DevCells"
 abstract: |
   We will be designing, manufacturing, and characterizing our biosensing material platforms that house DevCells. 
 ---

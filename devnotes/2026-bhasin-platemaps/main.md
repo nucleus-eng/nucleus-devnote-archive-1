@@ -1,4 +1,5 @@
 ---
+title: "Using platemaps to analyze and share data"
 abstract: |
   How do you join descriptions of experimental variables and measurement data together to analyze and share data in a reliable way? In this note, we'll discuss a common format for sharing datasets and introduce the _platemap_, a table that represents metadata for wells in a multiwell plate, as a tool for building these datasets. We'll show you how to build a platemap and how to use it for your analysis.
 ---

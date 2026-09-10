@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: IV-HSL emitter cell
+title: "IV-HSL Emitter Cell"
 abstract: |
   The Emitter Cell is a synthetic cell that produces and releases the signaling molecule IV-HSL to communicate with E. coli bacteria, serving as a foundation for creating Responder Cells that can detect molecular inputs and amplify signals in co-culture systems.
 ---

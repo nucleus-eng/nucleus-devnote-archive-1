@@ -1,5 +1,5 @@
 ---
-title: "ClpXP Control Module: Deployment in PURE with Nucleus Cytosol"
+title: "ClpXP Control Module: Deployment in Nucleus Cytosol"
 abstract: |
   We engineered a Cell Control Module that integrates the ATP-dependent ClpXP protease complex to enable programmable post-translational regulation in PURE-based systems. In the previous DevNote, we reconstituted and characterized ClpXP-mediated degradation of ssrA-tagged target proteins using the commercial NEB PURExpress system. In this DevNote, we extend this work by implementing the same module in Nucleus Cytosol, and demonstrate energy-dependent degradation of target substrates within the system.
 ---

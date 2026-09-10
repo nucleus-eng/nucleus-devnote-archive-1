@@ -1,5 +1,5 @@
 ---
-title: 'Dev Note - bnext-iter-2'
+title: "IGOR PPK Optimization: Round 2"
 abstract: |
   We investigate the reduced protein yield in PURE systems assembled by an automated, component-wise liquid handler. Our analysis suggests this is not a failure of final component stoichiometry, but a process-induced limitation rooted in non-equilibrium dynamics. We hypothesize that sequential component addition creates transient concentration spikes, leading to the formation of kinetically-trapped, non-productive states like inorganic precipitates or protein aggregates. A multivariate experiment is designed to test this 'path-dependent yield limitation' by systematically varying both component concentrations and their order of addition to identify an optimized assembly pathway.
 ---

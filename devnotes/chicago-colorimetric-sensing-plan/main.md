@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Colorimetric Sensing Module Development Plan"
 abstract: |
     This module enables colorimetric sensing utilizing salts to induce changes in the pitch of chiral nematic hydroxypropyl cellulose.
 ---

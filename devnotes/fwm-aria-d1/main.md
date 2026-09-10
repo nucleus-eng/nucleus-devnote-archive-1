@@ -1,3 +1,7 @@
+---
+title: "AI Scientist: Base Module Report"
+---
+
 :::{note}
 This article was written by a **human author**.
 :::

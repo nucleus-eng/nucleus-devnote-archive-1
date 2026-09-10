@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: Energy Metabolism Working Group at Build-a-Cell
+title: "Energy Metabolism Working Group at Build-a-Cell #15"
 abstract: |
   The 15th Build-a-Cell Workshop was held at the University of Michigan, Ann Arbor, bringing together researchers to critically examine foundational challenges in synthetic cell development. The workshop facilitated the formation of several working groups, each addressing key aspects of synthetic cell design, ranging from computational modeling to intercellular communication systems. Among these, we led a working group dedicated to identifying and addressing critical limitations in energy regeneration and metabolism within synthetic cells (SynCells) and cell-free systems more broadly. This DevNote presents a summary of the major themes and insights that emerged from the working group discussions, and outlines a few strategies for improving energyy metabolism in SynCells. 
 ---

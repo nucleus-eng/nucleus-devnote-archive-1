@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: Toehold switch-enabled translation regulation verified with Nucleus Cytosol
+title: "Toehold switch-enabled translation regulation verified in Nucleus Cytosol"
 abstract: |
   These results are part of preliminary testing for the pH-responsive DevCell module conducted during the DevCell Kickoff workshop. Using Nucleus Cytosol, the toehold switch enabled translation regulation of pHtdGFP in the presence of trigger ssDNA.
 ---

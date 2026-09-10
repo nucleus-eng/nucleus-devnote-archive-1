@@ -1,4 +1,5 @@
 ---
+title: "Theophylline-LacZ sensor validation in Nucleus Cytosol"
 abstract: |
    We validated that a biosensor for theophylline switches on with the addition of 1.5 mM theophylline in Nucleus Cytosol, resulting in a faster conversion of CPRG from a yellow to red product through the production of LacZ from the biosensor.
 ---
