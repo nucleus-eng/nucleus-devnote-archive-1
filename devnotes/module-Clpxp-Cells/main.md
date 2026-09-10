@@ -1,4 +1,5 @@
 ---
+title: "ClpXP Control Module: Deployment in PURE Cells"
 abstract: |
  The Developer Cell Control Module integrates the ATP-dependent ClpXP protease complex to enable programmable post-translational regulation within PURE-based systems. In this DevNote, we reconstitute and evaluate ClpXP-mediated degradation of ssrA-tagged target proteins in both bulk reactions and liposome-encapsulated synthetic cells. Using combinations of purified protein components and DNA templates supplemented with PURE, we demonstrate selective and energy-dependent degradation of target substrates in synthetic cells. 
 ---

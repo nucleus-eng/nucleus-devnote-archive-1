@@ -1,4 +1,5 @@
 ---
+title: "Characterizing the Limited Operational Lifetime of Cytosol Reactions"
 abstract: |
   PURE systems exhibit limited operational lifetimes at 37 °C, but whether this stems from component instability or resource depletion remains unclear. We systematically deconvolved the Cytosol system and demonstrated that individual components remain fully active when thermally incubated in isolation. Instead, performance loss requires multi-component coexistence. Pre-incubating a small-molecule mix (SMix) with a protein mix (PMix) reduced translation yields, an effect severely exacerbated by ribosomes. These findings indicate that reaction lifetime is limited by an uncoupled, background metabolic drain rather than the intrinsic thermal decay of individual system resources.
 ---

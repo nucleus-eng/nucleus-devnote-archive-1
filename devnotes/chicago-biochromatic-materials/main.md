@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: "[Title]"
+title: "Biochromatic Materials"
 abstract: |
   This is a system-level plan for developing Biochromatic Materials, a modular integration of Developer Cells into materials for color-based reporting.
 ---

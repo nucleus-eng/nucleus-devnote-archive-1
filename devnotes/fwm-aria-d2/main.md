@@ -1,3 +1,7 @@
+---
+title: "Defining AI Scientific Workflows: Using IGOR for Optimization of PURE"
+---
+
 :::{note}
 This article was written by a **[human author](./general/ai-detection.png)**.
 :::

@@ -1,4 +1,5 @@
 ---
+title: "Batch Bayesian Optimization"
 abstract: |
     Bayesian optimization is a powerful tool for assisting scientific discovery, but in its basic form experiments are assumed to run one at a time. We discuss possible modifications to the recipe generation step of the Bayesian optimization loop to accommodate laboratory requirements that batches of experiments be run simultaneously. Approaches are visualized on a simple, low-dimensional test function.
 ---

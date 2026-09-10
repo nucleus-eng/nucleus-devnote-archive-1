@@ -1,4 +1,5 @@
 ---
+title: "Double emulsion optimization: inner solution, lipid concentration, and composition"
 abstract: |
   We optimized the inner solution, lipid concentration, and lipid composition to identify conditions that achieved the highest yield of giant unilamellar vesicles (GUVs) using an inverted emulsion method. Our results indicate that higher sucrose concentrations, increased lipid concentration, and the incorporation of cholesterol enhance GUV yield.
 ---

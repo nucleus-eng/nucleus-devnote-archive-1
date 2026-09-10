@@ -1,7 +1,7 @@
 version: 1
 project:
   id: bd8b42b4-8a91-40c8-a636-3778d1c9a072
-  title: The colourimetric bacterial contamination sensing device.
+  title: "The colourimetric bacterial contamination sensing device."
   authors:
   - name: Charlie Newell
     email: charlie.newell.21@ucl.ac.uk

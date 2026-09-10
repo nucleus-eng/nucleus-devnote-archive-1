@@ -1,4 +1,5 @@
 ---
+title: "London Exchange Meeting: Liposome Protocol Survey"
 abstract: |
   Participants in the Developer Cell Project gathered at the London Exchange Meeting and compared liposome encapsulation protocols across labs, revealing significant variation. Discussions during this meeting will help establish the engineering practice for protocol development within Nucleus and build out a framework of co-existing, category-specific protocols for benchmarking synthetic cell systems.
 ---

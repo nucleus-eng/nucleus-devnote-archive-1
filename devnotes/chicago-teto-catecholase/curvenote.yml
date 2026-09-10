@@ -1,7 +1,7 @@
 version: 1
 project:
   id: 019db237-0d03-7ae1-8c40-e57e2ce1bea1
-  title: TetO-Catecholase sensor validation in Nucleus Cytosol
+  title: "TetO-Catecholase sensor validation in Nucleus Cytosol"
   authors:
   - name: Maram Naji
     email: maram@U.northwestern.edu
