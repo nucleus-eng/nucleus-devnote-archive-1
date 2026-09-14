@@ -1,6 +1,7 @@
 # Data Flow
 
-@Claude: format using standards in nucleus-skills; link to headers in this doc
+Conformed to the `mermaid-diagrams` skill on 2026-09-13, and every box links to its entry
+under [Locations](#locations).
 
 Most arrows carry an ID (`e1`, `e2`, ...) and a status glyph. Arrows that
 are known working are not labelled, because there is nothing to test.
@@ -11,8 +12,10 @@ flowchart TD
     %% 
     %% STATUS STYLES
     %% 
-    classDef eWorking stroke:#28a745,stroke-width:2px
-    classDef eBroken  stroke:#d73a49,stroke-width:3.5px
+    %% Okabe-Ito, colourblind-safe. Line weight and dash carry the status too,
+    %% so colour is never the only channel.
+    classDef eWorking stroke:#009E73,stroke-width:2px
+    classDef eBroken  stroke:#D55E00,stroke-width:3.5px
     classDef eTesting stroke:#999999,stroke-width:1.5px,stroke-dasharray:5 4
     classDef eMissing stroke:#cccccc,stroke-width:1.5px,stroke-dasharray:2 5
     %% box styles: nWorking / nBroken / nTesting to follow the same pattern
@@ -100,14 +103,34 @@ flowchart TD
 
     %% BOX STATUS
     class INV nMissing
+
+    %% 
+    %% LINKS — each box to its entry under # Locations
+    %% 
+    click DEV "#developers"
+    click FAC "#facilitators"
+    click NUC "#nucleusengineering"
+    click INV "#inventory"
+    click CY5 "#cytation-5"
+    click CY3 "#cytation-3"
+    click S2 "#synergy-2"
+    click MS1 "#cephla-1"
+    click MS2 "#cephla-2"
+    click GLY "#glycine"
+    click TYR "#tyrosine"
+    click VAL "#valine"
+    click R2 "#r2"
+    click GDRIVE "#gdrive"
+    click GIT "#github"
+    click CN "#curvenote"
 ```
 
 ## Legend
 
 | Glyph | Status | Line | Meaning |
 |---|---|---|---|
-| [ok] | Working | Green, solid | Tested end to end. It works. |
-| [x] | Broken | Red, thick | The connection exists but fails. |
+| [ok] | Working | Bluish-green, solid | Tested end to end. It works. |
+| [x] | Broken | Vermillion, thick | The connection exists but fails. |
 | [?] | Needs testing | Grey, dashed | Built, but nobody has confirmed it. |
 | [--] | Missing | Faint, dotted | Not built yet. |
 
@@ -137,3 +160,78 @@ flowchart TD
 | e20 | GitHub       | Curvenote           | [?]    |      |                               |
 | e21 | GitHub       | nucleus.engineering | [?]    |      |                               |
 | e22 | Curvenote    | nucleus.engineering | [?]    |      |                               |
+
+# Locations
+
+Boxes in the diagram above. Each box links here.
+
+## People
+
+### Developers
+DevStudio participants. Reach Inventory, GDrive and the public site.
+
+### Facilitators
+b.next staff running the studio. Also reach GitHub and R2.
+
+## Sites
+
+### nucleus.engineering
+The public documentation site. Served from GitHub and Curvenote.
+
+### Inventory
+**Does not exist yet.** Both edges into it are `[--]`, and the box is drawn dashed for the same
+reason.
+
+## Plate readers
+
+### Cytation 5
+### Cytation 3
+### Synergy 2
+
+All three write to Glycine.
+
+## Microscopes
+
+### Cephla 1
+### Cephla 2
+
+Cephla 1 writes to Valine; Cephla 2 to Tyrosine.
+
+## Acquisition computers
+
+### Glycine
+Plate-reader acquisition. The only computer that writes to both R2 and GDrive.
+
+### Tyrosine
+### Valine
+Microscopy acquisition. Both write to R2 only.
+
+## Servers
+
+### R2
+Object storage. Receives from all three acquisition computers, pushes to GitHub.
+
+### GDrive
+The DevStudio working surface. See `document-workflow` for what happens inside it.
+
+### GitHub
+`nucleus-docs` and the DevNote archive. See `document-workflow`.
+
+### Curvenote
+Renders and serves DevNotes to the public site.
+
+# What the skill could not settle
+
+`mermaid-diagrams` defines status with **edge syntax** — `-->` confirmed, `-.->` proposed,
+`--x` blocked. Three states. This diagram uses **classDef styling** for four, and its sibling
+`document-workflow` now uses six. Converting to the skill's three would lose the distinction
+between *needs testing* and *not built*, which is most of what these diagrams are for.
+
+**So the skill has no convention for this genre**, and the readiness README already says so:
+*"The two demo diagrams use a different convention… Two legends in the room."* What was applied
+here is everything that does transfer — fence form, `UPPER_SNAKE` ids, a colourblind-safe
+palette with redundant line-style encoding, a standalone legend, and `click` targets. What was
+not is the status vocabulary, deliberately.
+
+**Worth raising** when the `style-guide` skill lands: a status-diagram convention belongs
+somewhere, and right now it lives only in these two files and the README.
