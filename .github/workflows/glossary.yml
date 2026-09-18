@@ -1,0 +1,98 @@
+name: Glossary
+
+# Nothing here blocks. Every glossary rule is `warning` in this repo, because new
+# vocabulary enters the program through DevNotes and blocking the source would stop
+# the glossary growing — `nucleus-docs` is where it settles, so that is where it
+# blocks. A warning that fails no build needs somewhere to appear or it is not a
+# rule, so this job writes a job summary and one pull-request comment.
+
+on:
+  pull_request:
+    branches: ['main']
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    env:
+      # Pinned to match nucleus-docs. One set of rules read by two repos should be
+      # read by one engine; a finding that appears in one repo and not the other,
+      # for no stated reason, is worse than an old pin.
+      #
+      # Known gap at this pin: 3.14.2 does not support the `(?<!%)` lookbehind that
+      # `nucleus.degrees-symbol` needs, which makes that rule a no-op. It does not
+      # reach the glossary rules — all three are plain substitutions. If the 14
+      # `styles/nucleus/` rule files land here, the pin becomes one decision for
+      # both repos and wants settling first.
+      VALE_VERSION: "3.14.2"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history: the report needs to diff against the base to tell a
+          # finding this pull request is responsible for from one it inherited.
+          fetch-depth: 0
+
+      - name: Install Vale
+        run: |
+          set -euo pipefail
+          curl -sSL "https://github.com/vale-cli/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz" \
+            | tar xz -C /usr/local/bin vale
+
+      - name: List the files this pull request touched
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          # Filter with grep rather than a `**/*.md` pathspec, so this matches the
+          # Vale step exactly and a file directly under devnotes/ cannot slip past.
+          git diff --name-only --diff-filter=d "${BASE_SHA}" HEAD -- devnotes \
+            | grep '\.md$' > changed.txt || true
+          echo "touched $(wc -l < changed.txt) markdown files"
+
+      - name: Run Vale
+        run: |
+          set -euo pipefail
+          # `-z` and `xargs -0`, not the bare pipeline nucleus-docs uses: 266 tracked
+          # paths in this repo contain a space, and `xargs` would tear them in half.
+          #
+          # `git ls-files` also scopes this to tracked files, which is what keeps
+          # `_build/` out — it is gitignored and holds three copies of every page,
+          # so a directory walk trebles every count.
+          git ls-files -z devnotes | grep -zZ '\.md$' \
+            | xargs -0 vale --output=JSON > vale.json || true
+          test -s vale.json
+
+      - name: Build the report
+        id: report
+        # A finding never fails this job. A checker that could not run does, and
+        # loudly — tooling breakage read as a clean corpus is the worse failure.
+        run: python3 .github/scripts/report-vale.py
+
+      - name: Comment on the pull request
+        # A fork's token is read-only, so this cannot post there. The job summary
+        # still carries everything; do not fail the run over it.
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          HAS_FINDINGS: ${{ steps.report.outputs.has_findings }}
+        run: |
+          set -euo pipefail
+          # One comment per pull request, found by its marker and edited in place.
+          # A new comment on every push buries the review it is meant to inform.
+          id=$(gh api "repos/${REPO}/issues/${PR}/comments" --paginate \
+                 --jq '[.[] | select(.body | contains("<!-- nucleus-glossary-vale -->"))] | last | .id // empty')
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/${REPO}/issues/comments/${id}" -F body=@comment.md >/dev/null
+            echo "updated comment ${id}"
+          elif [ "$HAS_FINDINGS" = "true" ]; then
+            gh api -X POST "repos/${REPO}/issues/${PR}/comments" -F body=@comment.md >/dev/null
+            echo "posted a new comment"
+          else
+            # Nothing found and nothing to correct — say nothing.
+            echo "clean, and no existing comment to update"
+          fi
