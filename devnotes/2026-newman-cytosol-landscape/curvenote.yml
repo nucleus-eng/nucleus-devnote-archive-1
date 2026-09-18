@@ -24,6 +24,8 @@ project:
   thumbnail: assets/thumbnail.png
   toc:
     - file: main.md
+    - file: experiments/20260909-simulated-landscape/fig1_optimum_moves.ipynb
+      title: 'Figure 1: how adding a module moves the optimum'
     - file: experiments/20251105-labcraft-energy-sweep-01/Consolidating.ipynb
       title: 'Discovery Plate: 2 factors — Mg, K'
     - file: experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb
