@@ -7,15 +7,21 @@ full execution. Nothing reads from glycine or any mounted volume.
 
 | Directory | Figure | Notebook | Inputs |
 | --- | --- | --- | --- |
-| `20260909-simulated-landscape/` | Figure 1 (simulated) | `fig1_optimum_moves.py --two-panel` | none |
+| `20260909-simulated-landscape/` | Figure 1 (simulated) | `fig1_optimum_moves.ipynb` | none |
 | `20251105-labcraft-energy-sweep-01/` | Mg × K heatmap | `Consolidating.ipynb` | 3 |
 | `20251106-labcraft-protein-sweep-01/` | 3D scatter + interaction plots | `analysis.ipynb` | 2 |
 | `20260306-discoveryplate-aria-r0/` | 5-factor pairplot | `kinetics_QC.ipynb` | 5 |
 | `20260318-discoveryplate-aria-r1/` | 7-factor pairplot | `kinetics_QC.ipynb` | 5 |
 | `20260506-discoveryplate-aria-r3/` | 8-factor pairplot | `kinetics_QC.ipynb` | 5 |
 
-All five notebooks execute end to end with zero errors on
-`nucleus-cdk==0.5.0rc2`, pinned in each notebook's first cell.
+All six notebooks execute end to end with zero errors. The five data notebooks
+pin `nucleus-cdk==0.5.0rc2` in their first cell; `fig1_optimum_moves.ipynb` is
+simulated data and needs only numpy and matplotlib, so it carries no pin.
+
+`fig1_optimum_moves.ipynb` imports its plotting code from
+`fig1_optimum_moves.py` beside it, rather than duplicating it. That script also
+carries the `--banner` and `--surface-only` modes that generate this DevNote's
+`banner.png` and `assets/thumbnail.png`, both wired into `curvenote.yml`.
 
 ## Provenance
 

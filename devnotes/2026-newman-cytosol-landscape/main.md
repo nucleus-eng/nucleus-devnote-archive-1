@@ -15,7 +15,7 @@ Did the protein degrade? Or did adding it simply move the system away from its p
 
 A new protein can change the environment in which the rest of the system operates. It may bind magnesium, consume energy, compete for transcriptional or translational resources, introduce a new buffer, or alter the effective concentrations of other components. Integration also requires finding the recipe that makes both modules happy. We can see this in a simplified example ({ref}`fig-optimum-moves`): adding a protein can both shift the optimum we already knew and add a new dimension that we now need to explore.
 
-:::{figure} ./experiments/20260909-simulated-landscape/fig1-optimum-moves-2panel.png
+:::{figure} #fig:optimum-moves
 :label: fig-optimum-moves
 :align: center
 :width: 100%
