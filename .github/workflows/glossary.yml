@@ -24,9 +24,13 @@ jobs:
       #
       # Known gap at this pin: 3.14.2 does not support the `(?<!%)` lookbehind that
       # `nucleus.degrees-symbol` needs, which makes that rule a no-op. It does not
-      # reach the glossary rules — all three are plain substitutions. If the 14
-      # `styles/nucleus/` rule files land here, the pin becomes one decision for
-      # both repos and wants settling first.
+      # reach the glossary rules. Three of the four are plain substitutions, and the
+      # fourth, `glossary.narrows`, is an `existence` rule that carries its exclusions
+      # in an `exceptions` list for exactly this reason: Vale runs Go RE2 and has no
+      # lookbehind at any version, so the rule could never have used one. The rule set
+      # here was measured on Vale 3.22.0 locally and this job at 3.14.2 is its first
+      # test at the pin. If the 14 `styles/nucleus/` rule files land here, the pin
+      # becomes one decision for both repos and wants settling first.
       VALE_VERSION: "3.14.2"
     steps:
       - uses: actions/checkout@v4
