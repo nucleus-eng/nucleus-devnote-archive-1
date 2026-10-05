@@ -1,6 +1,5 @@
-<!-- gen:status-overlay -->
-<!-- Status overlay for Week 1, transcribed from the participants' boards. -->
-(fig:week1-ph)=
+<!-- Status overlay for Week 2, transcribed from the participants' boards. -->
+(fig:week2-ph)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -22,7 +21,7 @@ flowchart TD
 
     P1(["P1 &middot; Anneal pH-Responsive Trigger Duplex<br/>3:1"])
     P2(["P2 &middot; Assemble Aqueous Solution"])
-    P3(["P3 &middot; Encapsulation: LUV preparation"])
+    P3(["P3 &middot; Encapsulation: SUV extrusion"])
     P4(["P4 &middot; Encapsulation: Phase Transfer"])
     P5(["P5 &middot; Gel embed &amp; incubation, 37 &deg;C"])
     P6(["P6 &middot; Color Development<br/>incubation"])
@@ -53,13 +52,13 @@ flowchart TD
     RELEASED_GEL --> P6
     P6 --> COLOR
 
+    %% Status is the fill. Node kind is the border weight and the shape.
     subgraph LEGEND["Legend"]
         direction LR
         LEG_GREEN["Works here"] ~~~ LEG_ORANGE["Needs tuning"] ~~~ LEG_RED["Ruled out"] ~~~ LEG_GRAY["Not attempted"]
         LEG_MODULE["Module<br/>thin border"] ~~~ LEG_BUILT["Built<br/>thick border"] ~~~ LEG_PROCESS(["Process"])
     end
 
-    %% Status is the fill. Node kind is the border weight and the shape.
     classDef m_green  fill:#E3F4DD,stroke:#5E8F52,stroke-width:1.5px,color:#111827;
     classDef m_orange fill:#FBE3C4,stroke:#A85F00,stroke-width:1.5px,color:#111827;
     classDef m_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
@@ -74,14 +73,11 @@ flowchart TD
     classDef p_gray   fill:#E5E7EB,stroke:#6B7280,stroke-width:1.5px,color:#111827;
 
     class PH_RES,TRIGGER,CYTOSOL,TOEHOLD,MEMBRANE_C m_green;
-    class CPRG,MEMBRANE_V,BASIC_BUFFER m_orange;
-    class HYDROGEL m_gray;
+    class CPRG,MEMBRANE_V,HYDROGEL,BASIC_BUFFER m_orange;
     class PH_DNA,PH_CYTOSOL,PH_CELL b_green;
-    class CPRG_VESICLE b_orange;
-    class RELEASED_GEL,COLOR b_gray;
+    class CPRG_VESICLE,RELEASED_GEL,COLOR b_orange;
     class P1,P2,P4 p_green;
-    class P3,P6 p_orange;
-    class P5 p_gray;
+    class P3,P5,P6 p_orange;
     class LEG_GREEN m_green;
     class LEG_ORANGE m_orange;
     class LEG_RED m_red;
@@ -90,5 +86,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The pH Sensing demonstration releases CPRG from a vesicle when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Status at the end of Week 1: the sensing chain through the pH Sensing Cell is green, the CPRG vesicle branch is orange on unresolved leakiness, and no gel has been used for this demonstration.*
-<!-- /gen:status-overlay -->
+*The pH Sensing demonstration releases CPRG from a carrier when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Status at the end of Week 2: this demonstration ran end to end in LGA on Day 7, the first of the Studio, but the color change was ambiguous and leaky CPRG carriers are the likely cause. Day 9 rebuilt it on SUVs in place of LUVs and that result is not yet in. Compare {ref}`the same board at the end of Week 1 <fig:week1-ph>`.*

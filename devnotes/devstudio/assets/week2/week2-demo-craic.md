@@ -1,6 +1,5 @@
-<!-- gen:status-overlay -->
-<!-- Status overlay for Week 1, transcribed from the participants' boards. -->
-(fig:week1-craic)=
+<!-- Status overlay for Week 2, transcribed from the participants' boards. -->
+(fig:week2-craic)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -63,13 +62,13 @@ flowchart TD
     DEVICE_ON --> P5
     P5 --> OBSERVATION
 
+    %% Status is the fill. Node kind is the border weight and the shape.
     subgraph LEGEND["Legend"]
         direction LR
         LEG_GREEN["Works here"] ~~~ LEG_ORANGE["Needs tuning"] ~~~ LEG_RED["Ruled out"] ~~~ LEG_GRAY["Not attempted"]
         LEG_MODULE["Module<br/>thin border"] ~~~ LEG_BUILT["Built<br/>thick border"] ~~~ LEG_PROCESS(["Process"])
     end
 
-    %% Status is the fill. Node kind is the border weight and the shape.
     classDef m_green  fill:#E3F4DD,stroke:#5E8F52,stroke-width:1.5px,color:#111827;
     classDef m_orange fill:#FBE3C4,stroke:#A85F00,stroke-width:1.5px,color:#111827;
     classDef m_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
@@ -83,12 +82,12 @@ flowchart TD
     classDef p_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
     classDef p_gray   fill:#E5E7EB,stroke:#6B7280,stroke-width:1.5px,color:#111827;
 
-    class CYTOSOL_A,SENSOR_DNA,CYTOSOL_B,DYE,MEMBRANE_J,OS_J,ENZ m_orange;
-    class REPORTER_DNA,OS_I,MEMBRANE_I,GEL,AHSL m_gray;
-    class SENSOR_PROTEIN,DYE_VESICLE b_orange;
-    class SENS_CY,SENS_CELL,DEVICE_OFF,DEVICE_ON,OBSERVATION b_gray;
-    class P1A,P1B,P2J p_orange;
-    class P2I,P3,P4,P5 p_gray;
+    class CYTOSOL_A,SENSOR_DNA,CYTOSOL_B,REPORTER_DNA,OS_I,MEMBRANE_I,DYE,MEMBRANE_J,OS_J,GEL,ENZ m_orange;
+    class AHSL m_gray;
+    class SENSOR_PROTEIN,SENS_CY,SENS_CELL,DYE_VESICLE b_orange;
+    class DEVICE_OFF,DEVICE_ON,OBSERVATION b_gray;
+    class P1A,P1B,P2I,P2J,P3 p_orange;
+    class P4,P5 p_gray;
     class LEG_GREEN m_green;
     class LEG_ORANGE m_orange;
     class LEG_RED m_red;
@@ -97,5 +96,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*CRAIC, a Colorimetric Reporter for AHL In Cytosol, detects AHSL through EsaR in Nucleus Cytosol and reports it by releasing CPRG from a dye vesicle in a gel. Status at the end of Week 1: no node is green, because mNeon stands in for PLA1 and the dye branch carries the same unresolved leakiness as the pH demonstration.*
-<!-- /gen:status-overlay -->
+*CRAIC, a Colorimetric Reporter for AHL In Cytosol, detects AHSL through EsaR in Nucleus Cytosol and reports it by releasing CPRG from a dye carrier in a gel. Status at the end of Week 2: gel embedding came off gray on a result borrowed from the Day 9 cross-cutting lysis test, but this demonstration's own device has still never been built, so the device node stays gray. Compare {ref}`the same board at the end of Week 1 <fig:week1-craic>`.*

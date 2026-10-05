@@ -1,6 +1,5 @@
-<!-- gen:status-overlay -->
-<!-- Status overlay for Week 1, transcribed from the participants' boards. -->
-(fig:week1-ahl-lysate)=
+<!-- Status overlay for Week 2, transcribed from the participants' boards. -->
+(fig:week2-ahl-lysate)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -46,13 +45,13 @@ flowchart TD
     SIGNAL --> SPECTROMETER
     UV --> SPECTROMETER
 
+    %% Status is the fill. Node kind is the border weight and the shape.
     subgraph LEGEND["Legend"]
         direction LR
         LEG_GREEN["Works here"] ~~~ LEG_ORANGE["Needs tuning"] ~~~ LEG_RED["Ruled out"] ~~~ LEG_GRAY["Not attempted"]
         LEG_MODULE["Module<br/>thin border"] ~~~ LEG_BUILT["Built<br/>thick border"] ~~~ LEG_PROCESS(["Process"])
     end
 
-    %% Status is the fill. Node kind is the border weight and the shape.
     classDef m_green  fill:#E3F4DD,stroke:#5E8F52,stroke-width:1.5px,color:#111827;
     classDef m_orange fill:#FBE3C4,stroke:#A85F00,stroke-width:1.5px,color:#111827;
     classDef m_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
@@ -66,12 +65,10 @@ flowchart TD
     classDef p_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
     classDef p_gray   fill:#E5E7EB,stroke:#6B7280,stroke-width:1.5px,color:#111827;
 
-    class LYSATE,LUXR,GFP m_orange;
-    class OUTER_SOLUTION,MEMBRANE,ULGA,SOURCE,UV m_gray;
-    class PLASMID,SENSOR_LYSATE b_orange;
-    class SENSOR_CELL,DEVICE,SIGNAL,SPECTROMETER b_gray;
-    class P1,P2 p_orange;
-    class P3,P4 p_gray;
+    class LYSATE,LUXR,GFP,OUTER_SOLUTION,MEMBRANE,ULGA,SOURCE m_orange;
+    class UV m_gray;
+    class PLASMID,SENSOR_LYSATE,SENSOR_CELL,DEVICE,SIGNAL,SPECTROMETER b_orange;
+    class P1,P2,P3,P4 p_orange;
     class LEG_GREEN m_green;
     class LEG_ORANGE m_orange;
     class LEG_RED m_red;
@@ -80,5 +77,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The LuxR-GFP Sensor demonstration detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Status at the end of Week 1: the sensor chain is orange conservatively, because the dose response ran in Nucleus Cytosol rather than the lysate this figure draws, and no Sensing Cell has been encapsulated.*
-<!-- /gen:status-overlay -->
+*The LuxR-GFP Sensor demonstration detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Status at the end of Week 2: every node is orange except the UV lamp. The whole chain has now been attempted, including sensing of bacterial supernatant, and nothing in it is yet confirmed working as drawn. Compare {ref}`the same board at the end of Week 1 <fig:week1-ahl-lysate>`.*

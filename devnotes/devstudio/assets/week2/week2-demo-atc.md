@@ -1,6 +1,5 @@
-<!-- gen:status-overlay -->
-<!-- Status overlay for Week 1, transcribed from the participants' boards. -->
-(fig:week1-atc)=
+<!-- Status overlay for Week 2, transcribed from the participants' boards. -->
+(fig:week2-atc)=
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'lineColor': '#555555', 'edgeLabelBackground': '#ffffff'}}}%%
 flowchart TD
@@ -59,13 +58,13 @@ flowchart TD
     CASCADE --> P7
     P7 --> OUTCOME
 
+    %% Status is the fill. Node kind is the border weight and the shape.
     subgraph LEGEND["Legend"]
         direction LR
         LEG_GREEN["Works here"] ~~~ LEG_ORANGE["Needs tuning"] ~~~ LEG_RED["Ruled out"] ~~~ LEG_GRAY["Not attempted"]
         LEG_MODULE["Module<br/>thin border"] ~~~ LEG_BUILT["Built<br/>thick border"] ~~~ LEG_PROCESS(["Process"])
     end
 
-    %% Status is the fill. Node kind is the border weight and the shape.
     classDef m_green  fill:#E3F4DD,stroke:#5E8F52,stroke-width:1.5px,color:#111827;
     classDef m_orange fill:#FBE3C4,stroke:#A85F00,stroke-width:1.5px,color:#111827;
     classDef m_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
@@ -79,11 +78,9 @@ flowchart TD
     classDef p_red    fill:#F5D6CC,stroke:#8A2B12,stroke-width:1.5px,color:#111827;
     classDef p_gray   fill:#E5E7EB,stroke:#6B7280,stroke-width:1.5px,color:#111827;
 
-    class TETO_PLA,TETR,PEG_NB m_orange;
-    class CYTOSOL,LACZ,OUTER_SOLN,LIPID,MINERAL_OIL,CPRG,ATC m_gray;
-    class SENSOR,SENSOR_CYTOSOL,SENSOR_CELL,GEL_PIECE,TRIGGER_SOLN,CASCADE,OUTCOME b_gray;
-    class P1,P4 p_orange;
-    class P2,P3,P5,P6,P7 p_gray;
+    class TETO_PLA,TETR,CYTOSOL,LACZ,OUTER_SOLN,LIPID,MINERAL_OIL,PEG_NB,CPRG,ATC m_orange;
+    class SENSOR,SENSOR_CYTOSOL,SENSOR_CELL,GEL_PIECE,TRIGGER_SOLN,CASCADE,OUTCOME b_orange;
+    class P1,P2,P3,P4,P5,P6,P7 p_orange;
     class LEG_GREEN m_green;
     class LEG_ORANGE m_orange;
     class LEG_RED m_red;
@@ -92,5 +89,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The aTc Sensor demonstration uses TetR repression of a TetO-PLA construct, so that aTc triggers lysis and a colorimetric readout from a PEG-norbornene gel. Status at the end of Week 1: repression is being tuned with TetO-GFP as a proxy, so the sensor nodes are orange and everything downstream of them is gray.*
-<!-- /gen:status-overlay -->
+*The aTc Sensor demonstration uses TetR repression of a TetO-PLA construct, so that aTc triggers lysis and a colorimetric readout from a PEG-NB gel. Status at the end of Week 2: every node is orange, with no gray and no green. The demonstration was assembled in full and assayed, and leaky expression of tetO made the readout ambiguous. Compare {ref}`the same board at the end of Week 1 <fig:week1-atc>`.*
