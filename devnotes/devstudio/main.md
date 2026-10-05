@@ -118,7 +118,7 @@ Within that cadence, the three weeks will progress from orientation and reproduc
 
 ## Participants
 
-DevStudio participants at Nucleus Labs are Manuel Birbowski (Elani Lab, Imperial College London), Sung-Won Hwang (Liu Lab, University of Michigan), Mary Kelly (Kamat Lab, Northwestern University), Jonah McDonald (Hindley Lab, King's College London), Charlie Newell (Booth Lab, University College London), Ojaswita Pant (Truby Lab, Northwestern University), and Julia Purrinos De Oliveira (Contini Lab, Imperial College London). Each carries work developed with colleagues at their home institution who are not named here. The list will grow as more participants arrive.
+DevStudio participants at Nucleus Labs are Manuel Birbowski (Elani Lab, Imperial College London), Sung-Won Hwang (Liu Lab, University of Michigan), Mary Kelly (Kamat Lab, Northwestern University), Jonah McDonald (Hindley Lab, King's College London), Niall McIntyre (Krishna Kumar Lab, Imperial College London), Charlie Newell (Booth Lab, University College London), Ojaswita Pant (Truby Lab, Northwestern University), and Julia Purrinos De Oliveira (Contini Lab, Imperial College London). Each carries work developed with colleagues at their home institution who are not named here. The list will grow as more participants arrive.
 
 ## Acknowledgements
 
