@@ -34,10 +34,15 @@ jobs:
       # Measured at both versions over `styles/tests/temperature.md` in nucleus-docs:
       # 2 fixture lines fail at 3.14.2 and all 191 pass at 3.24.0.
       #
-      # WHAT THE BUMP COSTS HERE, measured over all 197 tracked pages on this tree:
-      # `glossary.narrows` moves from 62 findings to 63, and `collapses`, `prefer` and
-      # `prefer-cased` are unchanged at 1, 13 and 6. One finding, at warning, in a rule
-      # whose job is to catch exactly that word. Nothing else moves.
+      # WHAT THE BUMP COSTS HERE, re-measured 2026-10-05 over all 197 tracked pages on
+      # this tree: nothing. The two versions report the same 20 warnings, and the same
+      # split across the three rules, at 1 `collapses`, 13 `prefer` and 6 `prefer-cased`.
+      #
+      # The earlier measurement on this branch said the bump moved `glossary.narrows`
+      # from 62 findings to 63. That rule is deleted in this same commit, so the one
+      # finding it moved no longer exists and the bump now costs nothing at all. Every
+      # remaining glossary rule is a plain substitution, which no Vale version treats
+      # differently.
       VALE_VERSION: "3.24.0"
     steps:
       - uses: actions/checkout@v4
