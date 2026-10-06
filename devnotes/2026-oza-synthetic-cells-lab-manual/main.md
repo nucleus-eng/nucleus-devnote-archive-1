@@ -7,6 +7,22 @@ authors:
     orcid: 0000-0002-2902-6939
     affiliations:
       - name: California Polytechnic State University, San Luis Obispo, CA, USA
+  - name: Sunayana Nguyen
+    email: snguy230@calpoly.edu
+    affiliations:
+      - name: California Polytechnic State University, San Luis Obispo, CA, USA
+  - name: Clara Lillie
+    email: clillie@calpoly.edu
+    affiliations:
+      - name: California Polytechnic State University, San Luis Obispo, CA, USA
+  - name: Grace Nicole Montgomery
+    email: gnmontgo@calpoly.edu
+    affiliations:
+      - name: California Polytechnic State University, San Luis Obispo, CA, USA
+  - name: Maia Grace Lambson
+    email: mlambson@calpoly.edu
+    affiliations:
+      - name: California Polytechnic State University, San Luis Obispo, CA, USA
 date: # REVIEW: not found in source
 license: CC-BY-4.0
 thumbnail: # REVIEW: rename figures/media/image5.png to descriptive name and set here

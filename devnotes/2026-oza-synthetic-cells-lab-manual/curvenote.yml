@@ -9,6 +9,22 @@ project:
       affiliations:
         - name: California Polytechnic State University, San Luis Obispo, CA, USA
       corresponding: true
+    - name: Sunayana Nguyen
+      email: snguy230@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+    - name: Clara Lillie
+      email: clillie@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+    - name: Grace Nicole Montgomery
+      email: gnmontgo@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+    - name: Maia Grace Lambson
+      email: mlambson@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
   keywords:
     - cell-free expression
     - liposome encapsulation
