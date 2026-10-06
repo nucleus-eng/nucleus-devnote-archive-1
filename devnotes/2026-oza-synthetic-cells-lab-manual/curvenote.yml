@@ -3,14 +3,8 @@ project:
   id: 118a7ada-92d1-448f-adc2-f19c2da16b16
   title: 'Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation'
   authors:
-    - name: Javin P Oza
-      email: joza@calpoly.edu
-      orcid: 0000-0002-2902-6939
-      affiliations:
-        - name: California Polytechnic State University, San Luis Obispo, CA, USA
-      corresponding: true
-    - name: Sunayana Nguyen
-      email: snguy230@calpoly.edu
+    - name: Maia Grace Lambson
+      email: mlambson@calpoly.edu
       affiliations:
         - name: California Polytechnic State University, San Luis Obispo, CA, USA
     - name: Clara Lillie
@@ -21,10 +15,16 @@ project:
       email: gnmontgo@calpoly.edu
       affiliations:
         - name: California Polytechnic State University, San Luis Obispo, CA, USA
-    - name: Maia Grace Lambson
-      email: mlambson@calpoly.edu
+    - name: Sunayana Nguyen
+      email: snguy230@calpoly.edu
       affiliations:
         - name: California Polytechnic State University, San Luis Obispo, CA, USA
+    - name: Javin P Oza
+      email: joza@calpoly.edu
+      orcid: 0000-0002-2902-6939
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
   keywords:
     - cell-free expression
     - liposome encapsulation
