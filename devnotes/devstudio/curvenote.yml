@@ -20,6 +20,7 @@ project:
     - file: main.md
     - file: week1.md
     - file: week2.md
+    - file: week3.md
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
   open_access: true
