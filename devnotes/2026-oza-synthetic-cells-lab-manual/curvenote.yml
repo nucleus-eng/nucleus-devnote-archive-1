@@ -1,5 +1,6 @@
 version: 1
 project:
+  doi: 10.63765/hujx8273
   id: 118a7ada-92d1-448f-adc2-f19c2da16b16
   title: 'Synthetic Cells Course Lab Manual: Cell-free Gene Expression and Liposome Encapsulation'
   authors:
