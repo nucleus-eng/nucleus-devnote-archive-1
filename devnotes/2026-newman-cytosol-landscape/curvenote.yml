@@ -52,6 +52,7 @@ project:
     CDK: cell development kit
   exports:
     - format: meca
+      id: meca
     - format: typst
       template: https://github.com/curvenote-templates/bnext.git
       articles:
@@ -61,6 +62,9 @@ project:
   downloads:
     - id: article
       title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: cytosol-landscape.zip
   references:
     devnotes:
       url: https://devnotes.bnext.bio
