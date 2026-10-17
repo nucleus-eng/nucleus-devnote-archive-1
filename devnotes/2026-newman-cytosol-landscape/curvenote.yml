@@ -30,11 +30,11 @@ project:
       title: 'Discovery Plate: 2 factors — Mg, K'
     - file: experiments/20251106-labcraft-protein-sweep-01/analysis.ipynb
       title: 'Discovery Plate: 3 factors — Mg, ribosomes, T7RNAP'
-    - file: experiments/20260306-discoveryplate-aria-r0/kinetics_QC.ipynb
+    - file: experiments/20260306-discoveryplate-r0/kinetics_QC.ipynb
       title: 'Discovery Plate: 5 factors — salts, PMix, DNA'
-    - file: experiments/20260318-discoveryplate-aria-r1/kinetics_QC.ipynb
+    - file: experiments/20260318-discoveryplate-r1/kinetics_QC.ipynb
       title: 'Discovery Plate: 7 factors — AAs, energy, salts, tRNA'
-    - file: experiments/20260506-discoveryplate-aria-r3/kinetics_QC.ipynb
+    - file: experiments/20260506-discoveryplate-r3/kinetics_QC.ipynb
       title: 'Discovery Plate: 8 factors — energy, salts, DNA, PPK/PolyP'
   venue:
     title: Nucleus
