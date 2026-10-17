@@ -10,9 +10,9 @@ full execution. Nothing reads from glycine or any mounted volume.
 | `20260909-simulated-landscape/` | Figure 1 (simulated) | `fig1_optimum_moves.ipynb` | none |
 | `20251105-labcraft-energy-sweep-01/` | Mg × K heatmap | `Consolidating.ipynb` | 3 |
 | `20251106-labcraft-protein-sweep-01/` | 3D scatter + interaction plots | `analysis.ipynb` | 2 |
-| `20260306-discoveryplate-aria-r0/` | 5-factor pairplot | `kinetics_QC.ipynb` | 5 |
-| `20260318-discoveryplate-aria-r1/` | 7-factor pairplot | `kinetics_QC.ipynb` | 5 |
-| `20260506-discoveryplate-aria-r3/` | 8-factor pairplot | `kinetics_QC.ipynb` | 5 |
+| `20260306-discoveryplate-r0/` | 5-factor pairplot | `kinetics_QC.ipynb` | 5 |
+| `20260318-discoveryplate-r1/` | 7-factor pairplot | `kinetics_QC.ipynb` | 5 |
+| `20260506-discoveryplate-r3/` | 8-factor pairplot | `kinetics_QC.ipynb` | 5 |
 
 All six notebooks execute end to end with zero errors. The five data notebooks
 pin `nucleus-cdk==0.5.0rc2` in their first cell; `fig1_optimum_moves.ipynb` is
@@ -33,9 +33,9 @@ each figure actually reads.
 | --- | --- |
 | `20251105-labcraft-energy-sweep-01` | `20251105-labcraft-energy-sweep-01` |
 | `20251106-labcraft-protein-sweep-01` | `20251106_labcraft_protein_sweep_01` |
-| `20260306-discoveryplate-aria-r0` | `20260306-DisoveryPlate-ARIA-R0` |
-| `20260318-discoveryplate-aria-r1` | `20260318-DiscoveryPlate-ARIA-R1` |
-| `20260506-discoveryplate-aria-r3` | `20260506-DiscoveryPlate-ARIA-R3` |
+| `20260306-discoveryplate-r0` | `20260306-DisoveryPlate-R0` |
+| `20260318-discoveryplate-r1` | `20260318-DiscoveryPlate-R1` |
+| `20260506-discoveryplate-r3` | `20260506-DiscoveryPlate-R3` |
 
 The raw file for the 3-factor sweep lives in a separate tree on glycine
 (`bnext/instrument/biotek-cysteine/experiments/`), not beside its notebook; it
