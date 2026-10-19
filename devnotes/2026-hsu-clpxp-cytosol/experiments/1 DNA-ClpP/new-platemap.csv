@@ -1,0 +1,13 @@
+Well,Experiment,Date,Name,Type,[DNA] (nM)
+F1,20260604-2-ClpXP,2026-06-04,1.38 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,1.38
+G1,20260604-2-ClpXP,2026-06-05,1.38 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,1.38
+H1,20260604-2-ClpXP,2026-06-06,1.38 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,1.38
+F2,20260604-2-ClpXP,2026-06-07,2.76 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,2.76
+G2,20260604-2-ClpXP,2026-06-08,2.76 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,2.76
+H2,20260604-2-ClpXP,2026-06-09,2.76 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,2.76
+F3,20260604-2-ClpXP,2026-06-10,4.14 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,4.14
+G3,20260604-2-ClpXP,2026-06-11,4.14 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,4.14
+H3,20260604-2-ClpXP,2026-06-12,4.14 nM pT7-ClpP + Purified ClpX + Purified GFP-ssrA,Sample,4.14
+F4,20260604-2-ClpXP,2026-06-13,Purified deGFP-ssrA,Control,0
+G4,20260604-2-ClpXP,2026-06-14,Purified deGFP-ssrA,Control,0
+H4,20260604-2-ClpXP,2026-06-15,Purified deGFP-ssrA,Control,0

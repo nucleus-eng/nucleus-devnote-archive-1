@@ -25,6 +25,15 @@ project:
   banner: banner.webp
   toc:
     - file: main.md
+    - file: experiments/No DNA/20260605-No DNA.ipynb
+    - file: experiments/1 DNA-ClpP/new-cdk-version.ipynb
+    - file: experiments/1 DNA-ClpX/Untitled.ipynb
+    - file: experiments/1 DNA-deGFP-ssrA-1/Untitled.ipynb
+    - file: experiments/1 DNA-deGFP-ssrA-2/Untitled1.ipynb
+    - file: experiments/2DNA-GFP_ClpP/Untitled1.ipynb
+    - file: experiments/2DNA-GFP_ClpX/Untitled.ipynb
+    - file: experiments/3DNA/Untitled1.ipynb
+    - file: experiments/3DNA-NEB/Untitled.ipynb
   github: https://github.com/bnext-bio/nucleus-developer-notes
   license: CC-BY-4.0
   open_access: true
@@ -46,6 +55,7 @@ project:
   resources:
     - src/**/*
     - general/**/*
+    - experiments/**/*
   downloads:
     - id: article
       title: Download Article PDF
