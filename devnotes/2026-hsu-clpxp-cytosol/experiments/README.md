@@ -81,12 +81,24 @@ its plot as `Raw Plot.png`, matching the published figure.
 All nine figures are now wired. The only remaining open item is the stale
 `1 DNA-ClpP/Untitled.ipynb` draft noted above, left uncommitted for now.
 
-## Follow-up: BinderHub dependency
+## BinderHub dependency
 
-None of these notebooks install `nucleus-cdk` yet. A later commit needs to
-add this line as the first cell of each wired notebook, so the notebook runs
-on the deployment BinderHub.
+Each wired notebook now starts with this cell, so it installs its own
+dependency on the deployment BinderHub.
 
 ```
 !pip install nucleus-cdk==0.5.0rc2 | tail -n2
 ```
+
+## Normalize Data section removed
+
+Running these notebooks live exposed a bug in `nucleus-cdk==0.5.0rc2`:
+`pr.normalize_data_to_controls` (and, in the two non-template notebooks,
+`data.normalize`) raises a `TypeError` inside pandas. This broke every
+section after it: normalization, kinetic analysis, and the summary plot.
+
+None of the nine wired figures depend on that section. Each notebook's
+labeled figure cell sits under "## Plot Raw Curves", before the normalize
+step. Every cell from "## Normalize Data" onward was deleted from all nine
+notebooks. Each one now ends at its labeled figure cell and runs cleanly
+top to bottom.
