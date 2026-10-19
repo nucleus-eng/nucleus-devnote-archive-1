@@ -111,7 +111,8 @@ Interestingly, the control sample containing purified deGFP-ssrA and purified Cl
 :::
 ::::
 
-:::{figure} ./general/Platereader/No DNA/No DNA.png
+<!-- ./general/Platereader/No DNA/No DNA.png -->
+:::{figure} #20260605-no-dna
 :name: fig:No-DNA
 :align: center
 :width: 90%
@@ -146,7 +147,8 @@ As shown in {ref}`fig:1-DNA-ClpP`, we again observed rapid decrease in deGFP flu
 :::
 ::::
 
-:::{figure} ./general/Platereader/1DNA/1 DNA-ClpP.png
+<!-- ./general/Platereader/1DNA/1 DNA-ClpP.png -->
+:::{figure} #20260604-clpp
 :name: fig:1-DNA-ClpP
 :align: center
 :width: 90%
@@ -178,7 +180,8 @@ Besides using ClpP DNA, we also tested ClpX DNA to express the ClpX protease in 
 :::
 ::::
 
-:::{figure} ./general/Platereader/1DNA/1 DNA-ClpX.png
+<!-- ./general/Platereader/1DNA/1 DNA-ClpX.png -->
+:::{figure} #20260608-clpx
 :name: fig:1-DNA-ClpX
 :align: center
 :width: 90%
@@ -219,7 +222,8 @@ A control reaction lacking ClpX and ClpP was also included for comparison. As ex
 
 ::::{tab-item} deGFP-ssrA (w/ control) 
 :sync: tab1-1
-:::{figure} ./general/Platereader/1DNA/1 DNA-deGFP-ssrA-1.png
+<!-- ./general/Platereader/1DNA/1 DNA-deGFP-ssrA-1.png -->
+:::{figure} #20260605-degfp-ssra-1
 :label: fig:deGFP-ssrA-1
 GFP expression using pT7-deGFP-ssrA DNA in Cytosol reactions incubated at 37 °C for 6 hours. Purified ClpX and ClpP proteins were added to the sample reactions. The control reaction (4.05 nM pT7-deGFP-ssrA only) doesn't contain purified proteins. Data represent the mean of three replicate wells (n = 3), with shaded areas indicating SEM.
 :::
@@ -227,7 +231,8 @@ GFP expression using pT7-deGFP-ssrA DNA in Cytosol reactions incubated at 37 °C
 
 ::::{tab-item} deGFP-ssrA (w/o control)
 :sync: tab1-2
-:::{figure} ./general/Platereader/1DNA/1 DNA-deGFP-ssrA-2.png
+<!-- ./general/Platereader/1DNA/1 DNA-deGFP-ssrA-2.png -->
+:::{figure} #20260605-degfp-ssra-2
 :label: fig:deGFP-ssrA-2
 GFP expression using pT7-deGFP-ssrA DNA in Cytosol reactions incubated at 37 °C for 6 hours. Purified ClpX and ClpP proteins were added to the reactions. Data represent the mean of three replicate wells (n = 3), with shaded areas indicating SEM.
 :::
@@ -267,7 +272,8 @@ We also observed a slight fluorescence recovery after the minimum point in the C
 :::
 ::::
 
-:::{figure} ./general/Platereader/2DNAs/2DNA-GFP_ClpP.png
+<!-- ./general/Platereader/2DNAs/2DNA-GFP_ClpP.png -->
+:::{figure} #20260608-gfp-clpp
 :name: fig:2DNA-GFP_ClpP
 :align: center
 :width: 90%
@@ -296,7 +302,8 @@ GFP fluorescence signal in Cytosol reactions incubated at 37 °C for 6 hours. Th
 | **Total** | **10** | **10** | **10** | **10** |
 :::
 ::::
-:::{figure} ./general/Platereader/2DNAs/2DNA-GFP_ClpX.png
+<!-- ./general/Platereader/2DNAs/2DNA-GFP_ClpX.png -->
+:::{figure} #20260609-gfp-clpx
 :name: fig:2DNA-GFP_ClpX
 :align: center
 :width: 90%
@@ -331,7 +338,8 @@ Finally, we examined the simultaneous expression of three proteins within a sing
 :::
 ::::
 
-:::{figure} ./general/Platereader/3DNAs/3DNA.png
+<!-- ./general/Platereader/3DNAs/3DNA.png -->
+:::{figure} #20260609-3dna
 :name: fig:3DNA
 :align: center
 :width: 90%
@@ -345,7 +353,8 @@ The main difference was expression capacity. Nucleus PURE reached much higher pe
 
 The degradation phase, however, favored NEB PURExpress. In PURExpress reactions, fluorescence dropped to a low, nearly uniform baseline (~2,500–6,000 RFU), showing efficient and sustained degradation. In contrast, Nucleus Cytosol plateaued at much higher fluorescence levels (~23,000, 52,000, and 70,000 RFU, depending on reporter DNA concentration), indicating that degradation stopped before the accumulated deGFP was fully degraded.
 
-:::{figure} ./general/Platereader/3DNAs/3DNA-NEB.png
+<!-- ./general/Platereader/3DNAs/3DNA-NEB.png -->
+:::{figure} #20260617-3dna-neb
 :name: fig:3DNA-NEB
 :align: center
 :width: 90%
