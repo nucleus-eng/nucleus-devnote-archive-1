@@ -10,6 +10,7 @@ __pycache__/
 .git.disable/
 *.mp4
 archive/
+/source/
 
 # Artifacts of the glossary check, written by the workflow and by a local run
 # of the same commands.

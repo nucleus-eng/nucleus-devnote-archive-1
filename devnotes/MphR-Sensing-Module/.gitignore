@@ -1,0 +1,7 @@
+_build/
+# typst export output (curvenote.yml exports.output) — regenerated on every submit
+mphr-sensing-module.pdf
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+.DS_Store
