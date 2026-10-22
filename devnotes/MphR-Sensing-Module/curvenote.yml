@@ -1,0 +1,60 @@
+version: 1
+project:
+  id: mphr-sensing-module
+  title: "MphR Sensing Module"
+  subtitle: "A cell-free macrolide biosensor built on the MphR allosteric transcription factor in the ROSALIND system"
+  description: "Cell-free macrolide biosensor using the MphR allosteric transcription factor in the ROSALIND in vitro transcription system"
+  # TODO: no individual author/contact was credited in the source material,
+  # only the organization below. Supply a corresponding author email before
+  # this passes `curvenote check`.
+  authors:
+    - name: Stemloop
+      affiliations:
+        - name: Stemloop
+  keywords:
+    - MphR
+    - Macrolide biosensor
+    - ROSALIND
+    - Cell-free transcription
+    - Allosteric transcription factor
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+    aTF: allosteric transcription factor
+    MEF: micromolar equivalent fluorescein
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2024-08-05
+  banner: banner.webp
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: mphr-sensing-module.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+    - sequences/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: mphr-sensing-module.zip
+site:
+  template: article-theme
+  nav: []

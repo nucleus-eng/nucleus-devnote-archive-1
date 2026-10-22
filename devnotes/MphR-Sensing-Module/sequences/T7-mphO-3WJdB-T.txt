@@ -1,0 +1,10 @@
+# DNA-reporter: T7-mphO-3WJdB-T
+# Plasmid: pUC19-T7-mphO-3WJdB-T (Backbone: pUC19, Addgene #140386 - UBMTA)
+# Source: MphR Sensing Module DevNote
+
+gcggataacaatttcacacaggaaacagctatgaccatgattacgccaagcttgcatgcc
+tgcaggtcgactctagataatacgactcactataggagggaatataaccgacgtgactgt
+tacatttaggtggcccacatactctgatgatccgagacggtcgggtccagatattcgtat
+ctgtcgagtagagtgtgggctcggatcattcatggcaagagacggtcgggtccagatatt
+cgtatctgtcgagtagagtgtgggctcttgccatgtgtatgtgggtagcataaccccttg
+gggcctctaaacgggtcttgaggggttttttg
