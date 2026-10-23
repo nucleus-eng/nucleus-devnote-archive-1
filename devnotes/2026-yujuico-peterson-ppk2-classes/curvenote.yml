@@ -1,6 +1,6 @@
 version: 1
 project:
-  id: 2026-yujuico-peterson-ppk2-classes
+  id: yujuico-peterson-ppk2-classes
   title: "Combining Class I & Class II PPK2 in Synthetic Cells"
   subtitle: "Purifying, assaying, and encapsulating Class I and Class II PPK2 enzymes, alone and in combination, in PURExpress and Nucleus Cytosol"
   description: "Characterizing the enzyme kinetics of Class I and Class II PPK2 polyphosphate kinases, purified and assayed independently and combined, then encapsulated in PURExpress and cytosol synthetic cells"
