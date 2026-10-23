@@ -1,0 +1,7 @@
+_build/
+# typst export output (curvenote.yml exports.output) — regenerated on every submit
+ppk2-classes.pdf
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+.DS_Store

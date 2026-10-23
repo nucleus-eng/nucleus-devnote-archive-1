@@ -1,0 +1,64 @@
+version: 1
+project:
+  id: 2026-yujuico-peterson-ppk2-classes
+  title: "Combining Class I & Class II PPK2 in Synthetic Cells"
+  subtitle: "Purifying, assaying, and encapsulating Class I and Class II PPK2 enzymes, alone and in combination, in PURExpress and Nucleus Cytosol"
+  description: "Characterizing the enzyme kinetics of Class I and Class II PPK2 polyphosphate kinases, purified and assayed independently and combined, then encapsulated in PURExpress and cytosol synthetic cells"
+  authors:
+    - name: Jillian Yujuico
+      email: jyujuico@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
+    - name: Zach Peterson
+      email: zpeter06@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
+  keywords:
+    - PPK2
+    - PURExpress
+    - Liposome encapsulation
+    - Polyphosphate
+    - ATP regeneration
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+    PPK2: polyphosphate kinase 2
+    sfGFP: superfolder green fluorescent protein
+    RLU: relative luminescence units
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-06-12
+  banner: banner.webp
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: ppk2-classes.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: ppk2-classes.zip
+site:
+  template: article-theme
+  nav: []
