@@ -1,6 +1,6 @@
 version: 1
 project:
-  id: 2026-nguyen-ppk2-purexpress
+  id: nguyen-ppk2-purexpress
   title: "Supplementation and Encapsulation of PPK2 Enzymes in PURExpress Systems"
   subtitle: "Using PPK2/polyphosphate ATP regeneration to sustain sfGFP expression in liposome-encapsulated PURExpress"
   description: "Supplementing liposome-encapsulated PURExpress reactions with PPK2 and polyphosphate to regenerate ATP/NTPs and sustain cell-free sfGFP expression"
