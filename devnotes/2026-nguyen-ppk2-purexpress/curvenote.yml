@@ -1,0 +1,58 @@
+version: 1
+project:
+  id: 2026-nguyen-ppk2-purexpress
+  title: "Supplementation and Encapsulation of PPK2 Enzymes in PURExpress Systems"
+  subtitle: "Using PPK2/polyphosphate ATP regeneration to sustain sfGFP expression in liposome-encapsulated PURExpress"
+  description: "Supplementing liposome-encapsulated PURExpress reactions with PPK2 and polyphosphate to regenerate ATP/NTPs and sustain cell-free sfGFP expression"
+  authors:
+    - name: Sunayana Nguyen
+      email: snguy230@calpoly.edu
+      affiliations:
+        - name: California Polytechnic State University, San Luis Obispo, CA, USA
+      corresponding: true
+  keywords:
+    - PPK2
+    - PURExpress
+    - Liposome encapsulation
+    - Polyphosphate
+    - ATP regeneration
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+    PPK2: polyphosphate kinase 2
+    sfGFP: superfolder green fluorescent protein
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-06-10
+  banner: banner.webp
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: ppk2-purexpress.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: ppk2-purexpress.zip
+site:
+  template: article-theme
+  nav: []
