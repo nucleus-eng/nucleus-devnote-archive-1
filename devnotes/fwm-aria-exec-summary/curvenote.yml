@@ -1,0 +1,95 @@
+version: 1
+project:
+  id: fwm-aria-exec-summary
+  title: "An AI Scientist For High-Throughput Bio-Processing"
+  subtitle: "ARIA AI Scientist Program: Executive Summary"
+  description: "AI-Driven Energy Development and Optimization of a Cell-Free System"
+  authors:
+    - name: Maxwell Shapiro
+      affiliations:
+        - fwm
+      orcid: 0009-0005-9580-0098
+      corresponding: false
+    - name: Margarita Khariton
+      affiliations:
+        - bnext
+      orcid: 0000-0002-7454-7442
+      corresponding: false
+    - name: Joseph Lozier
+      affiliations:
+        - fwm
+      orcid: 0009-0003-1646-8003
+      corresponding: false
+    - name: Ash Eldritch
+      affiliations:
+        - fwm
+      corresponding: false
+    - name: Anton Jackson-Smith
+      affiliations:
+        - bnext
+      orcid: 0000-0002-7334-3368
+      corresponding: false
+    - name: Scott C. Riggs
+      affiliations:
+        - fwm
+      email: scr@findwhatmatters.ai
+      orcid: 0009-0001-2514-1358
+      corresponding: true
+  affiliations:
+    - id: fwm
+      name: Find What Matters, Inc.
+      url: https://findwhatmatters.ai
+    - id: bnext
+      name: b.next
+      url: https://bnext.bio
+  keywords:
+    - AI Scientist
+    - Bayesian Optimization
+    - Compositional Biology
+    - Cytosol
+    - IGOR
+    - Synthetic Biology
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+    IGOR: Iterative Guide and Orchestrated Research, our AI scientist.
+    PAP: pyruvate-acetate pathway
+    PURE: Protein synthesis Using Recombinant Elements, our base cytosol for compositional biology.
+    PPK: polyphosphate kinase
+    DOE: design of experiments
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-10-23
+  banner: banner.webp
+  thumbnail: figures/final-report-overview.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: false
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: fwm-aria-exec-summary.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: fwm-aria-exec-summary.zip
+site:
+  template: article-theme
+  nav: []
