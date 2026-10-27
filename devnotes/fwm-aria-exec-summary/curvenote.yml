@@ -1,47 +1,16 @@
 version: 1
 project:
   id: fwm-aria-exec-summary
-  title: "An AI Scientist For High-Throughput Bio-Processing"
+  title: "AI-driven Cell-Free Energy Development and Optimization—Final Report"
   subtitle: "ARIA AI Scientist Program: Executive Summary"
   description: "AI-Driven Energy Development and Optimization of a Cell-Free System"
   authors:
-    - name: Maxwell Shapiro
-      affiliations:
-        - fwm
-      orcid: 0009-0005-9580-0098
-      corresponding: false
-    - name: Margarita Khariton
-      affiliations:
-        - bnext
-      orcid: 0000-0002-7454-7442
-      corresponding: false
-    - name: Joseph Lozier
-      affiliations:
-        - fwm
-      orcid: 0009-0003-1646-8003
-      corresponding: false
-    - name: Ash Eldritch
-      affiliations:
-        - fwm
-      corresponding: false
-    - name: Anton Jackson-Smith
-      affiliations:
-        - bnext
-      orcid: 0000-0002-7334-3368
-      corresponding: false
-    - name: Scott C. Riggs
-      affiliations:
-        - fwm
+    - name: Find What Matters
       email: scr@findwhatmatters.ai
-      orcid: 0009-0001-2514-1358
       corresponding: true
-  affiliations:
-    - id: fwm
-      name: Find What Matters, Inc.
-      url: https://findwhatmatters.ai
-    - id: bnext
-      name: b.next
-      url: https://bnext.bio
+    - name: b.next
+      email: anton@bnext.bio
+      corresponding: true
   keywords:
     - AI Scientist
     - Bayesian Optimization
@@ -59,7 +28,7 @@ project:
     DOE: design of experiments
   references:
     devnotes: https://devnotes.bnext.bio
-  date: 2026-10-23
+  date: 2026-10-26
   banner: banner.webp
   thumbnail: figures/final-report-overview.png
   toc:
