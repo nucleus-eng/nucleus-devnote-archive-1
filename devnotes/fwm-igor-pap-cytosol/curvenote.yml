@@ -1,0 +1,105 @@
+version: 1
+project:
+  id: fwm-igor-pap-cytosol
+  title: "Wrangled, Grounded, Constrained, & Mechanistic"
+  subtitle: "What it took to successfully deploy an AI scientist in compositional biology"
+  description: "Deploying the IGOR Bayesian-optimization-backed AI co-scientist to optimize a pyruvate-acetate ATP-regeneration pathway in Cytosol cell-free protein synthesis"
+  authors:
+    - name: Maxwell Shapiro
+      affiliations:
+        - fwm
+      orcid: 0009-0005-9580-0098
+      corresponding: false
+    - name: Margarita Khariton
+      affiliations:
+        - bnext
+      orcid: 0000-0002-7454-7442
+      corresponding: false
+    - name: Joseph Lozier
+      affiliations:
+        - fwm
+      orcid: 0009-0003-1646-8003
+      corresponding: false
+    - name: Ash Eldritch
+      affiliations:
+        - fwm
+      corresponding: false
+    - name: Anton Jackson-Smith
+      affiliations:
+        - bnext
+      orcid: 0000-0002-7334-3368
+      corresponding: false
+    - name: Scott C. Riggs
+      affiliations:
+        - fwm
+      email: scr@findwhatmatters.ai
+      orcid: 0009-0001-2514-1358
+      corresponding: true
+  affiliations:
+    - id: fwm
+      name: Find What Matters, Inc.
+      url: https://findwhatmatters.ai
+    - id: bnext
+      name: b.next
+      url: https://bnext.bio
+  keywords:
+    - AI co-scientist
+    - Bayesian optimization
+    - Cell-free protein synthesis
+    - Cytosol
+    - IGOR
+    - Pyruvate-acetate pathway
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+    IGOR: Iterative Guide and Orchestrated Research, our AI scientist.
+    CFPS: cell-free protein synthesis
+    PAP: pyruvate-acetate pathway
+    LLM: large language model
+    DOE: design of experiments
+    GES: generated experimental suggestion, one of IGOR's proposed conditions
+    SMix: Cytosol small molecule mix
+    PMix: Cytosol protein mix
+    CP: creatine phosphate
+    CK: creatine kinase
+    MgOAc: magnesium acetate
+    MgGlu: magnesium glutamate
+    FAD: flavin adenine dinucleotide
+    TPP: thiamine pyrophosphate
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-10-26
+  banner: banner.webp
+  thumbnail: figures/contour_r1016_E17-thumbnail.png
+  toc:
+    - file: main.md
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+  jupyter: false
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: fwm-igor-pap-cytosol.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+    - resources/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: fwm-igor-pap-cytosol.zip
+site:
+  template: article-theme
+  nav: []
