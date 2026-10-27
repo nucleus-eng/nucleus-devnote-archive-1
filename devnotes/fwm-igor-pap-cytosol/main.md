@@ -13,12 +13,7 @@ TODO before this devnote is publish-ready (see PR description / conversion notes
    and the two large (6-7 MB) interactive QC HTML reports
    (20261018_PAP-LC_labcraft_QC_mScarlet_g75.html and its "_9h" variant).
    Decide whether/where to reference them.
-2. The new Summary (used as the frontmatter abstract) says "Over five
-   experimental rounds", but the Results section intro still says "over four
-   rounds" (unchanged in the 2026-10-26 (1).docx update). Confirm which count
-   is correct - likely whether Round 0 (baseline) counts as one of "the
-   rounds" or not.
-3. The Observation 1 / Example 1 paragraph (Magnesium-phosphate coupling) has
+2. The Observation 1 / Example 1 paragraph (Magnesium-phosphate coupling) has
    what looks like leftover/accidental text, "qwED", inserted mid-sentence in
    the 2026-10-26 (1).docx update (search for "qwED" below). Confirm intended
    wording.
@@ -94,7 +89,7 @@ IGOR populated its internal corpus of relevant literature with sources that were
 
 # Results
 
-Characterizing the performance of AI co-scientists is a known challenge; at present, no universally agreed-upon benchmarks exist [[Gottweis *et al.* 2026](https://doi.org/10.1038/s41586-026-10644-y)]; [[Kapoor *et al.* 2025](https://doi.org/10.48550/arXiv.2510.11977)]; [[Mohammadi *et al.* 2025](https://doi.org/10.1145/3711896.3736570)], and randomized control studies (involving parallel optimization campaigns orchestrated without AI) are cost prohibitive. In light of this, and also in lieu of an exhaustive chronology of all of IGOR's intermediate outputs, here we report on our distilled observations of IGOR's empirical performance over four rounds. Our aims are to clarify (via concrete examples) how IGOR supported experimental execution and to illuminate generalizable lessons for successful AI co-scientist deployment.
+Characterizing the performance of AI co-scientists is a known challenge; at present, no universally agreed-upon benchmarks exist [[Gottweis *et al.* 2026](https://doi.org/10.1038/s41586-026-10644-y)]; [[Kapoor *et al.* 2025](https://doi.org/10.48550/arXiv.2510.11977)]; [[Mohammadi *et al.* 2025](https://doi.org/10.1145/3711896.3736570)], and randomized control studies (involving parallel optimization campaigns orchestrated without AI) are cost prohibitive. In light of this, and also in lieu of an exhaustive chronology of all of IGOR's intermediate outputs, here we report on our distilled observations of IGOR's empirical performance over five rounds. Our aims are to clarify (via concrete examples) how IGOR supported experimental execution and to illuminate generalizable lessons for successful AI co-scientist deployment.
 
 ### Observation 1: IGOR generated scientific insight and facilitated quantitative interpretation
 
