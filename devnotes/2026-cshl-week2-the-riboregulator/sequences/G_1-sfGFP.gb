@@ -1,0 +1,102 @@
+LOCUS       G_1_sfGFP                956 bp ds-DNA     linear       23-OCT-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     primer          1..25
+                     /label="T7fwd"
+                     /note="sequence: TTCTAATACGACTCACTATAGGGAG"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    4..20
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+     misc_feature    21..37
+                     /label="5hp"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+     misc_feature    38..53
+                     /label="2r"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+     misc_feature    54..59
+                     /label="rbs'"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     misc_feature    60..69
+                     /label=1
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     misc_feature    70..72
+                     /label="L"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     misc_feature    73..136
+                     /label="R3"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    137..140
+                     /label="s4u"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    141..146
+                     /label="u"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     misc_feature    147..156
+                     /label="1'"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    157..162
+                     /label="rbs"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     misc_feature    163..168
+                     /label="c'"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    169..189
+                     /label="n"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     CDS             169..189
+                     /label="N linker"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MKQNKEQ"
+     misc_feature    190..909
+                     /label="sfGFP"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     CDS             190..909
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="LSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK**"
+     misc_feature    190..909
+                     /label="sfGFP_2tta"
+     misc_feature    910..956
+                     /label="T7 terminator (T7t)"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     primer          complement(931..956)
+                     /label="T7rev"
+                     /note="sequence: caaaaaacccctcaagacccgtttag"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+ORIGIN
+        1 TTCTAATACG ACTCACTATA GGGAGATTCG TCTCCCACTA CATCCACATA CTACCTCCTT
+       61 TACTTCACAT TCGGGTCGGC ATGGCATGTG CACCTCCTCG CGGTCCGACC TGGGCTACTT
+      121 CGGTAGGCTA AGGCACAGTA TGATGTTGTG AAGTGAAGGA GGATATAAAT GAAACAGAAC
+      181 AAAGAACAGT TAAGCAAAGG AGAAGAACTT TTCACTGGAG TTGTCCCAAT TCTTGTTGAA
+      241 TTAGATGGTG ATGTTAATGG GCACAAATTT TCTGTCCGTG GAGAGGGTGA AGGTGATGCT
+      301 ACAAACGGAA AACTCACCCT TAAATTTATT TGCACTACTG GAAAACTACC TGTTCCGTGG
+      361 CCAACACTTG TCACTACTCT GACCTATGGT GTTCAATGCT TTTCCCGTTA TCCGGATCAC
+      421 ATGAAACGGC ATGACTTTTT CAAGAGTGCC ATGCCCGAAG GTTATGTACA GGAACGCACT
+      481 ATATCTTTCA AAGATGACGG GACCTACAAG ACGCGTGCTG AAGTCAAGTT TGAAGGTGAT
+      541 ACCCTTGTTA ATCGTATCGA GTTAAAGGGT ATTGATTTTA AAGAAGATGG AAACATTCTT
+      601 GGACACAAAC TCGAGTACAA CTTTAACTCA CACAATGTAT ACATCACGGC AGACAAACAA
+      661 AAGAATGGAA TCAAAGCTAA CTTCAAAATT CGCCACAACG TTGAAGATGG TTCCGTTCAA
+      721 CTAGCAGACC ATTATCAACA AAATACTCCA ATTGGCGATG GCCCTGTCCT TTTACCAGAC
+      781 AACCATTACC TGTCGACACA ATCTGTCCTT TCGAAAGATC CCAACGAAAA GCGTGACCAC
+      841 ATGGTCCTTC TTGAGTTTGT AACTGCTGCT GGGATTACAC ATGGCATGGA TGAGCTCTAC
+      901 AAATAATAAt agcataaccc cttggggcct ctaaacgggt cttgaggggt tttttg
+//

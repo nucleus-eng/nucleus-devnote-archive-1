@@ -1,0 +1,49 @@
+LOCUS       pT7_TetR                 723 bp ds-DNA     linear       23-OCT-2026
+DEFINITION  .
+ACCESSION   urn.local...1513086269447.16
+COMMENT     Imported using the Genbank importer.
+            File name: 108529-attachment_MteXDJKOJx0Z.gb
+            ApEinfo:methylated:1.
+FEATURES             Location/Qualifiers
+     primer          1..25
+                     /label="T7fwd"
+                     /note="sequence: TTCTAATACGACTCACTATAGGGAG"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    4..20
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     RBS             21..48
+                     /label="tet1"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+     misc_feature    49..672
+                     /label="TetR"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+                     /note="Geneious type: CDS"
+     misc_feature    677..723
+                     /label="T7 terminator (T7t)"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     primer          complement(698..723)
+                     /label="T7rev"
+                     /note="sequence: caaaaaacccctcaagacccgtttag"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+ORIGIN
+        1 ttctaatacg actcactata ggaagagagt caattcaggg tggtgaatat gtccagatta
+       61 gataaaagta aagtgattaa cagcgcatta gagctgctta atgaggtcgg aatcgaaggt
+      121 ttaacaaccc gtaaactcgc ccagaagcta ggtgtagagc agcctacatt gtattggcat
+      181 gtaaaaaata agcgggcttt gctcgacgcc ttagccattg agatgttaga taggcaccat
+      241 actcactttt gccctttaga aggggaaagc tggcaagatt ttttacgtaa taacgctaaa
+      301 agttttagat gtgctttact aagtcatcgc gatggagcaa aagtacattt aggtacacgg
+      361 cctacagaaa aacagtatga aactctcgaa aatcaattag cctttttatg ccaacaaggt
+      421 ttttcactag agaatgcatt atatgcactc agcgctgtgg ggcattttac tttaggttgc
+      481 gtattggaag atcaagagca tcaagtcgct aaagaagaaa gggaaacacc tactactgat
+      541 agtatgccgc cattattacg acaagctatc gaattatttg atcaccaagg tgcagagcca
+      601 gccttcttat tcggccttga attgatcata tgcggattag aaaaacaact taaatgtgaa
+      661 agtgggtcct gataactagc ataacccctt ggggcctcta aacgggtctt gaggggtttt
+      721 ttg
+//

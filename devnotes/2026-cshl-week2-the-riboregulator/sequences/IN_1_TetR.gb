@@ -1,0 +1,52 @@
+LOCUS       IN_1_TetR                300 bp ds-DNA     linear       23-OCT-2026
+DEFINITION  .
+FEATURES             Location/Qualifiers
+     primer          1..23
+                     /label="fwd_U1"
+                     /note="sequence: CATTACTCGCATCCATTCTCAGG"
+                     /ApEinfo_revcolor="#f7977a"
+                     /ApEinfo_fwdcolor="#f7977a"
+     misc_feature    1..40
+                     /label="U1"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     misc_feature    44..60
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     misc_feature    63..81
+                     /label="tetO"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     misc_feature    84..103
+                     /label="d20"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    104..113
+                     /label=1
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    114..119
+                     /label="u"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+     misc_feature    126..204
+                     /label="Thyb10"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    205..244
+                     /label="Ux"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     primer          complement(225..244)
+                     /label="rev_Ux"
+                     /note="sequence: GGTGGAAGGGCTCGGAGTTG"
+                     /ApEinfo_revcolor="#f7977a"
+                     /ApEinfo_fwdcolor="#f7977a"
+ORIGIN
+        1 CATTACTCGC ATCCATTCTC AGGCTGTCTC GTCTCGTCTC TTCTAATACG ACTCACTATA
+       61 GGTCCCTATC AGTGATAGAG ACCAAATACT TAATACAAAA TAATCACTTC ACAACATCAa
+      121 taatcAGATA ACAGATACtt cgGtatctgt tatctgttTT TTTTcAACAG ATAGCCGCGt
+      181 tcgCGCGGCt atctgttTTT TTTtCCAGGA TACATAGATT ACCACAACTC CGAGCCCTTC
+      241 CACCactgtg tacttgttat aacatctgac agttaaagtc gggagaatag gagccgcaat
+//

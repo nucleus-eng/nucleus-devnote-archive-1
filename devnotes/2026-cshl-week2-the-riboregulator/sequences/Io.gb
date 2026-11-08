@@ -1,0 +1,57 @@
+LOCUS       Io                       304 bp ds-DNA     circular     23-OCT-2026
+DEFINITION  synthetic circular DNA.
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+COMMENT     Imported using the Genbank importer.
+            File name: pTwist+Amp+High+Copy.gb
+FEATURES             Location/Qualifiers
+     misc_feature    1..30
+                     /label="Ug"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     misc_feature    31..70
+                     /label="U1"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     primer          71..95
+                     /label="T7fwd"
+                     /note="sequence: TTCTAATACGACTCACTATAGGGAG"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    74..90
+                     /label="T7 promoter"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     misc_feature    91..106
+                     /label="hp5"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     misc_feature    108..123
+                     /label="Io"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+     misc_feature    124..208
+                     /label="Thyb10"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     primer          complement(183..208)
+                     /label="Thyb10rev"
+                     /note="sequence: aAAAAAAaacagataGCCGCGcgaaC"
+                     /ApEinfo_revcolor="#f7977a"
+                     /ApEinfo_fwdcolor="#f7977a"
+     misc_feature    209..264
+                     /label="riboJn"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     misc_feature    265..304
+                     /label="Ux"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+ORIGIN
+        1 gaagtctaac gctgctctgg gctaactgtc CATTACTCGC ATCCATTCTC AGGCTGTCTC
+       61 GTCTCGTCTC TTCTAATACG ACTCACTATA GGGAGATTCG TCTCCCAATC AATAACACAC
+      121 ATAataatcA GATAACAGAT ACttcgGtat ctgttatctg ttTTTTTTcA ACAGATAGCC
+      181 GCGttcgCGC GGCtatctgt tTTTTTTtAG CTGTCACCGG ATGTGCTTTC CGGTCTGATG
+      241 AGTCCGTGAG GACGAAACAG CCTCCCAGGA TACATAGATT ACCACAACTC CGAGCCCTTC
+      301 CACC
+//
