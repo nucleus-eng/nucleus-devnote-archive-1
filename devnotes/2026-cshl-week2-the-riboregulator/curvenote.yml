@@ -1,6 +1,6 @@
 version: 1
 project:
-  id: 2026-cshl-week2-the-riboregulator
+  id: cshl-week2-the-riboregulator
   title: "Testing Integration of a TetR Biosensor with a Toehold Exchange Riboregulator in Developer Cells with Nucleus Cytosol"
   subtitle: "CSHL Synthetic Biology 2026"
   description: "A TetR-based aTc biosensor coupled to a toehold exchange riboregulator is tested in Nucleus Cytosol, first in bulk PURExpress reactions and then encapsulated in Developer Cells."
