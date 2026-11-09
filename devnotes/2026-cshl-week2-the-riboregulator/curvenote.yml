@@ -1,0 +1,82 @@
+version: 1
+project:
+  id: 2026-cshl-week2-the-riboregulator
+  title: "Testing Integration of a TetR Biosensor with a Toehold Exchange Riboregulator in Developer Cells with Nucleus Cytosol"
+  subtitle: "CSHL Synthetic Biology 2026"
+  description: "A TetR-based aTc biosensor coupled to a toehold exchange riboregulator is tested in Nucleus Cytosol, first in bulk PURExpress reactions and then encapsulated in Developer Cells."
+  authors:
+    - name: Samuel W. Schaffter
+      email: samuel.schaffter@nist.gov
+      orcid: 0000-0002-7259-7374
+      affiliations:
+        - name: NIST
+      corresponding: true
+    - name: Samuel Chen
+      email: samjchen@umich.edu
+      orcid: 0000-0001-8501-7175
+      affiliations:
+        - name: University of Michigan
+      corresponding: true
+    - name: CSHL Week 2 Participants
+      affiliations:
+        - name: CSHL Synthetic Biology Summer Course
+  keywords:
+    - TetR biosensor
+    - Toehold exchange riboregulator
+    - Developer Cells
+    - Nucleus Cytosol
+    - Anhydrotetracycline
+  abbreviations:
+    aTc: anhydrotetracycline
+    THE: toehold exchange
+    TX: transcription
+    GFP: green fluorescent protein
+    CFP: cyan fluorescent protein
+    CDK: cell development kit
+  references:
+    devnotes: https://devnotes.bnext.bio
+  date: 2026-07-29
+  banner: banner.webp
+  thumbnail: assets/thumbnail.png
+  toc:
+    - file: main.md
+    - file: experiments/20260728-tetr-biosensor-devcells-4nM-2nM/analysis.ipynb
+      title: Figure 10 analysis (4 nM:2 nM ratio)
+    - file: experiments/20260730-tetr-biosensor-devcells-20nM-2nM/analysis.ipynb
+      title: Figure 12-13 analysis (20 nM:2 nM ratio)
+    - file: experiments/20260731-tetr-biosensor-devcells-final/analysis.ipynb
+      title: Figure 14 analysis (all conditions)
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  plugins:
+    - lorem.mjs
+    - ../../plugins/seqviz/seqviz.mjs
+  jupyter: true
+  exports:
+    - format: meca
+      id: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: 2026-cshl-week2-the-riboregulator.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - figures/**/*
+    - sequences/**/*
+    - experiments/**/*
+    - resources/**/*
+    - assets/**/*
+  downloads:
+    - id: article
+      title: Download Article PDF
+    - id: meca
+      title: Computational Archive
+      filename: 2026-cshl-week2-the-riboregulator.zip
+site:
+  template: article-theme
+  nav: []
