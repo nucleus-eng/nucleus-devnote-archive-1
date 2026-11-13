@@ -78,6 +78,14 @@ full ingest notes.
 This DevNote presents preliminary results from the
 [2026 CSHL Synthetic Biology Summer Course](https://meetings.cshl.edu/courses.aspx?course=C-SYNBIO).
 It is not a complete peer-reviewed research output.
+These opinions, recommendations, findings, and conclusions do not
+necessarily reflect the views or policies of NIST or the United States
+Government. Certain equipment, instruments, software, or materials are
+identified in this paper in order to specify the experimental procedure
+adequately. Such identification is not intended to imply recommendation or
+endorsement of any product or service by NIST, nor is it intended to imply
+that the materials or equipment identified are necessarily the best
+available for the purpose.
 :::
 
 # Overview
