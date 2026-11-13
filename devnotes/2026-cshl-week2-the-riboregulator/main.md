@@ -88,8 +88,8 @@ instructors, and teaching assistants helped optimize an anhyrotetracycline
 derepressed in the presence of aTc via the TetR transcription factor. This
 aTc sensor was first optimized in bulk cell-free expression reactions using
 PURExpress. The unregulated toehold exchange riboregulator circuit and the
-full aTc sensing circuit were then tested in an encapsulated cell-free
-expression system (Developer Cells).
+full aTc sensing circuit were then tested in Developer Cells (DevCells), an encapsulated cell-free
+expression system.
 
 # Bill of Materials
 
@@ -254,11 +254,11 @@ compiler:
   - With respect to DevCell preparation, the protocol did not deviate from
     the Nucleus protocol, other than the outer solution osmolarity, which
     was 1050 mmol/kg here.
-  - The Cytosol reaction set up table shows the concentrations and volumes
+  - The Cytosol reaction setup table shows the concentrations and volumes
     used for each of the samples. The Membrane composition and Outer
     solution tables show the mixtures used to prepare the DevCells.
-  - For DevCell experiments that included TetR, TetR used was expressed in a
-    bulk reaction of Nucleus Cytosol using 2 nM of linear `T7_TetR` template
+  - For DevCell experiments that included TetR, TetR was expressed in a
+    bulk reaction of Nucleus Cytosol using 4 nM of linear `T7_TetR` template
     ({ref}`seq-pt7-tetr`).
     The reaction was incubated at 37 °C for at least 3 h.
   - This TetR-enriched cytosol was then mixed at a 1:4.56 volume ratio with
@@ -270,7 +270,7 @@ compiler:
   Each sample was sufficiently diluted to
   prevent overcrowding of DevCells in the imaging wells. After initial
   imaging, the samples were incubated at 37 °C for 1.5 h or 2 h in a
-  benchtop incubator before post-incubation imaging.
+  benchtop incubator before the first post-incubation imaging.
 - After this first image, the samples were returned to the incubator and
   incubated at 37 °C for another 3 h before taking a final image.
 - Imaging was conducted on a Cephla Squid fluorescence microscope with a 20x
@@ -294,29 +294,28 @@ compiler:
   [Nucleus Cell Development Kit](https://github.com/nucleus-eng/nucleus)
   (nucleus-cdk), software developed by b.next for Nucleus.
 
-## Cytosol reaction set up table
+## Cytosol reaction setup table
 
 The last four columns indicate the volumes of each reagent to add for the
 four different samples tested, for encapsulating cell-free reactions in
 DevCells. These samples are detailed in {ref}`fig2`.
 
-:::{table} Cytosol reaction set up
+:::{table} Cytosol reaction setup
 :label: tbl-cytosol-reaction
-:align: center
 
-| Component | Stock Concentration | Final Concentration | Negative Control Volume (µL) | Positive Control Volume (µL) | EXP OFF Volume (µL) | EXP ON Volume (µL) |
-| --- | --- | --- | --- | --- | --- | --- |
-| SMix | 3.33x | 1.09x | 7.2 | 7.2 | 7.2 | 7.2 |
-| PMix | 15 mg/mL | 0.95 mg/mL | 1.4 | 1.4 | 1.4 | 1.4 |
-| Ribosomes | 10 µM | 0.36 µM | 0.8 | 0.8 | 0.8 | 0.8 |
-| tRNA | 35 mg/mL | 3.5 mg/mL | 2.4 | 2.4 | 2.4 | 2.4 |
-| DNA template for Gate (`G_1 GFP`, {ref}`seq-g1-sfgfp`) | 100 nM | 2 nM | 0.44 | 0.44 | 0.44 | 0.44 |
-| DNA template for complementary input (`IN_1`, {ref}`seq-in1`, or `IN_1_TetR`, {ref}`seq-in1-tetr`) | 100 nM | 18 nM | 0 | 3.96 | 3.96 | 3.96 |
-| Non-complementary input DNA (`Io`, {ref}`seq-io`) | 100 nM | 18 nM | 3.96 | 0 | 0 | 0 |
-| TetR-enriched cytosol | 1x | 0.215x | 0 | 0 | 4.73 | 4.73 |
-| RNase Inhibitor | 40 000 U/mL | 2000 U/mL | 1.4 | 1.4 | 1.4 | 1.4 |
-| Opti-Prep | — | 3.6% | 0.8 | 0.8 | 0.8 | 0.8 |
-| Water | — | — | 4.77 | 4.77 | 0 | 0 |
+| Component                                                                                          | Stock Concentration | Final Concentration | Negative Control Volume (µL) | Positive Control Volume (µL) | EXP OFF Volume (µL) | EXP ON Volume (µL) |
+| -------------------------------------------------------------------------------------------------- | ------------------- | ------------------- | ---------------------------- | ---------------------------- | ------------------- | ------------------ |
+| SMix                                                                                               | 3.33x               | 1.09x               | 7.2                          | 7.2                          | 7.2                 | 7.2                |
+| PMix                                                                                               | 15 mg/mL            | 0.95 mg/mL          | 1.4                          | 1.4                          | 1.4                 | 1.4                |
+| Ribosomes                                                                                          | 10 µM               | 0.36 µM             | 0.8                          | 0.8                          | 0.8                 | 0.8                |
+| tRNA                                                                                               | 35 mg/mL            | 3.5 mg/mL           | 2.4                          | 2.4                          | 2.4                 | 2.4                |
+| DNA template for Gate (`G_1 GFP`, {ref}`seq-g1-sfgfp`)                                             | 100 nM              | 2 nM                | 0.44                         | 0.44                         | 0.44                | 0.44               |
+| DNA template for complementary input (`IN_1`, {ref}`seq-in1`, or `IN_1_TetR`, {ref}`seq-in1-tetr`) | 100 nM              | 18 nM               | 0                            | 3.96                         | 3.96                | 3.96               |
+| Non-complementary input DNA (`Io`, {ref}`seq-io`)                                                  | 100 nM              | 18 nM               | 3.96                         | 0                            | 0                   | 0                  |
+| TetR-enriched cytosol                                                                              | 1x                  | 0.215x              | 0                            | 0                            | 4.73                | 4.73               |
+| RNase Inhibitor                                                                                    | 40 000 U/mL         | 2000 U/mL           | 1.4                          | 1.4                          | 1.4                 | 1.4                |
+| Opti-Prep                                                                                          | —                   | 3.6%                | 0.8                          | 0.8                          | 0.8                 | 0.8                |
+| Water                                                                                              | —                   | —                   | 4.77                         | 4.77                         | 0                   | 0                  |
 :::
 
 ## Membrane composition table
@@ -354,13 +353,13 @@ we sought to test toehold exchange riboregulators
 and small molecule biosensors in DevCells. We first validated that the coupling of a TetR-based biosensor
 and the toehold exchange riboregulators worked in bulk cell-free expression
 ({ref}`fig1`). Due to constraints on the available fluorescence channels on the
-microscopes available at the course we had to switch from CFP expression in
+microscopes available at the course, we had to switch from CFP expression in
 bulk reactions to GFP expression in the DevCell reactions. Although we do not
 expect this change to dramatically change system behavior, a detailed
 comparison would be warranted in a future study. {ref}`fig2` shows the
 schematics of the different systems we encapsulated in DevCells for testing.
 In DevCells, we initially tested the same concentrations of Input template
-and Gate template that we used in the bulk cell-free experiments but we did
+and Gate template that we used in the bulk cell-free experiments, but we did
 not observe much difference in expression levels between positive and
 negative controls ({ref}`fig3`, {ref}`fig4`), which contained the unregulated toehold
 exchange riboregulator circuit ({ref}`fig2`). We hypothesized that this might be
@@ -418,9 +417,8 @@ surrounding the DevCells.
 :align: center
 :width: 90%
 Representative images of GFP fluorescence in DevCells after cell-free
-expression at 37 °C. Here, the input-gate template ratio was (4 nM:2 nM),
-and TetR (4 nM template) was co-expressed with the input and gate. Contrast
-and bright adjustments were uniformly applied across all images for GFP
+expression at 37 °C. Here, the input-gate template ratio was 4 nM:2 nM. Contrast
+and brightness adjustments were uniformly applied across all images for GFP
 (green) and Cy5 membrane dye (red) fluorescence channels. Scale bar: 20 µm.
 :::
 
@@ -442,7 +440,7 @@ sample. See {ref}`fig2` for schematics of the different samples.
 :width: 90%
 Representative images of GFP fluorescence in DevCells after cell-free
 expression at 37 °C. Here, the input-gate template ratio was (20 nM:2 nM).
-Contrast and bright adjustments were uniformly applied across all images for
+Contrast and brightness adjustments were uniformly applied across all images for
 GFP (green) and Cy5 membrane dye (red) fluorescence channels. Scale bar:
 100 µm.
 :::
@@ -477,10 +475,9 @@ sample. See {ref}`fig2` for schematics of the different samples.
 :align: center
 :width: 80%
 Quantified GFP fluorescence after 5 h incubation using optimized
-input-gate template ratio (20 nM input template:2 nM gate template). Here,
+input-gate template ratio (20 nM :2 nM). Here,
 all four conditions (Neg Control, Pos Control, EXP OFF, EXP ON) are
-explored. This analysis was conducted on the images collected in the same
-experiments as shown in {ref}`fig5`, with n indicating the number of
+explored. n indicates the number of
 DevCells quantified for each sample. See {ref}`fig2` for schematics of the
 different samples. The high fluorescence in EXP ON is due to aTc's green
 fluorescence, making inference of any activation difficult.
@@ -488,7 +485,7 @@ fluorescence, making inference of any activation difficult.
 
 ## Failure modes
 
-A big failure mode was the green fluorescence of aTc. In future experiments
+A big failure mode was the green fluorescence of aTc. In future experiments,
 it is suggested to use a non-fluorescent read-out, such as luminescence, to
 mitigate this issue. At high concentrations, the aTc signal was so strong
 that it bled through channels other than the GFP channel, so switching to
