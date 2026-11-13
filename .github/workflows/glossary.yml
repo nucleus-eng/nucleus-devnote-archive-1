@@ -22,16 +22,28 @@ jobs:
       # read by one engine; a finding that appears in one repo and not the other,
       # for no stated reason, is worse than an old pin.
       #
-      # Known gap at this pin: 3.14.2 does not support the `(?<!%)` lookbehind that
-      # `nucleus.degrees-symbol` needs, which makes that rule a no-op. It does not
-      # reach the glossary rules. Three of the four are plain substitutions, and the
-      # fourth, `glossary.narrows`, is an `existence` rule that carries its exclusions
-      # in an `exceptions` list for exactly this reason: Vale runs Go RE2 and has no
-      # lookbehind at any version, so the rule could never have used one. The rule set
-      # here was measured on Vale 3.22.0 locally and this job at 3.14.2 is its first
-      # test at the pin. If the 14 `styles/nucleus/` rule files land here, the pin
-      # becomes one decision for both repos and wants settling first.
-      VALE_VERSION: "3.14.2"
+      # THIS PIN SAID IT MATCHED NUCLEUS-DOCS AND DID NOT. That repo moved to 3.24.0
+      # on 2026-10-04, in a commit whose subject is "Bump CI's Vale to 3.24.0, which
+      # turns a rule back on" — the rule being `nucleus.degrees-symbol`, which needs a
+      # `(?<!%)` lookbehind that 3.14.2 does not support and which was therefore a
+      # silent no-op there for as long as the old pin stood.
+      #
+      # So the gap the old comment called "known" was the reason to move, not a cost
+      # of staying. The 14 `styles/nucleus/` rule files are staged to land here, and
+      # `degrees-symbol` is one of them: at 3.14.2 it would arrive and report nothing.
+      # Measured at both versions over `styles/tests/temperature.md` in nucleus-docs:
+      # 2 fixture lines fail at 3.14.2 and all 191 pass at 3.24.0.
+      #
+      # WHAT THE BUMP COSTS HERE, re-measured 2026-10-05 over all 197 tracked pages on
+      # this tree: nothing. The two versions report the same 20 warnings, and the same
+      # split across the three rules, at 1 `collapses`, 13 `prefer` and 6 `prefer-cased`.
+      #
+      # The earlier measurement on this branch said the bump moved `glossary.narrows`
+      # from 62 findings to 63. That rule is deleted in this same commit, so the one
+      # finding it moved no longer exists and the bump now costs nothing at all. Every
+      # remaining glossary rule is a plain substitution, which no Vale version treats
+      # differently.
+      VALE_VERSION: "3.24.0"
     steps:
       - uses: actions/checkout@v4
         with:
