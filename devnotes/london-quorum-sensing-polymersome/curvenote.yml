@@ -27,7 +27,7 @@ project:
     devnotes: https://devnotes.bnext.bio
   date: '2026-01-10'
   banner: banner.webp
-  thumbnail: AHL.jpg
+  thumbnail: polymersome.jpg
   toc:
   - file: main.md
   github: https://github.com/bnext-bio/nucleus-developer-notes

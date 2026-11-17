@@ -11,7 +11,7 @@ Quorum sensing polymersomes' membranes will be made out of diblock copolymers wh
 Polymersomes will be made by phase transfer and will encapsulate PURE and LuxR inducible circuits that express beta-galactosidase. LuxR will activate expression of beta-galactosidase when AHL is present. The polymersomes will also contain X-gal which will be cleaved by beta-galactosidase when expression is activated. These polymersomes will be intergrated into an agarose hydrogel patch that can be placed on a AHL producing biofilm.
 
 
-:::{figure} ./Gemini_Generated_Image_es1k8oes1k8oes1k.png
+:::{figure} ./polymersome.jpg
 :label: fig:module-diagram
 :width: 110%
 :::
