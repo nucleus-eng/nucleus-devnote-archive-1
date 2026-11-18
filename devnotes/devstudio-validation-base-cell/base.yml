@@ -12,6 +12,7 @@ project:
     CDK: cell development kit
   plugins:
     - ../../plugins/seqviz/seqviz.mjs
+    - ../../plugins/platemap/platemap.mjs
   jupyter: true
   exports:
     - format: meca
@@ -25,8 +26,9 @@ project:
   resources:
     - src/**/*
     - figures/**/*
-    - assets/**/*
+    - dna/**/*
     - experiments/**/*
+    - "*.ipynb"
   downloads:
     - id: article
       title: Download Article PDF
