@@ -1,77 +1,23 @@
 version: 1
 extends: base.yml
 project:
-  title: Build a Base Cell
-  subtitle: Validation
+  id: 01a1ec9e-afcf-7e82-ab9e-90ef1b5ac550
+  title: "Build a Base Cell"
+  subtitle: "Validation"
   authors:
-    - nameParsed:
-        literal: Base Cell Validation Participants
-        given: Base Cell Validation
-        family: Participants
-      name: Base Cell Validation Participants
-      corresponding: true
+    - name: Base Cell Validation Participants
       email: build@bnext.bio
+      corresponding: true
       affiliations:
-        - affiliations-curvenote-generated-uid-0
-      id: contributors-curvenote-generated-uid-0
-  affiliations:
-    - id: affiliations-curvenote-generated-uid-0
-      name: Nucleus Labs, San Francisco, CA
-  date: '2026-10-13'
+        - name: Nucleus Labs, San Francisco, CA
+  date: 2026-10-13
+  thumbnail: figures/fogplot-compare-0.png
   exports:
     - format: meca
-    - format: typst
-      template: https://github.com/curvenote-templates/bnext.git
-      articles:
-        - file: main.md
-      output: devnote.pdf
-      id: article
-    - format: meca
       id: meca
+  toc:
+    - file: main.md
   downloads:
-    - id: article
-      title: Download Article PDF
     - id: meca
       title: Computational Archive
       filename: devstudio-validation-base-cell.zip
-  thumbnail: figures/fogplot-compare-0.png
-  toc:
-    - file: main.md
-  venue:
-    title: Nucleus
-  github: https://github.com/bnext-bio/nucleus-developer-notes
-  open_access: true
-  license: CC-BY-4.0
-  subject: Developer Note
-  abbreviations:
-    MyST: Markedly Structured Text
-    CDK: cell development kit
-  references:
-    devnotes:
-      url: https://devnotes.bnext.bio
-  thebe:
-    binder:
-      url: https://mybinder.org/
-      provider: github
-      repo: https://github.com/bnext-bio/nucleus-developer-notes
-      ref: HEAD
-  requirements:
-    - environment.yml
-  resources:
-    - src/**/*
-    - figures/**/*
-    - dna/**/*
-    - experiments/**/*
-    - '*.ipynb'
-  plugins:
-    - type: javascript
-      path: ../../plugins/seqviz/seqviz.mjs
-    - type: javascript
-      path: ../../plugins/platemap/platemap.mjs
-  id: 01a1ec9e-afcf-7e82-ab9e-90ef1b5ac550
-site:
-  nav: []
-  template: article-theme
-extend:
-  - >-
-    /Users/antonmolina/Documents/code/20250618-bnext-devnotes/devnote-repos/2026-CERN-OHL-P/devnotes/devstudio-validation-base-cell/base.yml
