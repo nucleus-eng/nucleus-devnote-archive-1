@@ -42,9 +42,9 @@ The plate held 11 wells, one or two per guest, imaged over 9 timepoints
 
 :::::
 
-Full notebook: {download}`Liposome Timeseries Analysis (2026-10-13) <./fogplot-compare.ipynb>`.
+Full notebook: [Liposome Timeseries Analysis (2026-10-13)](https://data.nucleus.engineering/microscopy/nucleus-bnext-01/20261013-devstudio-liposomes-timeseries_2026-10-13_12-07-24.011026.html).
 
-:::{anywidget} https://curvenote.github.io/widgets/widgets/vizarr-viewer.js
+:::{anywidget} ../../plugins/vizarr/vizarr-viewer.mjs
 :class: w-full
 
 {
@@ -71,6 +71,9 @@ at the Capstone.
 Per-well GFP distributions compared directly against each other.
 Segmented data is available here:
 [https://data.nucleus.engineering](https://data.nucleus.engineering/microscopy/nucleus-bnext-01/20261013-devstudio-liposomes-timeseries_2026-10-13_12-07-24.011026.parquet).
+Produced by {download}`fogplot-compare.ipynb <./fogplot-compare.ipynb>`, a
+trimmed extract of the full notebook linked above, keeping only the cells
+behind this figure.
 :::
 
 # Discussion
@@ -103,7 +106,7 @@ Booth (University College London, wells E6 and E7), Michael Clear
 (Schmidt Sciences, wells E8 and E9), and Claudia Contini (Imperial
 College London, well E10).
 
-# Acknowledgments
+## Acknowledgments
 
 Thank you to Yen-Yu Hsu (b.next) and Surendra Yadav (b.next) for serving
 as TAs at this session.
