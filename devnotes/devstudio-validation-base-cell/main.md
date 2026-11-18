@@ -18,29 +18,15 @@ The plate held 11 wells, one or two per guest, imaged over 9 timepoints
 2812 bp, circular, from
 [nucleus-eng/DNA](https://github.com/nucleus-eng/DNA/blob/main/reporters/pOpen-deGFP.gbk).
 
-:::::{tab-set}
-
-::::{tab-item} Construct
-:sync: construct
-
 :::{seqviz} ./dna/pOpen-deGFP.gbk
 :height: 400px
 :::
-
-::::
-
-::::{tab-item} Platemap
-:sync: platemap
 
 :::{platemap} ./experiments/20261013-devstudio-liposomes-platemap.csv
 :height: 420px
 :fields: Person, DNA, Membrane
 :label: platemap-20261013-validation
 :::
-
-::::
-
-:::::
 
 Full notebook: [Liposome Timeseries Analysis (2026-10-13)](https://data.nucleus.engineering/microscopy/nucleus-bnext-01/20261013-devstudio-liposomes-timeseries_2026-10-13_12-07-24.011026.html).
 
@@ -96,7 +82,7 @@ behind this figure.
   after centrifugation. The general approach was clear, but it was not
   optimized for concentration.
 
-# Participants
+## Base Cell Validation Participants
 
 Surendra Yadav (b.next, well D5), Neha Kamat (Northwestern University,
 well D6), Andrew Ellington (University of Texas at Austin, well D7),
