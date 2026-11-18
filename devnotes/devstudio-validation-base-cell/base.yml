@@ -1,0 +1,37 @@
+version: 1
+project:
+  license: CC-BY-4.0
+  open_access: true
+  venue: Nucleus
+  subject: Developer Note
+  github: https://github.com/bnext-bio/nucleus-developer-notes
+  references:
+    devnotes: https://devnotes.bnext.bio
+  abbreviations:
+    MyST: Markedly Structured Text
+    CDK: cell development kit
+  plugins:
+    - ../../plugins/seqviz/seqviz.mjs
+    - ../../plugins/platemap/platemap.mjs
+  jupyter: true
+  exports:
+    - format: meca
+    - format: typst
+      template: https://github.com/curvenote-templates/bnext.git
+      article: main.md
+      output: devnote.pdf
+      id: article
+  requirements:
+    - environment.yml
+  resources:
+    - src/**/*
+    - figures/**/*
+    - dna/**/*
+    - experiments/**/*
+    - "*.ipynb"
+  downloads:
+    - id: article
+      title: Download Article PDF
+site:
+  template: article-theme
+  nav: []
