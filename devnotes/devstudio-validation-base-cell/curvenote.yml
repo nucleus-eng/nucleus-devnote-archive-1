@@ -1,0 +1,22 @@
+version: 1
+extends: base.yml
+project:
+  title: "Base Cell Validation, October 13"
+  subtitle: "Reproducing the Build a Base Cell protocol at the DevStudio Capstone"
+  authors:
+    - name: Developer Studio Workshop Participants
+      email: build@bnext.bio
+      corresponding: true
+      affiliations:
+        - name: Nucleus Labs, San Francisco, CA
+  date: 2026-10-13
+  thumbnail: assets/fogplot-compare-0.png
+  exports:
+    - format: meca
+      id: meca
+  toc:
+    - file: main.md
+  downloads:
+    - id: meca
+      title: Computational Archive
+      filename: devstudio-validation-base-cell.zip
