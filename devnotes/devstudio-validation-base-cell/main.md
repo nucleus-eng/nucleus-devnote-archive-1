@@ -1,6 +1,6 @@
 ---
-title: Build a Base Cell
-subtitle: Validation
+title: Build a Base Cell Validation
+subtitle: DevStudio 2026 Capstone
 ---
 
 # Overview
