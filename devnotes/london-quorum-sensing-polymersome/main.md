@@ -5,10 +5,10 @@ title: "Quorum Sensing Polymersome"
 
 # Overview
 
-Quorum sensing polymersomes' membranes will be made out of diblock copolymers which self-assemble to form a bilayer, similarly to lipids. These polymersomes will be a chassis for genetic circuits responsive to quorum sensing molecules (acyl-homoserine lactone) produced by biofilms and will contain PURE to express these circuits. The polymersomes will also contain X-gal which will be cleaved by beta-galactosidase when AHL is present to produce a visible indigo dye. The polymersomes will be integrated into hydrogel via 3D printing.
+Quorum sensing polymersomes' membranes will be made out of diblock copolymers which self-assemble to form a bilayer, similarly to lipids. These polymersomes will be a chassis for genetic circuits responsive to quorum sensing molecules (acyl-homoserine lactone) produced by biofilms and will contain PURE to express these circuits. The polymersomes will also contain X-gal which will be cleaved by beta-galactosidase when acyl-homoserine lactone(AHL) is present to produce a visible indigo dye and they will be integrated into a hydrogel via 3D printing.
 
 ## How The Module Works
-Polymersomes will be made by phase transfer and will encapsulate PURE and LuxR inducible circuits that express beta-galactosidase. LuxR will activate expression of beta-galactosidase when AHL is present. The polymersomes will also contain X-gal which will be cleaved by beta-galactosidase when expression is activated. These polymersomes will be intergrated into an agarose hydrogel patch that can be placed on a AHL producing biofilm.
+Polymersomes will be made by emulsion phase transfer and encapsulate both LuxR inducible circuits and PURE that can express beta-galactosidase. LuxR will activate expression of beta-galactosidase when AHL is present. The polymersomes will also contain X-gal which can be cleaved by beta-galactosidase when expression is activated. Finally, these polymer vesicles will be integrated into an agarose hydrogel patch that can be placed on an AHL-producing biofilm.
 
 
 :::{figure} ./polymersome.jpg
@@ -22,9 +22,9 @@ Polymersomes will be made by phase transfer and will encapsulate PURE and LuxR i
 - Create polymersomes encapsulating PURE and compare to lipid GUVs
     - **Risk**: Osmolarity imbalance from PURE causing membrane instability
     - **Success Criteria**: GFP expressing in stable polymersomes
-- Integrate polymersomes into hydrogel that is stable for 3-4 hours. Outperforming DOPC standard GUVs in terms of time remaining stable.
+- Integrate polymersomes into hydrogel which is stable for 3-4 hours. Outperforming DOPC standard GUVs in terms of stability time.
     - **Risk**: Polymersomes unstable in hydrogel
-    - **Mitigation**: Test different concentrations of hydrogel to assess optimal concentration for polymersome stability
+    - **Mitigation**: Test different concentrations of agarose hydogel to assess optimal concentration for polymersome stability.
 - Insert alpha-hemolysin into polymersome membranes
     - **Risk**: Alpha-hemolysin not inserting
     - **Mitigation**: Test insertion in different polymer compositions
@@ -40,9 +40,9 @@ Polymersomes will be made by phase transfer and will encapsulate PURE and LuxR i
 :align: center
 
 | Component | Description |
-| --- | --- |
-| Diblock copolymer | Energy mix made without folinic acid. |
-| PURE  | B.next cytosol |
+| --- | --------- |
+| Diblock copolymer | Amphiphilic polymer that forms the vesicle membrane |
+| PURE  | B.next Cytosol |
 | Ultra low gelling agarose  | Gels at 8-17C  |
 | X-gal | Cleaved by beta-galactosidase into indigo dye |
 | LuxR genetic circuits | Provided by Elani lab |
