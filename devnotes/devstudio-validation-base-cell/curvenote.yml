@@ -2,7 +2,7 @@ version: 1
 extends: base.yml
 project:
   id: 01a1ec9e-afcf-7e82-ab9e-90ef1b5ac550
-  title: "Build a Base Cell Validation"
+  title: "Base Cell Validation"
   subtitle: "DevStudio 2026 Capstone"
   authors:
     - name: Base Cell Validation Participants
