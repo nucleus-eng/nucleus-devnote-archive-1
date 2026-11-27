@@ -96,4 +96,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*CRAIC, a Colorimetric Reporter for AHL In Cytosol, detects AHSL through EsaR in Nucleus Cytosol and reports it by releasing CPRG from a dye carrier in a gel. Status at the end of Week 3: unchanged on the figure. The team deliberately held EsaO/R at an mNeonGreen proxy rather than advancing the real PLA1 construct, in order to chase a repressor noise floor on the microscope. Compare {ref}`the same board at the end of Week 2 <fig:week2-craic>`.*
+*Module and Process board showing the status of the CRAIC demonstration at the end of Week 3. CRAIC, a Colorimetric Reporter for AHL In Cytosol, detects AHSL through EsaR in Nucleus Cytosol and reports it by releasing CPRG from a dye carrier in a gel. Compare {ref}`the same board at the end of Week 2 <fig:week2-craic>`.*

@@ -83,4 +83,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The pH Sensing demonstration releases CPRG from a carrier when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Status at the end of Week 3: complete. Every node is green. The Day 10 rerun on SUVs worked, which resolved the leaky CPRG carriers behind the ambiguous color of Day 8, and the Chicago base membrane is now confirmed rather than assumed, closing a question open since the first overlay. Compare {ref}`the same board at the end of Week 2 <fig:week2-ph>`.*
+*Module and Process board showing the status of the pH Sensing demonstration at the end of Week 3. It releases CPRG from a carrier when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Compare {ref}`the same board at the end of Week 2 <fig:week2-ph>`.*

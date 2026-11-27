@@ -89,4 +89,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The aTc Sensor demonstration uses TetR repression of a TetO-PLA construct, so that aTc triggers lysis and a colorimetric readout from a PEG-NB gel. Status at the end of Week 3: every node is orange, with no gray and no green, unchanged from Week 2. Leaky tetO expression remains the named cause of the ambiguous readout. Compare {ref}`the same board at the end of Week 2 <fig:week2-atc>`.*
+*Module and Process board showing the status of the aTc Sensor demonstration at the end of Week 3. It uses TetR repression of a TetO-PLA construct, so that aTc triggers lysis and a colorimetric readout from a PEG-NB gel. Compare {ref}`the same board at the end of Week 2 <fig:week2-atc>`.*

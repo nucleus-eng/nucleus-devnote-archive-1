@@ -77,4 +77,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The LuxR-GFP Sensor demonstration detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Status at the end of Week 2: every node is orange except the UV lamp. The whole chain has now been attempted, including sensing of bacterial supernatant, and nothing in it is yet confirmed working as drawn. Compare {ref}`the same board at the end of Week 1 <fig:week1-ahl-lysate>`.*
+*Module and Process board showing the status of the LuxR-GFP demonstration at the end of Week 2. It detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Compare {ref}`the same board at the end of Week 1 <fig:week1-ahl-lysate>`.*

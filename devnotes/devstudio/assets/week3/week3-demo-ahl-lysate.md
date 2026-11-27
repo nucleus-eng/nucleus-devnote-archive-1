@@ -77,4 +77,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The LuxR-GFP Sensor demonstration detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Status at the end of Week 3: this demonstration produced its first hard number, a two-fold difference in gel with synthetic AHL. It stays orange rather than green because no threshold has been set for what counts as a working signal. Compare {ref}`the same board at the end of Week 2 <fig:week2-ahl-lysate>`.*
+*Module and Process board showing the status of the LuxR-GFP demonstration at the end of Week 3. It detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Compare {ref}`the same board at the end of Week 2 <fig:week2-ahl-lysate>`.*

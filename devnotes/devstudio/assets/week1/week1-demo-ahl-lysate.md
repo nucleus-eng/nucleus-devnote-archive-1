@@ -80,5 +80,5 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The LuxR-GFP Sensor demonstration detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence. Status at the end of Week 1: the sensor chain is orange conservatively, because the dose response ran in Nucleus Cytosol rather than the lysate this figure draws, and no Sensing Cell has been encapsulated.*
+*Module and Process board showing the status of the LuxR-GFP demonstration at the end of Week 1. It detects 3OC6-HSL through LuxR in S30 Lysate and reports it as deGFP fluorescence.*
 <!-- /gen:status-overlay -->
