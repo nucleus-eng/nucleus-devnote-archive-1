@@ -2,6 +2,10 @@
 title: "Week 3, October 5 to 9"
 ---
 
+:::{note}
+Claude Sonnet 5 assisted in drafting and editing this page's text.
+:::
+
 Week 3 saw two of the four demonstrations run through to completion. The pH sensing demo was completed ({ref}`pH Sensing <fig:week3-ph>`), and an attempt to pattern the sensor and read the output with a phone application was attempted but inconclusive. The LuxR-GFP demo also successfully crossed the finish line ({ref}`LuxR-GFP <fig:week3-ahl-lysate>`). Several attempts at tuning the aTc sensor demo ultimately did not reproduce the visible color change the demo required ({ref}`aTc Sensor <fig:week3-atc>`). Finally, the CRAIC demo, relying on constructs untested before DevStudio, saw some characterization of its constructs in base cell ({ref}`CRAIC <fig:week3-craic>`).
 
 ::::{tab-set}

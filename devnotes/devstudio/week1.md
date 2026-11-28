@@ -2,6 +2,10 @@
 title: "Week 1, September 23 to 25"
 ---
 
+:::{note}
+Claude Sonnet 5 assisted in drafting and editing this page's text.
+:::
+
 We began DevStudio with a whiteboard exercise asking each participant to diagram their application demonstrations in terms of constituent Modules and Processes ({ref}`boards <fig:week1-boards>`). This exercise showed similarities across the proposed demonstrations, highlighted key intermediates, and gave us a means to track progress over the next 22 days. Each node is showing up with two proposed demonstrations. The Chicago Node is running a pH Sensing demonstration and an aTc Sensor demonstration. The London Node is running a LuxR-GFP Sensor demonstration in S30 Lysate and "CRAIC", a colorimetric reporter for AHL in cytosol.
 
 Using a [Nucleus-Skills](https://github.com/nucleus-eng/nucleus-skills) based workflow we were able to quickly translate the hand-drawn schematic into digital diagrams that we can annotate ({ref}`pH Sensing <fig:week1-ph>`, {ref}`aTc Sensor <fig:week1-atc>`, {ref}`LuxR-GFP <fig:week1-ahl-lysate>`, and {ref}`CRAIC <fig:week1-craic>`). In this case, we've annotated Modules and Processes as green if they've been successfully implemented as the demonstration requires; orange if the modules or processes have been attempted but they require modification or additional tuning; red if the module or process has been ruled out, whether by choice or by failure, which nothing has been so far; and gray if the module or process remains untouched at DevStudio.
