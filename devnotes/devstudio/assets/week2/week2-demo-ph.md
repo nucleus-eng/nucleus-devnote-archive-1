@@ -86,4 +86,4 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The pH Sensing demonstration releases CPRG from a carrier when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Status at the end of Week 2: this demonstration ran end to end in LGA on Day 7, the first of the Studio, but the color change was ambiguous and leaky CPRG carriers are the likely cause. Day 9 rebuilt it on SUVs in place of LUVs and that result is not yet in. Compare {ref}`the same board at the end of Week 1 <fig:week1-ph>`.*
+*Module and Process board showing the status of the pH Sensing demonstration at the end of Week 2. It releases CPRG from a carrier when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Compare {ref}`the same board at the end of Week 1 <fig:week1-ph>`.*

@@ -90,5 +90,5 @@ flowchart TD
     class LEG_PROCESS p_gray;
     style LEGEND fill:#ffffff,stroke:#9ca3af,color:#111827
 ```
-*The pH Sensing demonstration releases CPRG from a vesicle when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel. Status at the end of Week 1: the sensing chain through the pH Sensing Cell is green, the CPRG vesicle branch is orange on unresolved leakiness, and no gel has been used for this demonstration.*
+*Module and Process board showing the status of the pH Sensing demonstration at the end of Week 1. It releases CPRG from a vesicle when low pH opens a toehold switch that expresses PLA1, giving a color read out of a gel.*
 <!-- /gen:status-overlay -->

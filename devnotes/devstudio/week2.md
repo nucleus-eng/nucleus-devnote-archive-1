@@ -2,6 +2,10 @@
 title: "Week 2, September 28 to October 2"
 ---
 
+:::{note}
+Claude Sonnet 5 assisted in drafting and editing this page's text.
+:::
+
 Week 2 built three of the four demonstrations end to end, and the work has shifted from assembly to tuning the output. The two-vesicle pH Sensor system ran first, in LGA on Day 7, and the aTc demonstration followed on Day 10 with tetO/R-PLA1 fully assembled in PEG-NB. The proxy reporters that Week 1 relied on were replaced by PLA1. Three challenges have since emerged: CPRG leaks in two-vesicle architectures; transcription is leaky in the repressed sensor systems; the efficiency of embedding cells in hydrogels is hard to quantify.
 
 We've tracked progress on the four application demonstrations by updating the boards from Week 1, node for node ({ref}`pH Sensing <fig:week2-ph>`, {ref}`aTc Sensor <fig:week2-atc>`, {ref}`LuxR-GFP <fig:week2-ahl-lysate>`, and {ref}`CRAIC <fig:week2-craic>`). Updating the boards this week shows that our annotation scheme may not be adequate. Most nodes remain orange, and yet confidence in individual modules has grown: the EsaO/R-deGFP and PLA1 systems work well enough to document as standalone capacities, independent of any demonstration. The scheme turns a module green if it's demonstrated as intended to function in the end-to-end application demonstration. This means that a significant part of the aTc and CRAIC demos remain orange despite module validation being successful, i.e. detector-reporter constructs validated but not yet detector-lysis constructs.
