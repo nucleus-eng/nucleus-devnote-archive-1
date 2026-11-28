@@ -11,6 +11,7 @@ project:
       affiliations:
         - name: Nucleus Labs, San Francisco, CA
   date: 2026-10-13
+  banner: banner-devcells.webp
   thumbnail: figures/fogplot-compare-0.png
   exports:
     - format: meca
