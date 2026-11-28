@@ -63,12 +63,7 @@ These are the summaries circulated to PIs and to participants who could not atte
 
 ## Expected outputs
 
-These tables update the ones on the Week 2 page. Week 2's table assumed one DevNote per demonstration. That pattern held for pH Sensing and for the EsaO/R detector: each produced exactly the one DevNote expected, now under its actual title. It did not hold for the other two demonstrations. The aTc Sensor's actual development journey turned out to be five distinct devnotes: characterization in cytosol, characterization in GUVs, PLA1 in vesicles with its own titration and patterning, PLA1's lysis step tested on its own rather than as part of the aTc trigger, and a variant that co-encapsulates PLA1 expression with the beta-galactosidase substrate in a single GUV population instead of keeping the two separate. 
-
-The LuxR-GFP demonstration split in two for a related reason: the bulk color-change result, LuxR-PLA1 lysing a CPRG carrier in solution, is a different chassis from the gel-embedded sensing the main demonstration is about, so it earned a DevNote of its own.
-
-One further DevNote, on embedding tolerances across LGA, ULGA, and PEG-NB, characterizes the hydrogels used across all four demonstrations.
-
+As work progressed into week 3, our sense of DevStudio's outputs evolved. Some workstreams were amenable to clean mapping of DevNote to Demonstration. However, others followed a pattern of describing a key result or insight as an independent DevNote. Cross-cutting work such as characterizing the behavior of embedded synthetic cells across the three hydrogels (LGA, ULGA, and PEG-NB) used in all the demos resulted in its own DevNote.
 
 :::{table} DevNotes drafted during Week 3 and the weekend after.
 :label: tbl:week3-devnotes
